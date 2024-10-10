@@ -2,9 +2,12 @@ package com.core.timmy.data.model;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.Set;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -50,5 +53,13 @@ public class User implements Serializable {
 								 * en bases de datos relacionales, SQL los boolean pueden ser INT(1) o
 								 * TINYINT(1)
 								 */
-
+	/*es bueno guardar en colecciones las relaciones o vinculaciones entre tablas de bases de datos que nos interesen
+	, en este caso entre user.java y Role.java*/
+	
+	@ManyToMany
+	@JoinTable(name= "USERS_HAS_ROLES") //Forma de modificar el nombre de la tercera tabla
+    private Set<Role> roleSet;
+	
+	
+	
 }

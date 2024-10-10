@@ -2,9 +2,12 @@ package com.core.timmy.data.model;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.Set;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -39,6 +42,9 @@ public class Role implements Serializable {
 	@Id
 	private String rolename;
 	
+	/*@ManyToMany
+    private Set<User> userSet; /*con esto como es una colección de objetos, tendre acceso a una colección completa de todos
+	los atributos de User, eso sería lo que colectaría*/
 
 
 }
