@@ -1,5 +1,7 @@
 package com.core.timmy.serviceImpl;
 
+import java.util.HashSet;
+
 import java.util.Optional;
 import java.util.Set;
 
@@ -9,6 +11,9 @@ import org.springframework.stereotype.Service;
 import com.core.timmy.data.model.Role;
 import com.core.timmy.data.repository.IRoleRepository;
 import com.core.timmy.service.IRoleService;
+
+
+
 @Service
 public class RoleServiceImpl implements IRoleService {
 	
@@ -24,14 +29,17 @@ public class RoleServiceImpl implements IRoleService {
 
 	@Override
 	public Optional<Role> findById(String rolename) {
-		// TODO Auto-generated method stub
-		return Optional.empty();
+		
+		
+		return this.roleRepository.findById(rolename);
+		
 	}
 
 	@Override
 	public Set<Role> findall() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return new HashSet<Role>(this.roleRepository.findAll()); /*repositorio devuelve un objeto list, la mayoria de veces array list. 
+		en list el orden importa, acepta duplicado*/
 	}
 	
 	

@@ -1,0 +1,202 @@
+14-10-2024 08:45:40 INFO  com.core.timmy.TimmyApplication - Starting TimmyApplication using Java 21.0.4 with PID 7060 (C:\Users\manana\eclipse-workspace\timmy\target\classes started by manana in C:\Users\manana\eclipse-workspace\timmy)
+14-10-2024 08:45:40 INFO  com.core.timmy.TimmyApplication - No active profile set, falling back to 1 default profile: "default"
+14-10-2024 08:45:41 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+14-10-2024 08:45:41 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14-10-2024 08:45:41 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
+14-10-2024 08:45:41 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+14-10-2024 08:45:41 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14-10-2024 08:45:41 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+14-10-2024 08:45:41 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring embedded WebApplicationContext
+14-10-2024 08:45:41 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1433 ms
+14-10-2024 08:45:41 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14-10-2024 08:45:42 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:eventix user=SAS
+14-10-2024 08:45:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14-10-2024 08:45:42 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:eventix'
+14-10-2024 08:45:42 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+14-10-2024 08:45:42 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+14-10-2024 08:45:42 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14-10-2024 08:45:42 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+14-10-2024 08:45:42 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+14-10-2024 08:45:42 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14-10-2024 08:45:43 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14-10-2024 08:45:43 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14-10-2024 08:45:44 INFO  com.core.timmy.config.WebMvcConfig - Dialects & TemplateResolvers:  > [org.thymeleaf.spring6.dialect.SpringStandardDialect@3bfead8d, nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect@3ba6707e, org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect@4b407ac7] >> [org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver@3c6d3ba] >>> 1
+14-10-2024 08:45:44 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+14-10-2024 08:45:44 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+14-10-2024 08:45:44 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+14-10-2024 08:45:44 INFO  c.c.timmy.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@6fe55fcf, interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7fd4acee, started on Mon Oct 14 08:45:40 CEST 2024, class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@14b4f462}
+14-10-2024 08:45:44 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+14-10-2024 08:45:44 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+14-10-2024 08:45:45 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/timmy'
+14-10-2024 08:45:45 INFO  com.core.timmy.TimmyApplication - Started TimmyApplication in 5.192 seconds (process running for 5.986)
+14-10-2024 12:02:26 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+14-10-2024 12:02:26 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+14-10-2024 12:02:26 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14-10-2024 12:02:26 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+14-10-2024 12:03:33 INFO  com.core.timmy.TimmyApplication - Starting TimmyApplication using Java 21.0.4 with PID 12708 (C:\Users\manana\eclipse-workspace\timmy\target\classes started by manana in C:\Users\manana\eclipse-workspace\timmy)
+14-10-2024 12:03:33 INFO  com.core.timmy.TimmyApplication - No active profile set, falling back to 1 default profile: "default"
+14-10-2024 12:03:33 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+14-10-2024 12:03:33 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14-10-2024 12:03:33 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 2 JPA repository interfaces.
+14-10-2024 12:03:34 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+14-10-2024 12:03:34 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14-10-2024 12:03:34 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+14-10-2024 12:03:34 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring embedded WebApplicationContext
+14-10-2024 12:03:34 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1302 ms
+14-10-2024 12:03:34 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14-10-2024 12:03:34 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:eventix user=SAS
+14-10-2024 12:03:34 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14-10-2024 12:03:34 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:eventix'
+14-10-2024 12:03:34 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+14-10-2024 12:03:34 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+14-10-2024 12:03:35 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14-10-2024 12:03:35 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+14-10-2024 12:03:35 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+14-10-2024 12:03:35 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14-10-2024 12:03:36 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14-10-2024 12:03:36 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14-10-2024 12:03:36 INFO  com.core.timmy.config.WebMvcConfig - Dialects & TemplateResolvers:  > [org.thymeleaf.spring6.dialect.SpringStandardDialect@22c14d10, nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect@6a5a99d9, org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect@278df226] >> [org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver@735dc133] >>> 1
+14-10-2024 12:03:36 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+14-10-2024 12:03:36 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+14-10-2024 12:03:36 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+14-10-2024 12:03:36 INFO  c.c.timmy.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@74f54f8e, interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52500920, started on Mon Oct 14 12:03:33 CEST 2024, interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@628e0403}
+14-10-2024 12:03:37 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+14-10-2024 12:03:37 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+14-10-2024 12:03:37 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/timmy'
+14-10-2024 12:03:37 INFO  com.core.timmy.TimmyApplication - Started TimmyApplication in 4.794 seconds (process running for 5.521)
+14-10-2024 12:16:45 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14-10-2024 12:16:45 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14-10-2024 12:16:45 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+14-10-2024 12:16:45 DEBUG o.s.web.servlet.DispatcherServlet - Detected SessionLocaleResolver
+14-10-2024 12:16:45 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+14-10-2024 12:16:45 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@14e8304b
+14-10-2024 12:16:45 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@7cd6b76a
+14-10-2024 12:16:45 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+14-10-2024 12:16:45 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+14-10-2024 12:16:45 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/", parameters={}
+14-10-2024 12:16:45 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+14-10-2024 12:16:46 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+14-10-2024 12:16:46 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+14-10-2024 12:16:46 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+14-10-2024 12:16:46 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource loginGet.]
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+14-10-2024 12:16:46 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+14-10-2024 12:16:46 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+14-10-2024 12:16:46 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+14-10-2024 12:16:46 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource loginGet.]
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+14-10-2024 12:16:46 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+14-10-2024 12:16:46 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+14-10-2024 12:16:46 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+14-10-2024 12:16:46 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource loginGet.]
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+14-10-2024 12:16:46 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+14-10-2024 12:16:46 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+14-10-2024 12:16:46 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+14-10-2024 12:16:46 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource loginGet.]
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+14-10-2024 12:16:46 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+14-10-2024 12:16:46 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+14-10-2024 12:16:46 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+14-10-2024 12:16:46 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource loginGet.]
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+14-10-2024 12:16:46 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+14-10-2024 12:16:46 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+14-10-2024 12:16:46 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+14-10-2024 12:16:46 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource loginGet.]
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+14-10-2024 12:16:46 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+14-10-2024 12:16:46 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+14-10-2024 12:16:46 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+14-10-2024 12:16:46 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource loginGet.]
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+14-10-2024 12:16:46 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+14-10-2024 12:16:46 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+14-10-2024 12:16:46 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+14-10-2024 12:16:46 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource loginGet.]
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+14-10-2024 12:16:46 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+14-10-2024 12:16:46 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+14-10-2024 12:16:46 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+14-10-2024 12:16:46 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource loginGet.]
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+14-10-2024 12:16:46 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+14-10-2024 12:16:46 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+14-10-2024 12:16:46 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+14-10-2024 12:16:46 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource loginGet.]
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+14-10-2024 12:16:46 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+14-10-2024 12:16:46 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+14-10-2024 12:16:46 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+14-10-2024 12:16:46 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource loginGet.]
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+14-10-2024 12:16:46 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+14-10-2024 12:16:46 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+14-10-2024 12:16:46 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+14-10-2024 12:16:46 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource loginGet.]
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+14-10-2024 12:16:46 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+14-10-2024 12:16:46 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+14-10-2024 12:16:46 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+14-10-2024 12:16:46 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource loginGet.]
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+14-10-2024 12:16:46 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+14-10-2024 12:16:46 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+14-10-2024 12:16:46 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+14-10-2024 12:16:46 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource loginGet.]
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+14-10-2024 12:16:46 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+14-10-2024 12:16:46 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+14-10-2024 12:16:46 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+14-10-2024 12:16:46 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource loginGet.]
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+14-10-2024 12:16:46 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+14-10-2024 12:16:46 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+14-10-2024 12:16:46 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+14-10-2024 12:16:46 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource loginGet.]
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+14-10-2024 12:16:46 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+14-10-2024 12:16:46 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+14-10-2024 12:16:46 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+14-10-2024 12:16:46 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource loginGet.]
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+14-10-2024 12:16:46 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+14-10-2024 12:16:46 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+14-10-2024 12:16:46 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+14-10-2024 12:16:46 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource loginGet.]
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+14-10-2024 12:16:46 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+14-10-2024 12:16:46 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+14-10-2024 12:16:46 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+14-10-2024 12:16:46 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource loginGet.]
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+14-10-2024 12:16:46 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+14-10-2024 12:16:46 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+14-10-2024 12:16:46 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+14-10-2024 12:16:46 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource loginGet.]
+14-10-2024 12:16:46 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+14-10-2024 12:16:46 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+14-10-2024 12:48:17 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+14-10-2024 12:48:17 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+14-10-2024 12:48:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14-10-2024 12:48:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

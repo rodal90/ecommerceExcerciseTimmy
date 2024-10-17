@@ -47,9 +47,9 @@ public class WebSecurityConfig {
                 .headers(headers -> headers.frameOptions(Customizer.withDefaults()).disable()) //Necesario para que salgan todos los marcos de /h2
                 .csrf(csrf -> csrf.ignoringRequestMatchers("/h2/**")) // Para permitir acceso a /h2/** sin CSRF
                 .authorizeHttpRequests((authorize) -> authorize
-			        	.requestMatchers("/", "/welcome", "/login*", "/h2/**").permitAll()
+			        	.requestMatchers("/", "/index", "/login*", "/h2/**").permitAll()
 			        	.requestMatchers("/img/**").permitAll()
-			        	.requestMatchers("/index").authenticated()
+			        	.requestMatchers("/welcome").authenticated()
                         .anyRequest().authenticated())
                 //.formLogin(Customizer.withDefaults());	
                 .formLogin(formLogin -> {
@@ -59,7 +59,7 @@ public class WebSecurityConfig {
                       //.usernameParameter("username")
                       //.passwordParameter("password")
                       .permitAll() // We re permitting all for login page
-                      .defaultSuccessUrl("/index") // If the login is successful, user will be redirected to this URL.
+                      .defaultSuccessUrl("/welcome") // If the login is successful, user will be redirected to this URL.
                       .failureUrl("/login?badCredentials"); // If the user fails to login, application will redirect the user to this endpoint
                    	})
                 .logout(formLogout -> {

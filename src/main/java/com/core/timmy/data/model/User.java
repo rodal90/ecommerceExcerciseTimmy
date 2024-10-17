@@ -2,6 +2,7 @@ package com.core.timmy.data.model;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.Objects;
 import java.util.Set;
 
 import jakarta.persistence.Entity;
@@ -36,6 +37,29 @@ una contra parte en una base de datos.*/
  */
 
 public class User implements Serializable {
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(email, enabled, expiryDateAccount, expiryDateCredentials, fullname, lockedAccount, password,
+				roleSet, username);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		User other = (User) obj;
+		return Objects.equals(email, other.email) && Objects.equals(enabled, other.enabled)
+				&& Objects.equals(expiryDateAccount, other.expiryDateAccount)
+				&& Objects.equals(expiryDateCredentials, other.expiryDateCredentials)
+				&& Objects.equals(fullname, other.fullname) && Objects.equals(lockedAccount, other.lockedAccount)
+				&& Objects.equals(password, other.password) && Objects.equals(roleSet, other.roleSet)
+				&& Objects.equals(username, other.username);
+	}
 
 	private static final long serialVersionUID = 1L;
 	
