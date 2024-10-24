@@ -1,0 +1,411 @@
+21-10-2024 08:37:53 INFO  com.core.timmy.TimmyApplication - Starting TimmyApplication using Java 21.0.4 with PID 13224 (C:\Users\manana\eclipse-workspace\timmy\target\classes started by manana in C:\Users\manana\eclipse-workspace\timmy)
+21-10-2024 08:37:53 INFO  com.core.timmy.TimmyApplication - No active profile set, falling back to 1 default profile: "default"
+21-10-2024 08:37:54 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+21-10-2024 08:37:54 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+21-10-2024 08:37:54 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
+21-10-2024 08:37:55 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+21-10-2024 08:37:55 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+21-10-2024 08:37:55 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+21-10-2024 08:37:55 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring embedded WebApplicationContext
+21-10-2024 08:37:55 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1313 ms
+21-10-2024 08:37:55 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21-10-2024 08:37:55 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:eventix user=SAS
+21-10-2024 08:37:55 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21-10-2024 08:37:55 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:eventix'
+21-10-2024 08:37:55 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+21-10-2024 08:37:55 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+21-10-2024 08:37:55 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+21-10-2024 08:37:55 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+21-10-2024 08:37:55 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+21-10-2024 08:37:56 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+21-10-2024 08:37:56 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+21-10-2024 08:37:57 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21-10-2024 08:37:57 INFO  com.core.timmy.config.WebMvcConfig - Dialects & TemplateResolvers:  > [org.thymeleaf.spring6.dialect.SpringStandardDialect@4349389d, nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect@7b897456, org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect@4dcc0e3d] >> [org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver@2286dfcd] >>> 1
+21-10-2024 08:37:57 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+21-10-2024 08:37:57 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 4 mappings in 'requestMappingHandlerMapping'
+21-10-2024 08:37:57 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+21-10-2024 08:37:57 INFO  c.c.timmy.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@7594d189, interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@63bb719d, interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6175619b, started on Mon Oct 21 08:37:54 CEST 2024}
+21-10-2024 08:37:57 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+21-10-2024 08:37:57 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+21-10-2024 08:37:58 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/timmy'
+21-10-2024 08:37:58 INFO  com.core.timmy.TimmyApplication - Started TimmyApplication in 4.884 seconds (process running for 5.616)
+21-10-2024 08:38:18 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-10-2024 08:38:18 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21-10-2024 08:38:18 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+21-10-2024 08:38:18 DEBUG o.s.web.servlet.DispatcherServlet - Detected SessionLocaleResolver
+21-10-2024 08:38:18 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+21-10-2024 08:38:18 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@13482361
+21-10-2024 08:38:18 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@38a6ca39
+21-10-2024 08:38:18 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+21-10-2024 08:38:18 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+21-10-2024 08:38:18 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/", parameters={}
+21-10-2024 08:38:18 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+21-10-2024 08:38:19 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+21-10-2024 08:38:19 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+21-10-2024 08:38:19 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+21-10-2024 08:38:19 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+21-10-2024 08:38:24 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+21-10-2024 08:38:24 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+21-10-2024 08:38:24 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+21-10-2024 08:38:24 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+21-10-2024 08:38:24 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+21-10-2024 08:38:24 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+21-10-2024 08:38:24 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+21-10-2024 08:38:44 DEBUG o.s.web.servlet.DispatcherServlet - POST "/timmy/loginPost", parameters={masked}
+21-10-2024 08:38:44 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginPost(Model)
+21-10-2024 08:38:44 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+21-10-2024 08:38:44 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+21-10-2024 08:38:44 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+21-10-2024 08:38:44 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+21-10-2024 08:38:44 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+21-10-2024 08:38:49 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+21-10-2024 08:38:49 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+21-10-2024 08:38:49 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+21-10-2024 08:38:49 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+21-10-2024 08:39:13 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/", parameters={}
+21-10-2024 08:39:13 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+21-10-2024 08:49:52 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+21-10-2024 08:49:52 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+21-10-2024 08:49:52 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+21-10-2024 08:49:52 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+21-10-2024 10:44:57 INFO  com.core.timmy.TimmyApplication - Starting TimmyApplication using Java 21.0.4 with PID 4760 (C:\Users\manana\eclipse-workspace\timmy\target\classes started by manana in C:\Users\manana\eclipse-workspace\timmy)
+21-10-2024 10:44:57 INFO  com.core.timmy.TimmyApplication - No active profile set, falling back to 1 default profile: "default"
+21-10-2024 10:44:58 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+21-10-2024 10:44:58 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+21-10-2024 10:44:58 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
+21-10-2024 10:44:58 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+21-10-2024 10:44:58 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+21-10-2024 10:44:58 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+21-10-2024 10:44:58 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring embedded WebApplicationContext
+21-10-2024 10:44:58 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1285 ms
+21-10-2024 10:44:58 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21-10-2024 10:44:58 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:eventix user=SAS
+21-10-2024 10:44:58 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21-10-2024 10:44:58 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:eventix'
+21-10-2024 10:44:59 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+21-10-2024 10:44:59 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+21-10-2024 10:44:59 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+21-10-2024 10:44:59 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+21-10-2024 10:44:59 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+21-10-2024 10:44:59 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+21-10-2024 10:45:00 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+21-10-2024 10:45:00 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21-10-2024 10:45:00 INFO  com.core.timmy.config.WebMvcConfig - Dialects & TemplateResolvers:  > [org.thymeleaf.spring6.dialect.SpringStandardDialect@36def543, nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect@36995784, org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect@58dd1d0c] >> [org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver@4349389d] >>> 1
+21-10-2024 10:45:00 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+21-10-2024 10:45:00 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 4 mappings in 'requestMappingHandlerMapping'
+21-10-2024 10:45:01 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+21-10-2024 10:45:01 INFO  c.c.timmy.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@51f412e6, interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@50b010d4, interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6175619b, started on Mon Oct 21 10:44:57 CEST 2024}
+21-10-2024 10:45:01 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+21-10-2024 10:45:01 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+21-10-2024 10:45:01 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/timmy'
+21-10-2024 10:45:01 INFO  com.core.timmy.TimmyApplication - Started TimmyApplication in 4.889 seconds (process running for 5.627)
+21-10-2024 10:45:06 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-10-2024 10:45:06 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21-10-2024 10:45:06 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+21-10-2024 10:45:06 DEBUG o.s.web.servlet.DispatcherServlet - Detected SessionLocaleResolver
+21-10-2024 10:45:06 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+21-10-2024 10:45:06 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@482034fb
+21-10-2024 10:45:06 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@66790851
+21-10-2024 10:45:06 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+21-10-2024 10:45:06 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+21-10-2024 10:45:07 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/", parameters={}
+21-10-2024 10:45:07 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+21-10-2024 10:45:08 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+21-10-2024 10:45:08 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+21-10-2024 10:45:08 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+21-10-2024 10:45:08 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+21-10-2024 10:45:08 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+21-10-2024 10:45:08 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+21-10-2024 10:45:08 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+21-10-2024 10:45:08 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+21-10-2024 10:45:08 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+21-10-2024 10:45:08 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+21-10-2024 10:45:08 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+21-10-2024 10:45:11 DEBUG o.s.web.servlet.DispatcherServlet - POST "/timmy/loginPost", parameters={masked}
+21-10-2024 10:45:11 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginPost(Model)
+21-10-2024 10:45:11 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+21-10-2024 10:45:11 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+21-10-2024 10:45:11 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+21-10-2024 10:45:11 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+21-10-2024 10:45:11 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+21-10-2024 10:45:14 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+21-10-2024 10:45:14 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+21-10-2024 10:45:14 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+21-10-2024 10:45:14 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+21-10-2024 11:38:15 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+21-10-2024 11:38:15 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+21-10-2024 11:38:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+21-10-2024 11:38:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+21-10-2024 11:38:23 INFO  com.core.timmy.TimmyApplication - Starting TimmyApplication using Java 21.0.4 with PID 8760 (C:\Users\manana\eclipse-workspace\timmy\target\classes started by manana in C:\Users\manana\eclipse-workspace\timmy)
+21-10-2024 11:38:23 INFO  com.core.timmy.TimmyApplication - No active profile set, falling back to 1 default profile: "default"
+21-10-2024 11:38:24 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+21-10-2024 11:38:24 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+21-10-2024 11:38:24 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 2 JPA repository interfaces.
+21-10-2024 11:38:24 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+21-10-2024 11:38:24 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+21-10-2024 11:38:24 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+21-10-2024 11:38:24 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring embedded WebApplicationContext
+21-10-2024 11:38:24 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1275 ms
+21-10-2024 11:38:24 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21-10-2024 11:38:25 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:eventix user=SAS
+21-10-2024 11:38:25 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21-10-2024 11:38:25 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:eventix'
+21-10-2024 11:38:25 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+21-10-2024 11:38:25 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+21-10-2024 11:38:25 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+21-10-2024 11:38:25 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+21-10-2024 11:38:25 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+21-10-2024 11:38:25 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+21-10-2024 11:38:25 ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: Collection 'com.core.timmy.data.model.Customer.customerContactList' is 'mappedBy' a property named 'customerContact' which does not exist in the target entity 'com.core.timmy.data.model.CustomerContact'
+21-10-2024 11:38:25 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Collection 'com.core.timmy.data.model.Customer.customerContactList' is 'mappedBy' a property named 'customerContact' which does not exist in the target entity 'com.core.timmy.data.model.CustomerContact'
+21-10-2024 11:38:25 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+21-10-2024 11:38:25 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+21-10-2024 11:38:25 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+21-10-2024 11:38:25 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+21-10-2024 11:38:25 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Collection 'com.core.timmy.data.model.Customer.customerContactList' is 'mappedBy' a property named 'customerContact' which does not exist in the target entity 'com.core.timmy.data.model.CustomerContact'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.core.timmy.TimmyApplication.main(TimmyApplication.java:22)
+Caused by: org.hibernate.AnnotationException: Collection 'com.core.timmy.data.model.Customer.customerContactList' is 'mappedBy' a property named 'customerContact' which does not exist in the target entity 'com.core.timmy.data.model.CustomerContact'
+	at org.hibernate.boot.model.internal.CollectionBinder.isReversePropertyInJoin(CollectionBinder.java:1639)
+	at org.hibernate.boot.model.internal.CollectionBinder.noAssociationTable(CollectionBinder.java:1653)
+	at org.hibernate.boot.model.internal.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:1614)
+	at org.hibernate.boot.model.internal.CollectionBinder$1.secondPass(CollectionBinder.java:1605)
+	at org.hibernate.boot.model.internal.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1811)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1770)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:334)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 15 common frames omitted
+21-10-2024 11:42:37 INFO  com.core.timmy.TimmyApplication - Starting TimmyApplication using Java 21.0.4 with PID 1172 (C:\Users\manana\eclipse-workspace\timmy\target\classes started by manana in C:\Users\manana\eclipse-workspace\timmy)
+21-10-2024 11:42:37 INFO  com.core.timmy.TimmyApplication - No active profile set, falling back to 1 default profile: "default"
+21-10-2024 11:42:38 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+21-10-2024 11:42:38 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+21-10-2024 11:42:38 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49 ms. Found 2 JPA repository interfaces.
+21-10-2024 11:42:38 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+21-10-2024 11:42:38 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+21-10-2024 11:42:38 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+21-10-2024 11:42:39 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring embedded WebApplicationContext
+21-10-2024 11:42:39 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1292 ms
+21-10-2024 11:42:39 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21-10-2024 11:42:39 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:eventix user=SAS
+21-10-2024 11:42:39 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21-10-2024 11:42:39 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:eventix'
+21-10-2024 11:42:39 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+21-10-2024 11:42:39 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+21-10-2024 11:42:39 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+21-10-2024 11:42:39 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+21-10-2024 11:42:39 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+21-10-2024 11:42:39 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+21-10-2024 11:42:40 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+21-10-2024 11:42:40 WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "create table CUSTOMER (address varchar(255), id varchar(255) generated by default as identity, name varchar(255), phone varchar(255), vatnumber varchar(255), primary key (id))" via JDBC [Caracteristica no soportada: "CHARACTER VARYING(255)"
+Feature not supported: "CHARACTER VARYING(255)";]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table CUSTOMER (address varchar(255), id varchar(255) generated by default as identity, name varchar(255), phone varchar(255), vatnumber varchar(255), primary key (id))" via JDBC [Caracteristica no soportada: "CHARACTER VARYING(255)"
+Feature not supported: "CHARACTER VARYING(255)";]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:217)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createTables(SchemaCreatorImpl.java:428)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createSequencesTablesConstraints(SchemaCreatorImpl.java:344)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:239)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:172)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:142)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:118)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:222)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.core.timmy.TimmyApplication.main(TimmyApplication.java:22)
+Caused by: org.h2.jdbc.JdbcSQLFeatureNotSupportedException: Caracteristica no soportada: "CHARACTER VARYING(255)"
+Feature not supported: "CHARACTER VARYING(255)"; SQL statement:
+create table CUSTOMER (address varchar(255), id varchar(255) generated by default as identity, name varchar(255), phone varchar(255), vatnumber varchar(255), primary key (id)) [50100-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:568)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.getUnsupportedException(DbException.java:287)
+	at org.h2.command.ddl.SequenceOptions.getBounds(SequenceOptions.java:316)
+	at org.h2.command.ddl.SequenceOptions.getBounds(SequenceOptions.java:244)
+	at org.h2.schema.Sequence.<init>(Sequence.java:100)
+	at org.h2.table.Column.initializeSequence(Column.java:459)
+	at org.h2.command.ddl.CommandWithColumns.generateSequences(CommandWithColumns.java:103)
+	at org.h2.command.ddl.CreateTable.update(CreateTable.java:113)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
+	... 39 common frames omitted
+21-10-2024 11:42:40 WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table if exists CUSTOMER_CONTACT add constraint FK3x9hlfbvhpkca4avlhe6dt7f7 foreign key (idCustomer) references CUSTOMER" via JDBC [Tabla "CUSTOMER" no encontrada
+Table "CUSTOMER" not found;]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table if exists CUSTOMER_CONTACT add constraint FK3x9hlfbvhpkca4avlhe6dt7f7 foreign key (idCustomer) references CUSTOMER" via JDBC [Tabla "CUSTOMER" no encontrada
+Table "CUSTOMER" not found;]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:217)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createForeignKeys(SchemaCreatorImpl.java:305)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:251)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:172)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:142)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:118)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:222)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.core.timmy.TimmyApplication.main(TimmyApplication.java:22)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "CUSTOMER" no encontrada
+Table "CUSTOMER" not found; SQL statement:
+alter table if exists CUSTOMER_CONTACT add constraint FK3x9hlfbvhpkca4avlhe6dt7f7 foreign key (idCustomer) references CUSTOMER [42102-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:204)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:74)
+	at org.h2.command.ddl.AlterTable.update(AlterTable.java:46)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
+	... 38 common frames omitted
+21-10-2024 11:42:40 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21-10-2024 11:42:41 INFO  com.core.timmy.config.WebMvcConfig - Dialects & TemplateResolvers:  > [org.thymeleaf.spring6.dialect.SpringStandardDialect@43600de0, nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect@5e2525fe, org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect@59d6a4d1] >> [org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver@6c89c92e] >>> 1
+21-10-2024 11:42:41 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+21-10-2024 11:42:41 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 4 mappings in 'requestMappingHandlerMapping'
+21-10-2024 11:42:41 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+21-10-2024 11:42:41 INFO  c.c.timmy.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5f2f577, started on Mon Oct 21 11:42:37 CEST 2024, interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@f14d079, class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@7f088b5c}
+21-10-2024 11:42:41 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+21-10-2024 11:42:41 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+21-10-2024 11:42:42 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/timmy'
+21-10-2024 11:42:42 INFO  com.core.timmy.TimmyApplication - Started TimmyApplication in 5.058 seconds (process running for 5.847)
+21-10-2024 11:42:52 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+21-10-2024 11:42:52 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+21-10-2024 11:42:52 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+21-10-2024 11:42:52 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+21-10-2024 11:43:05 INFO  com.core.timmy.TimmyApplication - Starting TimmyApplication using Java 21.0.4 with PID 10624 (C:\Users\manana\eclipse-workspace\timmy\target\classes started by manana in C:\Users\manana\eclipse-workspace\timmy)
+21-10-2024 11:43:05 INFO  com.core.timmy.TimmyApplication - No active profile set, falling back to 1 default profile: "default"
+21-10-2024 11:43:06 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+21-10-2024 11:43:06 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+21-10-2024 11:43:06 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
+21-10-2024 11:43:07 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+21-10-2024 11:43:07 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+21-10-2024 11:43:07 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+21-10-2024 11:43:07 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring embedded WebApplicationContext
+21-10-2024 11:43:07 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1301 ms
+21-10-2024 11:43:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21-10-2024 11:43:07 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:eventix user=SAS
+21-10-2024 11:43:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21-10-2024 11:43:07 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:eventix'
+21-10-2024 11:43:07 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+21-10-2024 11:43:07 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+21-10-2024 11:43:07 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+21-10-2024 11:43:07 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+21-10-2024 11:43:07 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+21-10-2024 11:43:08 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+21-10-2024 11:43:09 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+21-10-2024 11:43:09 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21-10-2024 11:43:09 INFO  com.core.timmy.config.WebMvcConfig - Dialects & TemplateResolvers:  > [org.thymeleaf.spring6.dialect.SpringStandardDialect@6c54d0dc, nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect@31f96cf, org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect@3dc5eb8f] >> [org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver@52ec5ba6] >>> 1
+21-10-2024 11:43:09 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+21-10-2024 11:43:09 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 4 mappings in 'requestMappingHandlerMapping'
+21-10-2024 11:43:09 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+21-10-2024 11:43:09 INFO  c.c.timmy.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@8ba7408, interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7b6c3b37, interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5cc126dc, started on Mon Oct 21 11:43:05 CEST 2024}
+21-10-2024 11:43:09 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+21-10-2024 11:43:09 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+21-10-2024 11:43:10 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/timmy'
+21-10-2024 11:43:10 INFO  com.core.timmy.TimmyApplication - Started TimmyApplication in 5.043 seconds (process running for 5.722)
+21-10-2024 11:43:15 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-10-2024 11:43:15 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21-10-2024 11:43:15 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+21-10-2024 11:43:15 DEBUG o.s.web.servlet.DispatcherServlet - Detected SessionLocaleResolver
+21-10-2024 11:43:15 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+21-10-2024 11:43:15 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@f3ae18f
+21-10-2024 11:43:15 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@4c541b00
+21-10-2024 11:43:15 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+21-10-2024 11:43:15 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+21-10-2024 11:43:15 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/", parameters={}
+21-10-2024 11:43:15 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+21-10-2024 13:08:20 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+21-10-2024 13:08:20 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+21-10-2024 13:08:20 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+21-10-2024 13:08:20 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

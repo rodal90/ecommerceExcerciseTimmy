@@ -2,8 +2,16 @@ package com.core.timmy.data.model;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 import java.util.Objects;
 import java.util.Set;
+import java.util.stream.Collectors;
+
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -15,6 +23,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+import lombok.extern.slf4j.Slf4j;
 /*Esto a través de entity se convierte en una clase especial que va a funcionar como espejo, va tener que tener 
 una contra parte en una base de datos.*/
 
@@ -27,6 +36,8 @@ una contra parte en una base de datos.*/
 @AllArgsConstructor
 @NoArgsConstructor // Nos crea el constructor vacio
 @ToString
+@Slf4j
+//es  una libreria estandar de log. No es muy compleja.
 /* El AllArgsConstructor no agregar los atributos final o static. */
 
 /*
@@ -36,29 +47,29 @@ una contra parte en una base de datos.*/
  * razón es necesario modificar el nombre
  */
 
-public class User implements Serializable {
+public class User implements Serializable, UserDetails {
 
 	@Override
 	public int hashCode() {
+		//
 		return Objects.hash(email, enabled, expiryDateAccount, expiryDateCredentials, fullname, lockedAccount, password,
 				roleSet, username);
 	}
 
 	@Override
 	public boolean equals(Object obj) {
+		//son los punteros los que se comparan y se ve si apuntan al mismo objeto
 		if (this == obj)
 			return true;
+		//aca se compara un puntero y se verifica si uno esta vacia, si el puntero no tiene objeto, es null.
 		if (obj == null)
 			return false;
+		//aca se compara si la clase del objeto es la misma si no es la misma retorna falso.
 		if (getClass() != obj.getClass())
 			return false;
 		User other = (User) obj;
-		return Objects.equals(email, other.email) && Objects.equals(enabled, other.enabled)
-				&& Objects.equals(expiryDateAccount, other.expiryDateAccount)
-				&& Objects.equals(expiryDateCredentials, other.expiryDateCredentials)
-				&& Objects.equals(fullname, other.fullname) && Objects.equals(lockedAccount, other.lockedAccount)
-				&& Objects.equals(password, other.password) && Objects.equals(roleSet, other.roleSet)
-				&& Objects.equals(username, other.username);
+		//aca se compara si aunque sean dos objetos distintos, verifica si tienen el mismo user name. 
+		return Objects.equals(username, other.username);
 	}
 
 	private static final long serialVersionUID = 1L;
@@ -83,6 +94,55 @@ public class User implements Serializable {
 	@ManyToMany
 	@JoinTable(name= "USERS_HAS_ROLES") //Forma de modificar el nombre de la tercera tabla
     private Set<Role> roleSet;
+
+	@Override
+	public Collection<? extends GrantedAuthority> getAuthorities() {
+		// Declara new list of granted authorites
+		List<SimpleGrantedAuthority> simpleGrantedAuthorityList = new ArrayList<>();
+		
+		// obtener los roles del usuario autenticados
+		this.getRoleSet().stream().map(x -> x.getRolename()).forEach(x->simpleGrantedAuthorityList.add(new SimpleGrantedAuthority(x)));
+		
+		//Show granted authorities
+		log.info("Roles from "+ this.getUsername()+ ": "+ 
+		
+				simpleGrantedAuthorityList.stream()
+		.map(x -> x.getAuthority()).collect(Collectors.joining("|", "{", "}"))
+				
+				);
+		
+		
+		return simpleGrantedAuthorityList;
+	}
+
+	@Override
+	public boolean isAccountNonExpired() {
+		
+		//return UserDetails.super.isAccountNonExpired();
+		return this.getExpiryDateAccount().isAfter(LocalDate.now());
+	}
+
+	@Override
+	public boolean isAccountNonLocked() {
+		
+		//return UserDetails.super.isAccountNonLocked();
+		return !this.getLockedAccount();
+	}
+
+	@Override
+	public boolean isCredentialsNonExpired() {
+		
+		//return UserDetails.super.isCredentialsNonExpired();
+		return this.getExpiryDateCredentials().isAfter(LocalDate.now());
+		}
+
+	@Override
+	public boolean isEnabled() {
+		
+		//return UserDetails.super.isEnabled();
+		
+		return this.getEnabled();
+	}
 	
 	
 	

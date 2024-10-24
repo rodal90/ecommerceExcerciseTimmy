@@ -12,6 +12,7 @@
 	<artifactId>timmy</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>timmy</name>
+	<packaging>jar</packaging>
 	<description>Project for Data Access subject</description>
 	<url/>
 	<licenses>

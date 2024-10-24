@@ -1,0 +1,42 @@
+INSERT INTO `customers_contacts_tb`(`id`, `id_customer`, `name`, `phone`, `email`, `observations`) VALUES
+-- Contactos para TecnoVisión S.A.
+(1, 1, 'Carlos Martínez', '+34 600 123 456', 'cmartinez@tecnovision.com', 'Responsable de ventas'),
+(2, 1, 'Ana Pérez', '+34 600 654 321', 'aperez@tecnovision.com', 'Encargada de proyectos'),
+(3, 1, 'Javier Gómez', '+34 600 987 654', 'jgomez@tecnovision.com', 'Director de TI'),
+-- Contactos para Soluciones Globales SL
+(4, 2, 'Lucía Fernández', '+34 611 234 567', 'lfernandez@solucionesglobales.com', 'Asistente de dirección'),
+(5, 2, 'Pedro Sánchez', '+34 611 765 432', 'psanchez@solucionesglobales.com', 'Jefe de operaciones'),
+(6, 2, 'María López', '+34 611 876 543', 'mlopez@solucionesglobales.com', 'Departamento financiero'),
+-- Contactos para EcoEnergía Renovable
+(7, 3, 'Sergio Álvarez', '+34 622 123 987', 'salvarez@ecoenergia.com', 'Consultor técnico'),
+(8, 3, 'Laura Ramos', '+34 622 654 321', 'lramos@ecoenergia.com', 'Ingeniera ambiental'),
+(9, 3, 'Elena García', '+34 622 789 654', 'egarcia@ecoenergia.com', 'Gerente de proyectos'),
+-- Contactos para Digital Innovación SL
+(10, 4, 'Pablo Torres', '+34 633 321 654', 'ptorres@digitalinnovacion.com', 'CEO'),
+(11, 4, 'Raquel Jiménez', '+34 633 432 765', 'rjimenez@digitalinnovacion.com', 'Coordinadora de marketing'),
+(12, 4, 'José Ruiz', '+34 633 543 876', 'jruiz@digitalinnovacion.com', 'Desarrollador de software'),
+(13, 4, 'Verónica Sáez', '+34 633 654 987', 'vsaez@digitalinnovacion.com', 'Atención al cliente'),
+-- Contactos para Alimentos Naturales SL
+(14, 5, 'Isabel Cano', '+34 644 567 123', 'icano@alimentosnaturales.com', 'Encargada de compras'),
+(15, 5, 'Ricardo Castro', '+34 644 678 234', 'rcastro@alimentosnaturales.com', 'Gerente de distribución'),
+(16, 5, 'Marta Vega', '+34 644 789 345', 'mvega@alimentosnaturales.com', 'Responsable de calidad'),
+-- Contactos para Transportes Rápidos SA
+(17, 6, 'Héctor Navarro', '+34 655 765 432', 'hnavarro@transportesrapidos.com', 'Jefe de logística'),
+(18, 6, 'Sonia Blanco', '+34 655 876 543', 'sblanco@transportesrapidos.com', 'Encargada de tráfico'),
+(19, 6, 'Luis Moreno', '+34 655 987 654', 'lmoreno@transportesrapidos.com', 'Supervisor de rutas'),
+-- Contactos para Diseño Creativo SL
+(20, 7, 'Alberto Díaz', '+34 666 231 765', 'adiaz@diseñocreativo.com', 'Director de arte'),
+(21, 7, 'Patricia Mena', '+34 666 342 876', 'pmena@diseñocreativo.com', 'Ilustradora'),
+(22, 7, 'Jorge Ortega', '+34 666 453 987', 'jortega@diseñocreativo.com', 'Diseñador gráfico'),
+-- Contactos para Construcciones Modernas SL
+(23, 8, 'Miguel Serrano', '+34 677 123 789', 'mserrano@construccionesmodernas.com', 'Arquitecto jefe'),
+(24, 8, 'Andrea Medina', '+34 677 234 890', 'amedina@construccionesmodernas.com', 'Jefa de obra'),
+(25, 8, 'Víctor Gómez', '+34 677 345 901', 'vgomez@construccionesmodernas.com', 'Ingeniero civil'),
+-- Contactos para Tecnología Futuro SL
+(26, 9, 'David Romero', '+34 688 432 876', 'dromero@tecnologiafuturo.com', 'Desarrollador senior'),
+(27, 9, 'Beatriz González', '+34 688 543 987', 'bgonzalez@tecnologiafuturo.com', 'Gerente de producto'),
+(28, 9, 'Carlos Vázquez', '+34 688 654 098', 'cvazquez@tecnologiafuturo.com', 'Analista de datos'),
+-- Contactos para Café Aromático SL
+(29, 10, 'Sofía Morales', '+34 699 876 543', 'smorales@cafearomatico.com', 'Encargada de marketing'),
+(30, 10, 'Fernando Rubio', '+34 699 987 654', 'frubio@cafearomatico.com', 'Director de ventas'),
+(31, 10, 'Natalia Castro', '+34 699 123 456', 'ncastro@cafearomatico.com', 'Coordinadora de logística');

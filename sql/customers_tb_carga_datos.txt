@@ -1,0 +1,11 @@
+INSERT INTO `customers_tb`(`id`, `name`, `vat_number`, `address`, `phone`) VALUES
+(1, 'TecnoVisión S.A.', 'ESB12345678', 'Calle Innovación 12, Madrid, España', '+34 911 234 567'),
+(2, 'Soluciones Globales SL', 'ESB87654321', 'Av. Empresarial 45, Barcelona, España', '+34 931 987 654'),
+(3, 'EcoEnergía Renovable', 'ESA45678912', 'Paseo Verde 3, Valencia, España', '+34 961 123 987'),
+(4, 'Digital Innovación SL', 'ESB34567890', 'Calle de la Tecnología 22, Sevilla, España', '+34 954 321 654'),
+(5, 'Alimentos Naturales SL', 'ESA98765432', 'Plaza Mercado Central 15, Zaragoza, España', '+34 976 567 123'),
+(6, 'Transportes Rápidos SA', 'ESB23456789', 'Carretera Logística 87, Bilbao, España', '+34 944 765 432'),
+(7, 'Diseño Creativo SL', 'ESA67891234', 'Avenida Artistas 9, Málaga, España', '+34 952 231 765'),
+(8, 'Construcciones Modernas SL', 'ESB19283746', 'Calle del Progreso 18, Murcia, España', '+34 968 123 789'),
+(9, 'Tecnología Futuro SL', 'ESB56473829', 'Ronda Innovación 44, Salamanca, España', '+34 923 432 876'),
+(10, 'Café Aromático SL', 'ESA12398765', 'Plaza Central 7, Vigo, España', '+34 986 876 543');

@@ -42,11 +42,12 @@
                 Join over 900,000 designers already using Bootstrap. Get
                 Bootstrap <strong>free</strong> forever!
               </h4>
-              <form method= "POST" th:action="@{/loginPost}" class="form-inline d-flex justify-content-center h-25">
-                <input class="form-control  form-control mb-3"
+              <form th:object="${login}" method= "POST" th:action="@{/loginPost}" class="form-inline d-flex justify-content-center h-25">
+                <input th:field="*{username}" class="form-control  form-control mb-3"
                   placeholder="email address">
-                <input class="form-control form-control mb-3 mx-1"
+                <input th:field="*{password}" class="form-control form-control mb-3 mx-1"
                   type="password" placeholder="Create a Password">
+                  <a th:href="@{loginPost}">Prueba</a>
                 <button
                 type="submit"
                   class="btn btn-primary w-100 btn-round mb-3 btn-rised">Empieza Compadre

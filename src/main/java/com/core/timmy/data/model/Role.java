@@ -16,6 +16,7 @@ import lombok.Setter;
 import lombok.ToString;
 /*Esto a través de entity se convierte en una clase especial que va a funcionar como espejo, va tener que tener 
 una contra parte en una base de datos.*/
+import lombok.extern.slf4j.Slf4j;
 
 @Entity
 @Table(name = "ROLES") //Preferible usar librerias más cercanas a java como jakarta
@@ -26,6 +27,7 @@ una contra parte en una base de datos.*/
 @AllArgsConstructor
 @NoArgsConstructor // Nos crea el constructor vacio
 @ToString
+@Slf4j
 /* El AllArgsConstructor no agregar los atributos final o static. */
 
 /*

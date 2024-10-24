@@ -10,6 +10,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 
+import com.core.timmy.data.repository.ICustomerContactRepository;
+import com.core.timmy.data.repository.ICustomerRepository;
 import com.core.timmy.data.repository.IRoleRepository;
 import com.core.timmy.data.repository.IUserRepository;
 import com.core.timmy.data.model.User;
@@ -26,7 +28,10 @@ public class TimmyApplication extends SpringBootServletInitializer {
 	CommandLineRunner runner( // es como que si estuvieramos usando la consola
 
 			IUserRepository userRepository,
-			IRoleRepository roleRepository
+			IRoleRepository roleRepository,
+			ICustomerRepository customerRepository,
+			ICustomerContactRepository customerContactRepository
+			
 
 	) {
 
