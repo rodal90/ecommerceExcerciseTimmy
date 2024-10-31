@@ -1,5 +1,5 @@
 package com.core.timmy.service;
-
+//tampoco tiene repositorio ni modelo
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,7 @@
 package com.core.timmy.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -21,8 +22,15 @@ import org.springframework.security.web.SecurityFilterChain;
 //import com.core.timmy.service.IUserService;
 //import com.core.timmy.serviceImpl.UserServiceImpl;
 import com.core.timmy.data.model.User;
+import com.core.timmy.service.IUserService;
 
 import lombok.extern.slf4j.Slf4j;
+
+/**Webs to encrypt with BCrypt algorithm:
+  *https://bcrypt-generator.com/
+  *https://www.devglan.com/online-tools/bcrypt-has-generator
+		*/
+
 
 @Configuration
 @EnableWebSecurity
@@ -34,7 +42,7 @@ import lombok.extern.slf4j.Slf4j;
 public class WebSecurityConfig {
 	
 	@Autowired
-	//private IUserService userService;
+	private IUserService userService;
 //	@Autowired
 //	private IUserRepository userRepository;
 	
@@ -74,9 +82,10 @@ public class WebSecurityConfig {
 
 		return httpSecurity.build();
 	}
-	/*
+	
 	@Bean
 	AuthenticationManager authenticationManager(HttpSecurity httpSecurity) 
+	//gestor de autenticación
 			throws Exception {
 		AuthenticationManagerBuilder authenticationManagerBuilder =
 			httpSecurity.getSharedObject(AuthenticationManagerBuilder.class);		
@@ -86,6 +95,7 @@ public class WebSecurityConfig {
 
 	@Bean
 	DaoAuthenticationProvider daoAuthenticationProvider() {
+		//proveedor de autenticación
 		DaoAuthenticationProvider daoAuthenticationProvider =
 				new DaoAuthenticationProvider();
 		daoAuthenticationProvider.setUserDetailsService(this.userService);
@@ -93,7 +103,7 @@ public class WebSecurityConfig {
 		daoAuthenticationProvider.setPasswordEncoder(passwordEncoderBCrypt());
 		return daoAuthenticationProvider;
 	}
-*/
+
 	
 	/*
     // Para que la petición de credenciales se haga desde el formulario de Spring

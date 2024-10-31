@@ -20,4 +20,7 @@ public interface IStartController {
 
 
 	public String loginPost(@Valid Login login, BindingResult bindingResult, HttpServletRequest request, Model model);
+
+
+	String dumpDBGet();
 }

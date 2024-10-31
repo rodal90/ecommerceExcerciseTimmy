@@ -1,0 +1,240 @@
+24-10-2024 09:10:57 INFO  com.core.timmy.TimmyApplication - Starting TimmyApplication using Java 21.0.4 with PID 1208 (C:\Users\manana\eclipse-workspace\timmy\target\classes started by manana in C:\Users\manana\eclipse-workspace\timmy)
+24-10-2024 09:10:57 INFO  com.core.timmy.TimmyApplication - No active profile set, falling back to 1 default profile: "default"
+24-10-2024 09:10:58 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-10-2024 09:10:58 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+24-10-2024 09:10:58 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 4 JPA repository interfaces.
+24-10-2024 09:10:59 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+24-10-2024 09:10:59 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+24-10-2024 09:10:59 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+24-10-2024 09:10:59 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring embedded WebApplicationContext
+24-10-2024 09:10:59 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1613 ms
+24-10-2024 09:10:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+24-10-2024 09:10:59 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:eventix user=SAS
+24-10-2024 09:10:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+24-10-2024 09:10:59 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:eventix'
+24-10-2024 09:10:59 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+24-10-2024 09:10:59 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+24-10-2024 09:10:59 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+24-10-2024 09:10:59 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+24-10-2024 09:10:59 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+24-10-2024 09:11:00 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+24-10-2024 09:11:01 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+24-10-2024 09:11:01 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+24-10-2024 09:11:02 INFO  com.core.timmy.config.WebMvcConfig - Dialects & TemplateResolvers:  > [org.thymeleaf.spring6.dialect.SpringStandardDialect@5e08ed28, nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect@541d8a9e, org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect@51c0346d] >> [org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver@6c289070] >>> 1
+24-10-2024 09:11:02 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+24-10-2024 09:11:02 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 4 mappings in 'requestMappingHandlerMapping'
+24-10-2024 09:11:02 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+24-10-2024 09:11:02 INFO  c.c.timmy.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2cf92cc7, started on Thu Oct 24 09:10:57 CEST 2024, interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@73418044, class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@35ef158f}
+24-10-2024 09:11:02 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+24-10-2024 09:11:02 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+24-10-2024 09:11:03 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/timmy'
+24-10-2024 09:11:03 INFO  com.core.timmy.TimmyApplication - Started TimmyApplication in 6.314 seconds (process running for 7.459)
+24-10-2024 09:11:07 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-10-2024 09:11:07 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+24-10-2024 09:11:07 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+24-10-2024 09:11:07 DEBUG o.s.web.servlet.DispatcherServlet - Detected SessionLocaleResolver
+24-10-2024 09:11:07 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+24-10-2024 09:11:07 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3eb4fdd5
+24-10-2024 09:11:07 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1caa1866
+24-10-2024 09:11:07 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+24-10-2024 09:11:07 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+24-10-2024 09:11:07 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/", parameters={}
+24-10-2024 09:11:07 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+24-10-2024 09:11:08 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+24-10-2024 09:11:08 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+24-10-2024 09:11:08 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+24-10-2024 09:11:08 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+24-10-2024 09:11:32 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginPost", parameters={}
+24-10-2024 09:11:32 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+24-10-2024 09:11:32 DEBUG o.s.web.servlet.DispatcherServlet - Completed 405 METHOD_NOT_ALLOWED
+24-10-2024 09:11:32 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+24-10-2024 09:11:32 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+24-10-2024 09:11:32 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+24-10-2024 09:11:32 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+24-10-2024 09:11:32 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+24-10-2024 09:11:32 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+24-10-2024 09:11:32 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+24-10-2024 09:11:32 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+24-10-2024 09:11:36 DEBUG o.s.web.servlet.DispatcherServlet - POST "/timmy/loginPost", parameters={masked}
+24-10-2024 09:11:36 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginPost(Model)
+24-10-2024 09:11:36 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+24-10-2024 09:11:36 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+24-10-2024 09:11:36 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+24-10-2024 09:11:36 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+24-10-2024 09:11:36 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+24-10-2024 09:12:18 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+24-10-2024 09:12:18 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+24-10-2024 09:12:18 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+24-10-2024 09:12:18 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+24-10-2024 09:12:31 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+24-10-2024 09:12:31 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+24-10-2024 09:12:31 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+24-10-2024 09:12:31 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+24-10-2024 09:12:54 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+24-10-2024 09:12:54 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+24-10-2024 09:12:54 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+24-10-2024 09:12:54 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+24-10-2024 09:16:44 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginPost", parameters={}
+24-10-2024 09:16:44 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+24-10-2024 09:16:44 DEBUG o.s.web.servlet.DispatcherServlet - Completed 405 METHOD_NOT_ALLOWED
+24-10-2024 09:16:44 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+24-10-2024 09:16:44 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+24-10-2024 09:16:44 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+24-10-2024 09:16:44 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+24-10-2024 09:16:44 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+24-10-2024 09:16:44 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+24-10-2024 09:16:44 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+24-10-2024 09:16:44 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+24-10-2024 09:16:47 DEBUG o.s.web.servlet.DispatcherServlet - POST "/timmy/loginPost", parameters={masked}
+24-10-2024 09:16:47 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginPost(Model)
+24-10-2024 09:16:47 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+24-10-2024 09:16:47 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+24-10-2024 09:16:47 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+24-10-2024 09:16:47 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+24-10-2024 09:16:47 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+24-10-2024 09:16:53 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+24-10-2024 09:16:53 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+24-10-2024 09:16:53 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+24-10-2024 09:16:53 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+24-10-2024 09:20:53 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginPost", parameters={}
+24-10-2024 09:20:53 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+24-10-2024 09:20:53 DEBUG o.s.web.servlet.DispatcherServlet - Completed 405 METHOD_NOT_ALLOWED
+24-10-2024 09:20:53 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+24-10-2024 09:20:53 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+24-10-2024 09:20:53 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+24-10-2024 09:20:53 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+24-10-2024 09:20:53 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+24-10-2024 09:20:53 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+24-10-2024 09:20:53 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+24-10-2024 09:20:53 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+24-10-2024 09:20:56 DEBUG o.s.web.servlet.DispatcherServlet - POST "/timmy/loginPost", parameters={masked}
+24-10-2024 09:20:56 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginPost(Model)
+24-10-2024 09:20:56 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+24-10-2024 09:20:56 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+24-10-2024 09:20:56 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+24-10-2024 09:20:56 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+24-10-2024 09:20:56 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+24-10-2024 09:29:39 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+24-10-2024 09:29:39 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+24-10-2024 09:29:39 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+24-10-2024 09:29:39 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+24-10-2024 09:31:40 INFO  com.core.timmy.TimmyApplication - Starting TimmyApplication using Java 21.0.4 with PID 12648 (C:\Users\manana\eclipse-workspace\timmy\target\classes started by manana in C:\Users\manana\eclipse-workspace\timmy)
+24-10-2024 09:31:40 INFO  com.core.timmy.TimmyApplication - No active profile set, falling back to 1 default profile: "default"
+24-10-2024 09:31:41 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-10-2024 09:31:41 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+24-10-2024 09:31:41 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 4 JPA repository interfaces.
+24-10-2024 09:31:42 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+24-10-2024 09:31:42 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+24-10-2024 09:31:42 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+24-10-2024 09:31:42 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring embedded WebApplicationContext
+24-10-2024 09:31:42 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1258 ms
+24-10-2024 09:31:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+24-10-2024 09:31:42 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:eventix user=SAS
+24-10-2024 09:31:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+24-10-2024 09:31:42 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:eventix'
+24-10-2024 09:31:42 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+24-10-2024 09:31:42 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+24-10-2024 09:31:42 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+24-10-2024 09:31:42 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+24-10-2024 09:31:42 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+24-10-2024 09:31:43 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+24-10-2024 09:31:44 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+24-10-2024 09:31:44 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+24-10-2024 09:31:44 INFO  com.core.timmy.config.WebMvcConfig - Dialects & TemplateResolvers:  > [org.thymeleaf.spring6.dialect.SpringStandardDialect@7e092ca, nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect@44b99467, org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect@124b8fe9] >> [org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver@6a495d88] >>> 1
+24-10-2024 09:31:44 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+24-10-2024 09:31:44 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+24-10-2024 09:31:44 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+24-10-2024 09:31:44 INFO  c.c.timmy.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@56a63c28, interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@23973547, interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5cc126dc, started on Thu Oct 24 09:31:41 CEST 2024}
+24-10-2024 09:31:45 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+24-10-2024 09:31:45 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+24-10-2024 09:31:45 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/timmy'
+24-10-2024 09:31:45 INFO  com.core.timmy.TimmyApplication - Started TimmyApplication in 4.858 seconds (process running for 5.528)
+24-10-2024 09:31:48 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-10-2024 09:31:48 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+24-10-2024 09:31:48 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+24-10-2024 09:31:48 DEBUG o.s.web.servlet.DispatcherServlet - Detected SessionLocaleResolver
+24-10-2024 09:31:48 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+24-10-2024 09:31:48 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@45bde54d
+24-10-2024 09:31:48 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@6829b897
+24-10-2024 09:31:48 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+24-10-2024 09:31:48 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+24-10-2024 09:31:48 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginPost", parameters={}
+24-10-2024 09:31:48 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+24-10-2024 09:31:48 DEBUG o.s.web.servlet.DispatcherServlet - Completed 405 METHOD_NOT_ALLOWED
+24-10-2024 09:31:48 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+24-10-2024 09:31:48 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+24-10-2024 09:31:48 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+24-10-2024 09:31:48 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+24-10-2024 09:31:48 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+24-10-2024 09:31:48 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+24-10-2024 09:31:48 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+24-10-2024 09:31:48 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+24-10-2024 09:31:51 DEBUG o.s.web.servlet.DispatcherServlet - POST "/timmy/loginPost", parameters={masked}
+24-10-2024 09:31:51 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginPost(Model)
+24-10-2024 09:31:51 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+24-10-2024 09:31:51 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+24-10-2024 09:31:51 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+24-10-2024 09:31:51 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+24-10-2024 09:31:51 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+24-10-2024 09:31:54 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+24-10-2024 09:31:54 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+24-10-2024 09:31:54 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+24-10-2024 09:31:54 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+24-10-2024 09:31:54 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+24-10-2024 09:31:54 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+24-10-2024 09:31:54 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+24-10-2024 09:31:54 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+24-10-2024 09:40:44 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/", parameters={}
+24-10-2024 09:40:44 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+24-10-2024 11:36:04 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+24-10-2024 11:36:04 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+24-10-2024 11:36:04 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+24-10-2024 11:36:04 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+24-10-2024 12:39:14 INFO  com.core.timmy.TimmyApplication - Starting TimmyApplication using Java 21.0.4 with PID 1692 (C:\Users\manana\eclipse-workspace\timmy\target\classes started by manana in C:\Users\manana\eclipse-workspace\timmy)
+24-10-2024 12:39:14 INFO  com.core.timmy.TimmyApplication - No active profile set, falling back to 1 default profile: "default"
+24-10-2024 12:39:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-10-2024 12:39:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+24-10-2024 12:39:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 4 JPA repository interfaces.
+24-10-2024 12:39:15 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+24-10-2024 12:39:15 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+24-10-2024 12:39:15 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+24-10-2024 12:39:15 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring embedded WebApplicationContext
+24-10-2024 12:39:15 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1370 ms
+24-10-2024 12:39:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+24-10-2024 12:39:16 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:eventix user=SAS
+24-10-2024 12:39:16 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+24-10-2024 12:39:16 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:eventix'
+24-10-2024 12:39:16 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+24-10-2024 12:39:16 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+24-10-2024 12:39:16 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+24-10-2024 12:39:16 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+24-10-2024 12:39:16 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+24-10-2024 12:39:16 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+24-10-2024 12:39:17 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+24-10-2024 12:39:17 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+24-10-2024 12:39:17 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'startControllerImpl': Unsatisfied dependency expressed through field 'authenticationManager': No qualifying bean of type 'org.springframework.security.authentication.AuthenticationManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+24-10-2024 12:39:17 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+24-10-2024 12:39:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+24-10-2024 12:39:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+24-10-2024 12:39:17 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+24-10-2024 12:39:17 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+24-10-2024 12:39:17 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field authenticationManager in com.core.timmy.controllerImpl.StartControllerImpl required a bean of type 'org.springframework.security.authentication.AuthenticationManager' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.authentication.AuthenticationManager' in your configuration.
+

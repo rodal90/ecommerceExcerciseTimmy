@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import com.core.timmy.controller.IStartController;
 import com.core.timmy.data.model.Login;
 import com.core.timmy.service.ILoginService;
+import com.core.timmy.service.ISqlScriptCreatorService;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
@@ -24,6 +25,8 @@ import lombok.extern.slf4j.Slf4j;
 
 //sirve para no tener que utilizar en los nombres de paquetes y de clases muy largos no necesitemos usar todo el nombre
 import static org.springframework.security.web.context.HttpSessionSecurityContextRepository.SPRING_SECURITY_CONTEXT_KEY;
+
+import java.security.Principal;
 
 @Controller
 @Slf4j
@@ -35,6 +38,55 @@ public class StartControllerImpl implements IStartController {
 	
 	@Autowired
 	private AuthenticationManager authenticationManager;
+	
+	@Autowired
+	private ISqlScriptCreatorService sqlCreatorServiceImpl;
+	
+	
+	
+	@Override
+	@GetMapping({"/dumpDBGet"}) /*hay que asegurarse que el boton que vamos a pinchar tenga este enlace para que se conecte con este método*/
+	
+	public String dumpDBGet() {
+		
+		System.out.println("TRAZA dumpDBGet");
+		
+		sqlCreatorServiceImpl.dumpDB();
+		
+		return "masterFull";
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+@GetMapping({"/logoutGet"}) /*hay que asegurarse que el boton que vamos a pinchar tenga este enlace para que se conecte con este método*/
+	
+	public String logoutGet(
+			//si el usuario está auntenticada principal tiene el username y los roles.
+			Principal principal,
+			//model para inyectar datos a la maquina
+			Model model,
+			//clase de Java que tiene la cabecera de la petición de request de HTML
+			HttpServletRequest request) {
+		
+		System.out.println("TRAZA logoutGet");
+		
+		//Invalidate session. No importa si es una session anónima o de usuario
+		request.getSession().invalidate();
+		//
+		// Inject data into html pag
+		model.addAttribute("login", loginService.newEntity());
+		
+		//return "redirect:/loginGet?logoutOk";
+		
+		return "loginPage";
+		
+	}
 	
 	
 
@@ -106,6 +158,8 @@ public class StartControllerImpl implements IStartController {
 			
 		}
 		//TODO user/password test
+		model.addAttribute("username", login.getUsername());
+		model.addAttribute("userPicture", "");
 		return "masterfull";
 	}
 

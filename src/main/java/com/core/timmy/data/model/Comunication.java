@@ -1,14 +1,17 @@
 package com.core.timmy.data.model;
 
 import java.io.Serializable;
-
+import java.time.LocalDate;
 import java.util.List;
-
+import java.util.Objects;
+import java.util.Set;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
@@ -21,7 +24,7 @@ una contra parte en una base de datos.*/
 import lombok.extern.slf4j.Slf4j;
 
 @Entity
-@Table(name = "CUSTOMER") //Preferible usar librerias más cercanas a java como jakarta
+//@Table(name = "COMUNICATION") //Preferible usar librerias más cercanas a java como jakarta
 
 
 @Getter
@@ -31,7 +34,10 @@ import lombok.extern.slf4j.Slf4j;
 @ToString
 @Slf4j
 
-public class Customer implements Serializable {
+//@ManyToOne lo que haces es generarnos los join a travez del JPA
+
+//comunicación es la tabla que está conectada con todo lo demás y luego al rededor tenes la otras tablas, como budget, status y customer contac
+public class Comunication implements Serializable {
 
 	
 	private static final long serialVersionUID = 1L;
@@ -40,17 +46,25 @@ public class Customer implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
-	@OneToMany(mappedBy ="customer")
-    private List<CustomerContact> customerContactList;
-	
-	private String name;
-	private String vatnumber;
-	private String address;
-	private String phone; 
+	@ManyToOne
+	@JoinColumn(name="idBudget", referencedColumnName="id")
+	private Budget budget;
 	
 	
+	@ManyToOne
+	@JoinColumn(name="idStatus", referencedColumnName="statusName")
+	
+	private Status status;
+	
+	@ManyToOne
+	@JoinColumn(name="idCustomerContact", referencedColumnName="id")
+	
+	private CustomerContact CustomerContact;
 	
 	
+	private String message;
+	private LocalDate messageDate;
+	private Double amount;
 	
 	
 }
