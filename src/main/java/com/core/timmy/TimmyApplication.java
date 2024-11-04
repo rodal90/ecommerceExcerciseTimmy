@@ -98,6 +98,9 @@ public class TimmyApplication extends SpringBootServletInitializer {
 					"Ronda Innovación 44, Salamanca, España", "+34 923 432 876"));
 			customerRepository.save(new Customer(null, null, "Café Aromático SL", "ESA12398765",
 					"Plaza Central 7, Vigo, España", "+34 986 876 543"));
+			//customer test when he has no contacst
+			customerRepository.save(new Customer(null, null, "Carmolino", "pirulo",
+					"ñandu 235", "+34 986 876 563"));
 
 			customerContactRepository.save(new CustomerContact(1, "Carlos Martínez", "+34 600 123 456",
 					"cmartinez@tecnovision.com", "Responsable de ventas", customerRepository.findById(1).get()));
@@ -237,6 +240,7 @@ public class TimmyApplication extends SpringBootServletInitializer {
 			comunicationRepository.save(new Comunication(null, budgetRepository.findById(10).get(),
 					statusRepository.findById("ENVIADO").get(), customerContactRepository.findById(29).get(),
 					"Presupuesto enviado, pendiente de revisión.", LocalDate.parse("2024-09-22"), 14000.50));
+			
 			
 
 		};

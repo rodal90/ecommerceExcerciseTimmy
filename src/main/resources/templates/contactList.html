@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html
+
+ xmlns="http://www.w3,org/1999/xhtml"
+ xmlns:th="http://www.thymeleaf.org"
+ xmlns:layout="http://www.ultraq.net.nz/thymeLeaf/layout"
+ xmlns:sec="http://www.thymeLeaf.org/extras/spring-security">
+
+   <div th:replace="~{standarLayouts/head :: head1}">
+   AQUI DEBERIAMOS USAR EL HEAD
+  </div>
+
+  <body>
+  
+  <nav th:replace="~{standarLayouts/navbar :: navbar1}">
+           AQUI DEBERIA DE ALISR EL navbar
+   </nav>
+
+
+    <section id="prices" class="pt-5 pb-5 bg-dark text-white">
+      <div class="container">
+        <div class="row w-100">
+          <div class="col-lg-12 col-md-12 col-12">
+            <h3 class="display-5 mb-2 text-white">
+              Contact List
+            </h3>
+            <p class="mb-5">Bitcoin is a revolutionary invention of the last
+              decade. Its essential meaning is money digitization.</p>
+            <div class="table-responsive bg-light">
+              <table class="table   table-hover text-start text-dark">
+                <thead class="">
+                  <tr class="bgd-gradient-blue  ">
+                    <th>Cryptocurrency</th>
+                    <th>Price</th>
+                    <th>24h % Change</th>
+                    <th>24h Volume (coin)</th>
+                    <th>Supply</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Bitcoin</td>
+                    <td>9,290.06 $</td>
+                    <td class="up">14.44%</td>
+                    <td>218,087 BTC</td>
+                    <td>923,629</td>
+                  </tr>
+                  <tr>
+                    <td>Ethereum</td>
+                    <td>407.13 $</td>
+                    <td class="up">16.17%</td>
+                    <td>1,223,367 ETH</td>
+                    <td>663,133</td>
+                  </tr>
+                  <tr>
+                    <td>Ripple</td>
+                    <td>0.22 $</td>
+                    <td class="up">20.80%</td>
+                    <td>211,418,299 XRP</td>
+                    <td>719,280</td>
+                  </tr>
+                  <tr>
+                    <td>Nxt</td>
+                    <td>709.31 $</td>
+                    <td class="down">-1.18%</td>
+                    <td>125,361 DASH</td>
+                    <td>427,132</td>
+                  </tr>
+                  <tr>
+                    <td>Monero</td>
+                    <td>78.97 $</td>
+                    <td class="up">20.55% </td>
+                    <td>2,281,288 LTC</td>
+                    <td>719,280</td>
+                  </tr>
+                  <tr>
+                    <td>Litecoin</td>
+                    <td>156.32 $</td>
+                    <td class="up">1.18%</td>
+                    <td>255,226 XMR</td>
+                    <td>218,887</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div th:replace="~{standarLayouts/sectionCards :: sectionCards1}">
+   AQUI DEBERIAMOS USAR El sectionCards
+  </div>
+    
+    <div th:replace="~{standarLayouts/sectionFooter :: sectionFooter1}">
+   AQUI DEBERIAMOS USAR EL sectionFooter
+  </div>
+
+     <div th:replace="~{standarLayouts/script :: script1}">
+           AQUI DEBERIA DE ALISR EL script
+   </div>
+
+  </body>
+
+</html>

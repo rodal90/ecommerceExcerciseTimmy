@@ -8,9 +8,10 @@ import org.springframework.ui.Model;
 /*en todos hay que importar algo para definirlos, con sus etiquetas ej: @Controller, @Service, @*/
 
 @Controller
-public interface ICustomerController {
+public interface IContactController {
 	
-	public String customerListGet(Principal principal, Model model);
+
+	public String contactListGet(Principal principal, Model model);
 	
 	
 

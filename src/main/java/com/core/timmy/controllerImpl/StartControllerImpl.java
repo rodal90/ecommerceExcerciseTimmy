@@ -106,6 +106,26 @@ public class StartControllerImpl implements IStartController {
 		
 		return "loginPage";
 	}
+	
+	
+	@Override
+	@GetMapping({"/homeGet"}) /*hay que asegurarse que el boton que vamos a pinchar tenga este enlace para que se conecte con este método*/
+	
+	public String homeGet(Principal principal, Model model) {
+		
+		System.out.println("TRAZA homeGet");
+		
+		//el objeto que le inyectamos puede ir con datos o sin datos. Como añadimos un objeto. Necesitamos indexar todo lo que necesita antes
+		//de retornar a la loginPage. 
+		//necesitamos darle un nombre de atributo y decirle también
+		//debido a que no se recomienda un controllador para 
+		//login dentro de html Inject data into html page
+		
+		model.addAttribute("username", principal.getName());
+		model.addAttribute("userPicture", "");
+		
+		return "masterfull";
+	}
 
 	@Override
 	@PostMapping({"/loginPost"})

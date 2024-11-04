@@ -30,7 +30,6 @@ import lombok.extern.slf4j.Slf4j;
 @NoArgsConstructor // Nos crea el constructor vacio
 @ToString
 @Slf4j
-
 public class Customer implements Serializable {
 
 	

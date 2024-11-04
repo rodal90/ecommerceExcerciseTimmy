@@ -64,8 +64,8 @@ public class CustomerContact implements Serializable {
 	
 	
 	private String observations;
-	
-	
+	//to string to exclud lo que hace es excluir este campo y no lo va a crear?. es para evitar el bucle infinito
+	@ToString.Exclude
 	@ManyToOne
 	@JoinColumn(name= "idCustomer", referencedColumnName= "id")
     private Customer customer;
