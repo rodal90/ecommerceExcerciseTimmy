@@ -5,13 +5,21 @@ import java.security.Principal;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.core.timmy.controller.ICustomerController;
 import com.core.timmy.controller.IStartController;
+import com.core.timmy.data.model.Customer;
 import com.core.timmy.service.ICustomerService;
 
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.validation.Valid;
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @Controller
 public class CustomerControllerImpl implements ICustomerController {
 	@Autowired
@@ -31,6 +39,73 @@ public class CustomerControllerImpl implements ICustomerController {
 		model.addAttribute("customerList", this.customerService.findAll());
 		
 		return "customerList";
+	}
+	
+	
+/*un path variable se puede utilizar poniendo dentro de corchetes lo que se va ir modificando*/
+	/*pueden haber mas etiquetas de path variables que podemos guardr en variables como el Long id*/
+	
+	@Override
+	@GetMapping({"/customer/viewGet/{id}"}) /*hay que asegurarse que el boton que vamos a pinchar tenga este enlace para que se conecte con este método*/
+	public String customerViewGet(@PathVariable("id") Long id,
+			Principal principal,Model model, HttpServletRequest request) {
+		System.out.println("TRAZA customerViewGet");
+		model.addAttribute("username", principal.getName());
+		model.addAttribute("userPicture", "");
+		
+		
+		//inyectar los registros de los customer, siempre debemos tirar de los servicios. aca hemos pedido la lista
+		
+		log.info("customer= " + this.customerService.findById(id));
+		
+		model.addAttribute("customer", this.customerService.findById(id).get());
+		
+		return "customerView";
+	}
+	
+	
+	
+	@Override
+	@GetMapping({"/customer/updateGet/{id}"}) /*hay que asegurarse que el boton que vamos a pinchar tenga este enlace para que se conecte con este método*/
+	public String customerUpdateGet(@PathVariable("id") Long id,
+			Principal principal,Model model, HttpServletRequest request) {
+		System.out.println("TRAZA customerUpdateGet");
+		model.addAttribute("username", principal.getName());
+		model.addAttribute("userPicture", "");
+		
+		
+		//inyectar los registros de los customer, siempre debemos tirar de los servicios. aca hemos pedido la lista
+		
+		/*log.info("customer= " + this.customerService.findById(id));*/
+		
+		model.addAttribute("customer", this.customerService.findById(id).get());
+		
+		return "customerUpdate";
+	}
+	
+
+	@Override
+	@PostMapping({"/customer/updatePost"}) /*hay que asegurarse que el boton que vamos a pinchar tenga este enlace para que se conecte con este método*/
+	public String customerUpdatePost(@Valid Customer customer,
+			BindingResult bindingResult,
+			Principal principal,Model model, HttpServletRequest request) {
+		System.out.println("TRAZA customerUpdatePost");
+		
+		if(bindingResult.hasErrors()){
+			log.error("el formulario de customer tiene errores"+ bindingResult.getAllErrors());
+			
+			return "redirect:/customer/updateGet/"+ customer.getId(); // Redirect the manda a un mapeo especifico
+			
+		}else {
+			
+			log.info("Formulario correcto: " + customer);
+			this.customerService.save(customer);
+			
+			return "redirect:/customerListGet";
+			
+			
+		}
+				
 	}
 
 }

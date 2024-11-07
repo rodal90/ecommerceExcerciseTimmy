@@ -7,7 +7,7 @@ import com.core.timmy.data.model.Customer;
 
 
 @Repository
-public interface ICustomerRepository extends JpaRepository<Customer, Integer> { /* solo le tenemos que decir para que tabla y que tipo
+public interface ICustomerRepository extends JpaRepository<Customer, Long> { /* solo le tenemos que decir para que tabla y que tipo
 de dato es el primarykey de user*/ 
 
 }

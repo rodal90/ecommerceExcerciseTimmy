@@ -37,7 +37,7 @@ public class Customer implements Serializable {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
+	private Long id;
 	
 	@OneToMany(mappedBy ="customer")
     private List<CustomerContact> customerContactList;

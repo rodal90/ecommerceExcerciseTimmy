@@ -30,7 +30,7 @@ public class CustomerServiceImpl implements ICustomerService {
 	}
 
 	@Override
-	public Optional<Customer> findById(Integer id) {
+	public Optional<Customer> findById(Long id) {
 		
 		
 		return this.customerRepository.findById(id);

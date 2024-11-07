@@ -13,7 +13,7 @@ public interface ICustomerService {
 	
 	public Customer save(Customer customer);
 	
-	public Optional<Customer> findById(Integer id);
+	public Optional<Customer> findById(Long id);
 	
 	public List<Customer> findAll();
 

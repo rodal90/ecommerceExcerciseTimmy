@@ -58,12 +58,22 @@
 
 									</td>
 									<!-- referencia a en view a cada id específico -->
-									<td> <a th:text="'View'" role="button" class="btn btn-primary" th:href="@{/customer/view/} + ${customer.getId()}">
+									<td> <a th:text="'View'" role="button" class="btn btn-primary" th:href="@{/customer/viewGet/} + ${customer.getId()}">
 									</a>
+									
+									
 									</td>
 									
-									<td th:text="${customer.getId()}"></td>
-									<td th:text="${customer.getId()}"></td>
+									<td><a th:text="'Update'" role="button" class="btn btn-warning" th:href="@{/customer/updateGet/} + ${customer.getId()}">
+									</a>
+									
+									</td>
+									
+									<td>
+									<a th:text="'Delete'" role="button" class="btn btn-danger" th:href="@{/customer/deleteGet/} + ${customer.getId()}">
+									</a>
+									
+									</td>
 									
 								</tr>
 							</tbody>

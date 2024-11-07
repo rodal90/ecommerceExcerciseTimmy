@@ -101,89 +101,89 @@ public class TimmyApplication extends SpringBootServletInitializer {
 			//customer test when he has no contacst
 			customerRepository.save(new Customer(null, null, "Carmolino", "pirulo",
 					"ñandu 235", "+34 986 876 563"));
-
+                  /*es importante poner detras del numbero la "L" para que sepa que es un long*/
 			customerContactRepository.save(new CustomerContact(1, "Carlos Martínez", "+34 600 123 456",
-					"cmartinez@tecnovision.com", "Responsable de ventas", customerRepository.findById(1).get()));
+					"cmartinez@tecnovision.com", "Responsable de ventas", customerRepository.findById(1L).get()));
 			customerContactRepository.save(new CustomerContact(2, "Ana Pérez", "+34 600 654 321",
-					"aperez@tecnovision.com", "Encargada de proyectos", customerRepository.findById(1).get()));
+					"aperez@tecnovision.com", "Encargada de proyectos", customerRepository.findById(1l).get()));
 			customerContactRepository.save(new CustomerContact(3, "Javier Gómez", "+34 600 987 654",
-					"jgomez@tecnovision.com", "Director de TI", customerRepository.findById(1).get()));
+					"jgomez@tecnovision.com", "Director de TI", customerRepository.findById(1L).get()));
 
 			// Contactos para Soluciones Globales SL
 			customerContactRepository.save(
 					new CustomerContact(4, "Lucía Fernández", "+34 611 234 567", "lfernandez@solucionesglobales.com",
-							"Asistente de dirección", customerRepository.findById(2).get()));
+							"Asistente de dirección", customerRepository.findById(2L).get()));
 			customerContactRepository.save(new CustomerContact(5, "Pedro Sánchez", "+34 611 765 432",
-					"psanchez@solucionesglobales.com", "Jefe de operaciones", customerRepository.findById(2).get()));
+					"psanchez@solucionesglobales.com", "Jefe de operaciones", customerRepository.findById(2L).get()));
 			customerContactRepository.save(new CustomerContact(6, "María López", "+34 611 876 543",
-					"mlopez@solucionesglobales.com", "Departamento financiero", customerRepository.findById(2).get()));
+					"mlopez@solucionesglobales.com", "Departamento financiero", customerRepository.findById(2L).get()));
 
 			// Contactos para EcoEnergía Renovable
 			customerContactRepository.save(new CustomerContact(7, "Sergio Álvarez", "+34 622 123 987",
-					"salvarez@ecoenergia.com", "Consultor técnico", customerRepository.findById(3).get()));
+					"salvarez@ecoenergia.com", "Consultor técnico", customerRepository.findById(3L).get()));
 			customerContactRepository.save(new CustomerContact(8, "Laura Ramos", "+34 622 654 321",
-					"lramos@ecoenergia.com", "Ingeniera ambiental", customerRepository.findById(3).get()));
+					"lramos@ecoenergia.com", "Ingeniera ambiental", customerRepository.findById(3L).get()));
 			customerContactRepository.save(new CustomerContact(9, "Elena García", "+34 622 789 654",
-					"egarcia@ecoenergia.com", "Gerente de proyectos", customerRepository.findById(3).get()));
+					"egarcia@ecoenergia.com", "Gerente de proyectos", customerRepository.findById(3L).get()));
 
 			// Contactos para Digital Innovación SL
 			customerContactRepository.save(new CustomerContact(10, "Pablo Torres", "+34 633 321 654",
-					"ptorres@digitalinnovacion.com", "CEO", customerRepository.findById(4).get()));
+					"ptorres@digitalinnovacion.com", "CEO", customerRepository.findById(4L).get()));
 			customerContactRepository
 					.save(new CustomerContact(11, "Raquel Jiménez", "+34 633 432 765", "rjimenez@digitalinnovacion.com",
-							"Coordinadora de marketing", customerRepository.findById(4).get()));
+							"Coordinadora de marketing", customerRepository.findById(4L).get()));
 			customerContactRepository.save(new CustomerContact(12, "José Ruiz", "+34 633 543 876",
-					"jruiz@digitalinnovacion.com", "Desarrollador de software", customerRepository.findById(4).get()));
+					"jruiz@digitalinnovacion.com", "Desarrollador de software", customerRepository.findById(4L).get()));
 			customerContactRepository.save(new CustomerContact(13, "Verónica Sáez", "+34 633 654 987",
-					"vsaez@digitalinnovacion.com", "Atención al cliente", customerRepository.findById(4).get()));
+					"vsaez@digitalinnovacion.com", "Atención al cliente", customerRepository.findById(4L).get()));
 
 			// Contactos para Alimentos Naturales SL
 			customerContactRepository.save(new CustomerContact(14, "Isabel Cano", "+34 644 567 123",
-					"icano@alimentosnaturales.com", "Encargada de compras", customerRepository.findById(5).get()));
+					"icano@alimentosnaturales.com", "Encargada de compras", customerRepository.findById(5L).get()));
 			customerContactRepository.save(new CustomerContact(15, "Ricardo Castro", "+34 644 678 234",
-					"rcastro@alimentosnaturales.com", "Gerente de distribución", customerRepository.findById(5).get()));
+					"rcastro@alimentosnaturales.com", "Gerente de distribución", customerRepository.findById(5L).get()));
 			customerContactRepository.save(new CustomerContact(16, "Marta Vega", "+34 644 789 345",
-					"mvega@alimentosnaturales.com", "Responsable de calidad", customerRepository.findById(5).get()));
+					"mvega@alimentosnaturales.com", "Responsable de calidad", customerRepository.findById(5L).get()));
 
 			// Contactos para Transportes Rápidos SA
 			customerContactRepository.save(new CustomerContact(17, "Héctor Navarro", "+34 655 765 432",
-					"hnavarro@transportesrapidos.com", "Jefe de logística", customerRepository.findById(6).get()));
+					"hnavarro@transportesrapidos.com", "Jefe de logística", customerRepository.findById(6L).get()));
 			customerContactRepository.save(new CustomerContact(18, "Sonia Blanco", "+34 655 876 543",
-					"sblanco@transportesrapidos.com", "Encargada de tráfico", customerRepository.findById(6).get()));
+					"sblanco@transportesrapidos.com", "Encargada de tráfico", customerRepository.findById(6L).get()));
 			customerContactRepository.save(new CustomerContact(19, "Luis Moreno", "+34 655 987 654",
-					"lmoreno@transportesrapidos.com", "Supervisor de rutas", customerRepository.findById(6).get()));
+					"lmoreno@transportesrapidos.com", "Supervisor de rutas", customerRepository.findById(6L).get()));
 
 			// Contactos para Diseño Creativo SL
 			customerContactRepository.save(new CustomerContact(20, "Alberto Díaz", "+34 666 231 765",
-					"adiaz@diseñocreativo.com", "Director de arte", customerRepository.findById(7).get()));
+					"adiaz@diseñocreativo.com", "Director de arte", customerRepository.findById(7L).get()));
 			customerContactRepository.save(new CustomerContact(21, "Patricia Mena", "+34 666 342 876",
-					"pmena@diseñocreativo.com", "Ilustradora", customerRepository.findById(7).get()));
+					"pmena@diseñocreativo.com", "Ilustradora", customerRepository.findById(7L).get()));
 			customerContactRepository.save(new CustomerContact(22, "Jorge Ortega", "+34 666 453 987",
-					"jortega@diseñocreativo.com", "Diseñador gráfico", customerRepository.findById(7).get()));
+					"jortega@diseñocreativo.com", "Diseñador gráfico", customerRepository.findById(7L).get()));
 
 			// Contactos para Construcciones Modernas SL
 			customerContactRepository.save(new CustomerContact(23, "Miguel Serrano", "+34 677 123 789",
-					"mserrano@construccionesmodernas.com", "Arquitecto jefe", customerRepository.findById(8).get()));
+					"mserrano@construccionesmodernas.com", "Arquitecto jefe", customerRepository.findById(8L).get()));
 			customerContactRepository.save(new CustomerContact(24, "Andrea Medina", "+34 677 234 890",
-					"amedina@construccionesmodernas.com", "Jefa de obra", customerRepository.findById(8).get()));
+					"amedina@construccionesmodernas.com", "Jefa de obra", customerRepository.findById(8L).get()));
 			customerContactRepository.save(new CustomerContact(25, "Víctor Gómez", "+34 677 345 901",
-					"vgomez@construccionesmodernas.com", "Ingeniero civil", customerRepository.findById(8).get()));
+					"vgomez@construccionesmodernas.com", "Ingeniero civil", customerRepository.findById(8L).get()));
 
 			// Contactos para Tecnología Futuro SL
 			customerContactRepository.save(new CustomerContact(26, "David Romero", "+34 688 432 876",
-					"dromero@tecnologiafuturo.com", "Desarrollador senior", customerRepository.findById(9).get()));
+					"dromero@tecnologiafuturo.com", "Desarrollador senior", customerRepository.findById(9L).get()));
 			customerContactRepository.save(new CustomerContact(27, "Beatriz González", "+34 688 543 987",
-					"bgonzalez@tecnologiafuturo.com", "Gerente de producto", customerRepository.findById(9).get()));
+					"bgonzalez@tecnologiafuturo.com", "Gerente de producto", customerRepository.findById(9L).get()));
 			customerContactRepository.save(new CustomerContact(28, "Carlos Vázquez", "+34 688 654 098",
-					"cvazquez@tecnologiafuturo.com", "Analista de datos", customerRepository.findById(9).get()));
+					"cvazquez@tecnologiafuturo.com", "Analista de datos", customerRepository.findById(9L).get()));
 
 			// Contactos para Café Aromático SL
 			customerContactRepository.save(new CustomerContact(29, "Sofía Morales", "+34 699 876 543",
-					"smorales@cafearomatico.com", "Encargada de marketing", customerRepository.findById(10).get()));
+					"smorales@cafearomatico.com", "Encargada de marketing", customerRepository.findById(10L).get()));
 			customerContactRepository.save(new CustomerContact(30, "Fernando Rubio", "+34 699 987 654",
-					"frubio@cafearomatico.com", "Director de ventas", customerRepository.findById(10).get()));
+					"frubio@cafearomatico.com", "Director de ventas", customerRepository.findById(10L).get()));
 			customerContactRepository.save(new CustomerContact(31, "Natalia Castro", "+34 699 123 456",
-					"ncastro@cafearomatico.com", "Coordinadora de logística", customerRepository.findById(10).get()));
+					"ncastro@cafearomatico.com", "Coordinadora de logística", customerRepository.findById(10L).get()));
 
 			budgetRepository.save(new Budget(null, 15000.50, statusRepository.findById("INICIADO").get(), null));
 			budgetRepository.save(new Budget(null, 8500.00, statusRepository.findById("ENVIADO").get(), null));
