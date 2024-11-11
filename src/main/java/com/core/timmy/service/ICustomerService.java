@@ -17,5 +17,7 @@ public interface ICustomerService {
 	
 	public List<Customer> findAll();
 
+	public String deleteById(Long id);
+
 }
 

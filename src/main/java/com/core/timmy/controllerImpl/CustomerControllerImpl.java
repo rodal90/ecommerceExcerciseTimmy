@@ -64,6 +64,45 @@ public class CustomerControllerImpl implements ICustomerController {
 	}
 	
 	
+	@Override
+	@GetMapping({"/customer/deleteGet/{id}"}) /*hay que asegurarse que el boton que vamos a pinchar tenga este enlace para que se conecte con este método*/
+	public String customerDeleteGet(@PathVariable("id") Long id,
+			Principal principal,Model model, HttpServletRequest request) {
+		System.out.println("TRAZA customerDeleteGet");
+		model.addAttribute("username", principal.getName());
+		model.addAttribute("userPicture", "");
+		
+		
+		//inyectar los registros de los customer, siempre debemos tirar de los servicios. aca hemos pedido la lista
+		
+		log.info("customer= " + this.customerService.findById(id).get());
+		
+		model.addAttribute("customer", this.customerService.findById(id).get());
+		
+		return "customerDelete";
+	}
+	
+	
+	@Override
+	@GetMapping({"/customer/deleteConfirmed/{id}"}) /*hay que asegurarse que el boton que vamos a pinchar tenga este enlace para que se conecte con este método*/
+	public String customerDeleteConfirmed(@PathVariable("id") Long id,
+			Principal principal,Model model, HttpServletRequest request) {
+		System.out.println("TRAZA customerDeleteConfirmed");
+		model.addAttribute("username", principal.getName());
+		model.addAttribute("userPicture", "");
+		
+		
+		//inyectar los registros de los customer, siempre debemos tirar de los servicios. aca hemos pedido la lista
+		
+		log.info("customer deleted= " + this.customerService.deleteById(id));
+		
+		
+		
+		return "redirect:/customerListGet";
+	}
+	
+	
+	
 	
 	@Override
 	@GetMapping({"/customer/updateGet/{id}"}) /*hay que asegurarse que el boton que vamos a pinchar tenga este enlace para que se conecte con este método*/

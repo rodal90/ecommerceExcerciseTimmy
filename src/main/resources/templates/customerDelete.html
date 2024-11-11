@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3,org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeLeaf/layout"
+	xmlns:sec="http://www.thymeLeaf.org/extras/spring-security">
+
+<div th:replace="~{standarLayouts/head :: head1}">AQUI DEBERIAMOS
+	USAR EL HEAD</div>
+
+<body>
+
+	<nav th:replace="~{standarLayouts/navbar :: navbar1}">AQUI
+		DEBERIA DE ALISR EL navbar</nav>
+
+
+	<section class="pb-5 pt-5 bg-dark text-light min-vw-100 min-vh-100">
+		<div class="block pt-5 pb-5 text-center">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-md-5 text-center">
+
+						<div class="card">
+							<div class="card-body">
+
+								<h4 class="mt-5 mb-5 text-white">Customer Delete</h4>
+								<div th:object="${customer}"
+									class="form-inline d-flex justify-content-center h-25">
+									<!--poner un asterisco en el th:text indica que el campo esta dentro del th:object osea el objeto customer -->
+									<div class="form-group mt-2">
+										<label>Id</label> <span th:text=*{id}
+											class="form-control mt-2"></span>
+									</div>
+
+									<div class="form-group mt-2">
+										<label>Name</label> <span th:text=*{name}
+											class="form-control mt-2"></span>
+									</div>
+
+									<div class="form-group mt-2">
+										<label>Vat Number</label> <span th:text=*{vatnumber}
+											class="form-control mt-2"></span>
+									</div>
+
+
+									<div class="form-group mt-2">
+										<label>Address</label> <span th:text=*{address}
+											class="form-control mt-2"></span>
+									</div>
+
+
+									<div class="form-group mt-2">
+										<label>Phone</label> <span th:text=*{phone}
+											class="form-control mt-2"></span>
+									</div>
+
+
+									<div class="form-group mt-2">
+										<label>Customer contacts</label> <span
+											th:text=*{customerContactList} class="form-control mt-2"></span>
+									</div>
+
+
+									<div class="form-group mt-2">
+
+										<p th:unless="${customer.getCustomerContactList().size() !=0}"
+											th:text="'This customer has no contacts'"></p>
+
+										<ul th:if="${customer.getCustomerContactList().size() != 0}">
+											<li
+												th:each="customerContact : ${customer.getCustomerContactList()}"
+												th:value="${customerContact.getId()}"
+												th:text="${customerContact.getName()} + '>' + ${customerContact.getPhone()}  + '>>' + ${customerContact.getObservations()}">
+
+											</li>
+
+										</ul>
+									</div>
+
+									<!--<input class="form-control  form-control mb-3"
+                  placeholder="email address">
+                <input class="form-control form-control mb-3 mx-1"
+                  type="password" placeholder="Create a Password">-->
+
+									<!-- la "a" es un ancla -->
+									<div class="form-group mt-3">
+										<a type="button" th:href="@{/customerListGet}"
+											class="btn btn-primary w-100 btn-round mb-3 btn-rised">Volver</a>
+									</div>
+									<div class="form-group mt-3">
+										<a type="button" th:href="@{/customer/deleteConfirmed/}+${customer.getId()}"
+											class="btn btn-danger w-100 btn-round mb-3 btn-rised">Confirmar borrado</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+
+	<div th:replace="~{standarLayouts/sectionCards :: sectionCards1}">
+		AQUI DEBERIAMOS USAR El sectionCards</div>
+
+	<div th:replace="~{standarLayouts/sectionFooter :: sectionFooter1}">
+		AQUI DEBERIAMOS USAR EL sectionFooter</div>
+
+	<div th:replace="~{standarLayouts/script :: script1}">AQUI
+		DEBERIA DE ALISR EL script</div>
+
+</body>
+
+</html>

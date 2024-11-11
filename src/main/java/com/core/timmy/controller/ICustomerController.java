@@ -26,6 +26,10 @@ public interface ICustomerController {
 
 	public String customerUpdatePost(@Valid Customer customer, BindingResult bindingresult, Principal principal, Model model,
 			HttpServletRequest request);
+
+	 public String customerDeleteGet(Long id, Principal principal, Model model, HttpServletRequest request);
+
+	 public String customerDeleteConfirmed(Long id, Principal principal, Model model, HttpServletRequest request);
 	
 	
 

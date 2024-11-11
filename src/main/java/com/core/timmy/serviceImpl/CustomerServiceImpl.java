@@ -43,6 +43,12 @@ public class CustomerServiceImpl implements ICustomerService {
 		return this.customerRepository.findAll(); /*repositorio devuelve un objeto list, la mayoria de veces array list. 
 		en list el orden importa, acepta duplicado*/
 	}
+
+	@Override
+	public String deleteById(Long id) {
+		this.customerRepository.deleteById(id);		
+		return this.customerRepository.existsById(id)? "Borrado" : "No Borrado";
+	}
 	
 	
 
