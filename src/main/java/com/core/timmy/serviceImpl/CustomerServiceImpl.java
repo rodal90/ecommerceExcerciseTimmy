@@ -49,6 +49,11 @@ public class CustomerServiceImpl implements ICustomerService {
 		this.customerRepository.deleteById(id);		
 		return this.customerRepository.existsById(id)? "Borrado" : "No Borrado";
 	}
+
+	@Override
+	public Customer newCustomer() {
+		return new Customer();
+	}
 	
 	
 

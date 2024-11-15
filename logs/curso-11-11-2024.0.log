@@ -1,0 +1,942 @@
+11-11-2024 08:53:45 INFO  com.core.timmy.TimmyApplication - Starting TimmyApplication using Java 21.0.4 with PID 6968 (C:\Users\manana\eclipse-workspace\timmy\target\classes started by manana in C:\Users\manana\eclipse-workspace\timmy)
+11-11-2024 08:53:45 INFO  com.core.timmy.TimmyApplication - No active profile set, falling back to 1 default profile: "default"
+11-11-2024 08:53:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+11-11-2024 08:53:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-11-2024 08:53:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 73 ms. Found 7 JPA repository interfaces.
+11-11-2024 08:53:47 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11-11-2024 08:53:47 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11-11-2024 08:53:47 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+11-11-2024 08:53:47 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring embedded WebApplicationContext
+11-11-2024 08:53:47 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1729 ms
+11-11-2024 08:53:47 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11-11-2024 08:53:47 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:eventix user=SAS
+11-11-2024 08:53:47 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11-11-2024 08:53:47 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:eventix'
+11-11-2024 08:53:47 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+11-11-2024 08:53:47 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+11-11-2024 08:53:47 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11-11-2024 08:53:47 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+11-11-2024 08:53:47 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+11-11-2024 08:53:48 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11-11-2024 08:53:49 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11-11-2024 08:53:49 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-11-2024 08:53:49 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+11-11-2024 08:53:49 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+11-11-2024 08:53:49 INFO  com.core.timmy.config.WebMvcConfig - Dialects & TemplateResolvers:  > [org.thymeleaf.spring6.dialect.SpringStandardDialect@6aa7d7a0, nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect@b8e6981, org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect@1e40edb7] >> [org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver@3b9d85c2] >>> 1
+11-11-2024 08:53:49 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+11-11-2024 08:53:50 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 12 mappings in 'requestMappingHandlerMapping'
+11-11-2024 08:53:50 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+11-11-2024 08:53:50 INFO  c.c.timmy.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@2052c49f, interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6175619b, started on Mon Nov 11 08:53:45 CET 2024, class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@3a9a12a1}
+11-11-2024 08:53:50 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+11-11-2024 08:53:50 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+11-11-2024 08:53:50 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/timmy'
+11-11-2024 08:53:50 INFO  com.core.timmy.TimmyApplication - Started TimmyApplication in 6.058 seconds (process running for 6.851)
+11-11-2024 08:53:59 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+11-11-2024 08:53:59 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11-11-2024 08:53:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11-11-2024 08:53:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11-11-2024 12:00:34 INFO  com.core.timmy.TimmyApplication - Starting TimmyApplication using Java 21.0.4 with PID 8748 (C:\Users\manana\eclipse-workspace\timmy\target\classes started by manana in C:\Users\manana\eclipse-workspace\timmy)
+11-11-2024 12:00:34 INFO  com.core.timmy.TimmyApplication - No active profile set, falling back to 1 default profile: "default"
+11-11-2024 12:00:35 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+11-11-2024 12:00:35 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-11-2024 12:00:35 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 71 ms. Found 7 JPA repository interfaces.
+11-11-2024 12:00:36 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11-11-2024 12:00:36 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11-11-2024 12:00:36 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+11-11-2024 12:00:36 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring embedded WebApplicationContext
+11-11-2024 12:00:36 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1452 ms
+11-11-2024 12:00:36 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11-11-2024 12:00:36 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:eventix user=SAS
+11-11-2024 12:00:36 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11-11-2024 12:00:36 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:eventix'
+11-11-2024 12:00:36 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+11-11-2024 12:00:36 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+11-11-2024 12:00:36 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11-11-2024 12:00:36 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+11-11-2024 12:00:36 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+11-11-2024 12:00:36 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11-11-2024 12:00:37 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11-11-2024 12:00:38 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-11-2024 12:00:38 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+11-11-2024 12:00:38 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+11-11-2024 12:00:38 INFO  com.core.timmy.config.WebMvcConfig - Dialects & TemplateResolvers:  > [org.thymeleaf.spring6.dialect.SpringStandardDialect@7a8d6eb3, nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect@19cad9f0, org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect@4cce421e] >> [org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver@4a66949a] >>> 1
+11-11-2024 12:00:38 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+11-11-2024 12:00:38 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 12 mappings in 'requestMappingHandlerMapping'
+11-11-2024 12:00:38 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+11-11-2024 12:00:38 INFO  c.c.timmy.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@440d45c5, interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52500920, started on Mon Nov 11 12:00:34 CET 2024, interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@6f4e39b3}
+11-11-2024 12:00:39 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+11-11-2024 12:00:39 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+11-11-2024 12:00:39 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/timmy'
+11-11-2024 12:00:39 INFO  com.core.timmy.TimmyApplication - Started TimmyApplication in 5.372 seconds (process running for 6.106)
+11-11-2024 12:00:55 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-11-2024 12:00:55 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11-11-2024 12:00:55 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+11-11-2024 12:00:55 DEBUG o.s.web.servlet.DispatcherServlet - Detected SessionLocaleResolver
+11-11-2024 12:00:55 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+11-11-2024 12:00:55 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4cb641a5
+11-11-2024 12:00:55 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@108a7fff
+11-11-2024 12:00:55 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+11-11-2024 12:00:55 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+11-11-2024 12:00:55 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginPost", parameters={}
+11-11-2024 12:00:55 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+11-11-2024 12:00:55 DEBUG o.s.web.servlet.DispatcherServlet - Completed 405 METHOD_NOT_ALLOWED
+11-11-2024 12:00:55 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+11-11-2024 12:00:55 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+11-11-2024 12:00:55 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+11-11-2024 12:00:55 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:00:56 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+11-11-2024 12:00:56 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+11-11-2024 12:00:56 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+11-11-2024 12:00:56 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:01:00 DEBUG o.s.web.servlet.DispatcherServlet - POST "/timmy/loginPost", parameters={masked}
+11-11-2024 12:01:00 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginPost(Login, BindingResult, HttpServletRequest, Model)
+11-11-2024 12:01:01 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale en_US
+11-11-2024 12:01:01 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale en_US
+11-11-2024 12:01:01 DEBUG o.s.web.servlet.DispatcherServlet - Failed to complete request: org.springframework.security.authentication.BadCredentialsException: Bad credentials
+11-11-2024 12:01:01 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+11-11-2024 12:01:01 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+11-11-2024 12:01:01 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:01:01 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+11-11-2024 12:01:01 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+11-11-2024 12:01:01 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+11-11-2024 12:01:01 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:01:09 DEBUG o.s.web.servlet.DispatcherServlet - POST "/timmy/loginPost", parameters={masked}
+11-11-2024 12:01:09 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginPost(Login, BindingResult, HttpServletRequest, Model)
+11-11-2024 12:01:09 INFO  com.core.timmy.data.model.User - Roles from ana: {ADMIN|USER}
+11-11-2024 12:01:09 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:01:09 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/img/Eventixpro_recortado_5.jpg", parameters={}
+11-11-2024 12:01:09 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/img/lion.ico", parameters={}
+11-11-2024 12:01:09 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+11-11-2024 12:01:09 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+11-11-2024 12:01:09 DEBUG o.s.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+11-11-2024 12:01:09 DEBUG o.s.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+11-11-2024 12:01:09 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/favicon.ico", parameters={}
+11-11-2024 12:01:09 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+11-11-2024 12:01:09 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:01:14 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customerListGet", parameters={}
+11-11-2024 12:01:14 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerControllerImpl#customerListGet(Principal, Model)
+11-11-2024 12:01:14 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:16:32 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+11-11-2024 12:16:32 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11-11-2024 12:16:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11-11-2024 12:16:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11-11-2024 12:16:34 INFO  com.core.timmy.TimmyApplication - Starting TimmyApplication using Java 21.0.4 with PID 7236 (C:\Users\manana\eclipse-workspace\timmy\target\classes started by manana in C:\Users\manana\eclipse-workspace\timmy)
+11-11-2024 12:16:34 INFO  com.core.timmy.TimmyApplication - No active profile set, falling back to 1 default profile: "default"
+11-11-2024 12:16:35 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+11-11-2024 12:16:35 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-11-2024 12:16:35 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 71 ms. Found 7 JPA repository interfaces.
+11-11-2024 12:16:35 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11-11-2024 12:16:35 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11-11-2024 12:16:35 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+11-11-2024 12:16:35 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring embedded WebApplicationContext
+11-11-2024 12:16:35 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1306 ms
+11-11-2024 12:16:35 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11-11-2024 12:16:35 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:eventix user=SAS
+11-11-2024 12:16:35 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11-11-2024 12:16:35 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:eventix'
+11-11-2024 12:16:36 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+11-11-2024 12:16:36 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+11-11-2024 12:16:36 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11-11-2024 12:16:36 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+11-11-2024 12:16:36 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+11-11-2024 12:16:36 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11-11-2024 12:16:37 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11-11-2024 12:16:37 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-11-2024 12:16:37 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+11-11-2024 12:16:37 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+11-11-2024 12:16:38 INFO  com.core.timmy.config.WebMvcConfig - Dialects & TemplateResolvers:  > [org.thymeleaf.spring6.dialect.SpringStandardDialect@539570b8, nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect@87276c4, org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect@38f4a641] >> [org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver@27a8bfa1] >>> 1
+11-11-2024 12:16:38 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+11-11-2024 12:16:38 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 13 mappings in 'requestMappingHandlerMapping'
+11-11-2024 12:16:38 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+11-11-2024 12:16:38 INFO  c.c.timmy.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@4a10e65b, interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6175619b, started on Mon Nov 11 12:16:34 CET 2024, class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@3c9cab4}
+11-11-2024 12:16:38 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+11-11-2024 12:16:38 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+11-11-2024 12:16:38 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/timmy'
+11-11-2024 12:16:39 INFO  com.core.timmy.TimmyApplication - Started TimmyApplication in 5.152 seconds (process running for 5.833)
+11-11-2024 12:16:43 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-11-2024 12:16:43 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11-11-2024 12:16:43 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+11-11-2024 12:16:43 DEBUG o.s.web.servlet.DispatcherServlet - Detected SessionLocaleResolver
+11-11-2024 12:16:43 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+11-11-2024 12:16:43 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@136c3a6
+11-11-2024 12:16:43 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@4e132a9b
+11-11-2024 12:16:43 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+11-11-2024 12:16:43 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+11-11-2024 12:16:43 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+11-11-2024 12:16:43 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+11-11-2024 12:16:43 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+11-11-2024 12:16:43 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:16:48 DEBUG o.s.web.servlet.DispatcherServlet - POST "/timmy/loginPost", parameters={masked}
+11-11-2024 12:16:48 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginPost(Login, BindingResult, HttpServletRequest, Model)
+11-11-2024 12:16:49 INFO  com.core.timmy.data.model.User - Roles from ana: {USER|ADMIN}
+11-11-2024 12:16:49 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:16:54 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customerListGet", parameters={}
+11-11-2024 12:16:54 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerControllerImpl#customerListGet(Principal, Model)
+11-11-2024 12:16:54 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:16:56 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customer/deleteGet/1", parameters={}
+11-11-2024 12:16:56 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerControllerImpl#customerDeleteGet(Long, Principal, Model, HttpServletRequest)
+11-11-2024 12:16:56 INFO  c.c.t.c.CustomerControllerImpl - customer= Optional[Customer(id=1, customerContactList=[CustomerContact(id=1, name=Carlos Martínez, phone=+34 600 123 456, email=cmartinez@tecnovision.com, observations=Responsable de ventas), CustomerContact(id=2, name=Ana Pérez, phone=+34 600 654 321, email=aperez@tecnovision.com, observations=Encargada de proyectos), CustomerContact(id=3, name=Javier Gómez, phone=+34 600 987 654, email=jgomez@tecnovision.com, observations=Director de TI)], name=TecnoVisión S.A., vatnumber=ESB12345678, address=Calle Innovación 12, Madrid, España, phone=+34 911 234 567)]
+11-11-2024 12:16:56 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:17:10 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customerListGet", parameters={}
+11-11-2024 12:17:10 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerControllerImpl#customerListGet(Principal, Model)
+11-11-2024 12:17:10 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:17:13 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customer/deleteGet/1", parameters={}
+11-11-2024 12:17:13 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerControllerImpl#customerDeleteGet(Long, Principal, Model, HttpServletRequest)
+11-11-2024 12:17:13 INFO  c.c.t.c.CustomerControllerImpl - customer= Optional[Customer(id=1, customerContactList=[CustomerContact(id=1, name=Carlos Martínez, phone=+34 600 123 456, email=cmartinez@tecnovision.com, observations=Responsable de ventas), CustomerContact(id=2, name=Ana Pérez, phone=+34 600 654 321, email=aperez@tecnovision.com, observations=Encargada de proyectos), CustomerContact(id=3, name=Javier Gómez, phone=+34 600 987 654, email=jgomez@tecnovision.com, observations=Director de TI)], name=TecnoVisión S.A., vatnumber=ESB12345678, address=Calle Innovación 12, Madrid, España, phone=+34 911 234 567)]
+11-11-2024 12:17:13 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:17:24 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customerListGet", parameters={}
+11-11-2024 12:17:24 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerControllerImpl#customerListGet(Principal, Model)
+11-11-2024 12:17:24 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:17:25 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customer/deleteGet/2", parameters={}
+11-11-2024 12:17:25 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerControllerImpl#customerDeleteGet(Long, Principal, Model, HttpServletRequest)
+11-11-2024 12:17:25 INFO  c.c.t.c.CustomerControllerImpl - customer= Optional[Customer(id=2, customerContactList=[CustomerContact(id=4, name=Lucía Fernández, phone=+34 611 234 567, email=lfernandez@solucionesglobales.com, observations=Asistente de dirección), CustomerContact(id=5, name=Pedro Sánchez, phone=+34 611 765 432, email=psanchez@solucionesglobales.com, observations=Jefe de operaciones), CustomerContact(id=6, name=María López, phone=+34 611 876 543, email=mlopez@solucionesglobales.com, observations=Departamento financiero)], name=Soluciones Globales SL, vatnumber=ESB87654321, address=Av. Empresarial 45, Barcelona, España, phone=+34 931 987 654)]
+11-11-2024 12:17:25 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:17:28 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customerListGet", parameters={}
+11-11-2024 12:17:28 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerControllerImpl#customerListGet(Principal, Model)
+11-11-2024 12:17:28 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:17:29 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customer/deleteGet/3", parameters={}
+11-11-2024 12:17:29 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerControllerImpl#customerDeleteGet(Long, Principal, Model, HttpServletRequest)
+11-11-2024 12:17:29 INFO  c.c.t.c.CustomerControllerImpl - customer= Optional[Customer(id=3, customerContactList=[CustomerContact(id=7, name=Sergio Álvarez, phone=+34 622 123 987, email=salvarez@ecoenergia.com, observations=Consultor técnico), CustomerContact(id=8, name=Laura Ramos, phone=+34 622 654 321, email=lramos@ecoenergia.com, observations=Ingeniera ambiental), CustomerContact(id=9, name=Elena García, phone=+34 622 789 654, email=egarcia@ecoenergia.com, observations=Gerente de proyectos)], name=EcoEnergía Renovable, vatnumber=ESA45678912, address=Paseo Verde 3, Valencia, España, phone=+34 961 123 987)]
+11-11-2024 12:17:29 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:17:33 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customerListGet", parameters={}
+11-11-2024 12:17:33 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerControllerImpl#customerListGet(Principal, Model)
+11-11-2024 12:17:33 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:28:31 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+11-11-2024 12:28:31 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11-11-2024 12:28:31 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11-11-2024 12:28:31 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11-11-2024 12:28:33 INFO  com.core.timmy.TimmyApplication - Starting TimmyApplication using Java 21.0.4 with PID 13632 (C:\Users\manana\eclipse-workspace\timmy\target\classes started by manana in C:\Users\manana\eclipse-workspace\timmy)
+11-11-2024 12:28:33 INFO  com.core.timmy.TimmyApplication - No active profile set, falling back to 1 default profile: "default"
+11-11-2024 12:28:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+11-11-2024 12:28:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-11-2024 12:28:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 7 JPA repository interfaces.
+11-11-2024 12:28:35 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11-11-2024 12:28:35 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11-11-2024 12:28:35 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+11-11-2024 12:28:35 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring embedded WebApplicationContext
+11-11-2024 12:28:35 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1312 ms
+11-11-2024 12:28:35 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11-11-2024 12:28:35 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:eventix user=SAS
+11-11-2024 12:28:35 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11-11-2024 12:28:35 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:eventix'
+11-11-2024 12:28:35 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+11-11-2024 12:28:35 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+11-11-2024 12:28:35 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11-11-2024 12:28:35 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+11-11-2024 12:28:35 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+11-11-2024 12:28:36 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11-11-2024 12:28:37 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11-11-2024 12:28:37 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-11-2024 12:28:37 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+11-11-2024 12:28:37 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+11-11-2024 12:28:37 INFO  com.core.timmy.config.WebMvcConfig - Dialects & TemplateResolvers:  > [org.thymeleaf.spring6.dialect.SpringStandardDialect@6a4c4261, nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect@632a7680, org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect@66e5441e] >> [org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver@7a14d8a4] >>> 1
+11-11-2024 12:28:37 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+11-11-2024 12:28:37 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 14 mappings in 'requestMappingHandlerMapping'
+11-11-2024 12:28:37 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+11-11-2024 12:28:37 INFO  c.c.timmy.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@530aa75c, class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@2527765a, interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2cf92cc7, started on Mon Nov 11 12:28:33 CET 2024}
+11-11-2024 12:28:38 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+11-11-2024 12:28:38 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+11-11-2024 12:28:38 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/timmy'
+11-11-2024 12:28:38 INFO  com.core.timmy.TimmyApplication - Started TimmyApplication in 5.221 seconds (process running for 5.881)
+11-11-2024 12:28:43 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-11-2024 12:28:43 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11-11-2024 12:28:43 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+11-11-2024 12:28:43 DEBUG o.s.web.servlet.DispatcherServlet - Detected SessionLocaleResolver
+11-11-2024 12:28:43 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+11-11-2024 12:28:43 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2e587292
+11-11-2024 12:28:43 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@30ffc3c0
+11-11-2024 12:28:43 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+11-11-2024 12:28:43 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+11-11-2024 12:28:43 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+11-11-2024 12:28:43 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+11-11-2024 12:28:43 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+11-11-2024 12:28:44 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:28:49 DEBUG o.s.web.servlet.DispatcherServlet - POST "/timmy/loginPost", parameters={masked}
+11-11-2024 12:28:49 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginPost(Login, BindingResult, HttpServletRequest, Model)
+11-11-2024 12:28:49 INFO  com.core.timmy.data.model.User - Roles from ana: {USER|ADMIN}
+11-11-2024 12:28:49 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:28:52 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customerListGet", parameters={}
+11-11-2024 12:28:52 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerControllerImpl#customerListGet(Principal, Model)
+11-11-2024 12:28:52 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:28:54 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customer/deleteGet/1", parameters={}
+11-11-2024 12:28:54 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerControllerImpl#customerDeleteGet(Long, Principal, Model, HttpServletRequest)
+11-11-2024 12:28:54 INFO  c.c.t.c.CustomerControllerImpl - customer= Customer(id=1, customerContactList=[CustomerContact(id=1, name=Carlos Martínez, phone=+34 600 123 456, email=cmartinez@tecnovision.com, observations=Responsable de ventas), CustomerContact(id=2, name=Ana Pérez, phone=+34 600 654 321, email=aperez@tecnovision.com, observations=Encargada de proyectos), CustomerContact(id=3, name=Javier Gómez, phone=+34 600 987 654, email=jgomez@tecnovision.com, observations=Director de TI)], name=TecnoVisión S.A., vatnumber=ESB12345678, address=Calle Innovación 12, Madrid, España, phone=+34 911 234 567)
+11-11-2024 12:28:54 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:28:56 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customer/deleteConfirmed/1", parameters={}
+11-11-2024 12:28:56 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerControllerImpl#customerDeleteConfirmed(Long, Principal, Model, HttpServletRequest)
+11-11-2024 12:28:56 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 23503, SQLState: 23503
+11-11-2024 12:28:56 ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Violación de una restricción de Integridad Referencial: "FK3X9HLFBVHPKCA4AVLHE6DT7F7: PUBLIC.CUSTOMER_CONTACT FOREIGN KEY(IDCUSTOMER) REFERENCES PUBLIC.CUSTOMER(ID) (CAST(1 AS BIGINT))"
+Referential integrity constraint violation: "FK3X9HLFBVHPKCA4AVLHE6DT7F7: PUBLIC.CUSTOMER_CONTACT FOREIGN KEY(IDCUSTOMER) REFERENCES PUBLIC.CUSTOMER(ID) (CAST(1 AS BIGINT))"; SQL statement:
+delete from CUSTOMER where id=? [23503-224]
+11-11-2024 12:28:56 DEBUG o.s.web.servlet.DispatcherServlet - Failed to complete request: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Violación de una restricción de Integridad Referencial: "FK3X9HLFBVHPKCA4AVLHE6DT7F7: PUBLIC.CUSTOMER_CONTACT FOREIGN KEY(IDCUSTOMER) REFERENCES PUBLIC.CUSTOMER(ID) (CAST(1 AS BIGINT))"
+Referential integrity constraint violation: "FK3X9HLFBVHPKCA4AVLHE6DT7F7: PUBLIC.CUSTOMER_CONTACT FOREIGN KEY(IDCUSTOMER) REFERENCES PUBLIC.CUSTOMER(ID) (CAST(1 AS BIGINT))"; SQL statement:
+delete from CUSTOMER where id=? [23503-224]] [delete from CUSTOMER where id=?]; SQL [delete from CUSTOMER where id=?]; constraint [FK3X9HLFBVHPKCA4AVLHE6DT7F7: PUBLIC.CUSTOMER_CONTACT FOREIGN KEY(IDCUSTOMER) REFERENCES PUBLIC.CUSTOMER(ID) (CAST(1 AS BIGINT)); SQL statement:
+delete from CUSTOMER where id=? [23503-224]]
+11-11-2024 12:28:56 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/timmy] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Violación de una restricción de Integridad Referencial: "FK3X9HLFBVHPKCA4AVLHE6DT7F7: PUBLIC.CUSTOMER_CONTACT FOREIGN KEY(IDCUSTOMER) REFERENCES PUBLIC.CUSTOMER(ID) (CAST(1 AS BIGINT))"
+Referential integrity constraint violation: "FK3X9HLFBVHPKCA4AVLHE6DT7F7: PUBLIC.CUSTOMER_CONTACT FOREIGN KEY(IDCUSTOMER) REFERENCES PUBLIC.CUSTOMER(ID) (CAST(1 AS BIGINT))"; SQL statement:
+delete from CUSTOMER where id=? [23503-224]] [delete from CUSTOMER where id=?]; SQL [delete from CUSTOMER where id=?]; constraint [FK3X9HLFBVHPKCA4AVLHE6DT7F7: PUBLIC.CUSTOMER_CONTACT FOREIGN KEY(IDCUSTOMER) REFERENCES PUBLIC.CUSTOMER(ID) (CAST(1 AS BIGINT)); SQL statement:
+delete from CUSTOMER where id=? [23503-224]]] with root cause
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de una restricción de Integridad Referencial: "FK3X9HLFBVHPKCA4AVLHE6DT7F7: PUBLIC.CUSTOMER_CONTACT FOREIGN KEY(IDCUSTOMER) REFERENCES PUBLIC.CUSTOMER(ID) (CAST(1 AS BIGINT))"
+Referential integrity constraint violation: "FK3X9HLFBVHPKCA4AVLHE6DT7F7: PUBLIC.CUSTOMER_CONTACT FOREIGN KEY(IDCUSTOMER) REFERENCES PUBLIC.CUSTOMER(ID) (CAST(1 AS BIGINT))"; SQL statement:
+delete from CUSTOMER where id=? [23503-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:365)
+	at org.h2.constraint.ConstraintReferential.checkRowRefTable(ConstraintReferential.java:382)
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:256)
+	at org.h2.table.Table.fireConstraints(Table.java:1200)
+	at org.h2.table.Table.fireAfterRow(Table.java:1218)
+	at org.h2.command.dml.Delete.update(Delete.java:92)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:216)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:174)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:194)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.performNonBatchedMutation(AbstractMutationExecutor.java:134)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:55)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55)
+	at org.hibernate.persister.entity.mutation.AbstractDeleteCoordinator.doStaticDelete(AbstractDeleteCoordinator.java:279)
+	at org.hibernate.persister.entity.mutation.AbstractDeleteCoordinator.delete(AbstractDeleteCoordinator.java:87)
+	at org.hibernate.action.internal.EntityDeleteAction.execute(EntityDeleteAction.java:131)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:633)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:500)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:385)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:41)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1425)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:487)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2324)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1981)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:795)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:758)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:663)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:413)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy138.deleteById(Unknown Source)
+	at com.core.timmy.serviceImpl.CustomerServiceImpl.deleteById(CustomerServiceImpl.java:49)
+	at com.core.timmy.controllerImpl.CustomerControllerImpl.customerDeleteConfirmed(CustomerControllerImpl.java:97)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:142)
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+11-11-2024 12:28:56 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/timmy/error", parameters={}
+11-11-2024 12:28:56 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+11-11-2024 12:28:56 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 500
+11-11-2024 12:31:10 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginPost", parameters={}
+11-11-2024 12:31:10 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+11-11-2024 12:31:10 DEBUG o.s.web.servlet.DispatcherServlet - Completed 405 METHOD_NOT_ALLOWED
+11-11-2024 12:31:10 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/timmy/error", parameters={}
+11-11-2024 12:31:10 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+11-11-2024 12:31:10 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 405
+11-11-2024 12:31:15 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+11-11-2024 12:31:15 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11-11-2024 12:31:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11-11-2024 12:31:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11-11-2024 12:31:17 INFO  com.core.timmy.TimmyApplication - Starting TimmyApplication using Java 21.0.4 with PID 7996 (C:\Users\manana\eclipse-workspace\timmy\target\classes started by manana in C:\Users\manana\eclipse-workspace\timmy)
+11-11-2024 12:31:17 INFO  com.core.timmy.TimmyApplication - No active profile set, falling back to 1 default profile: "default"
+11-11-2024 12:31:18 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+11-11-2024 12:31:18 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-11-2024 12:31:18 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 7 JPA repository interfaces.
+11-11-2024 12:31:19 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11-11-2024 12:31:19 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11-11-2024 12:31:19 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+11-11-2024 12:31:19 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring embedded WebApplicationContext
+11-11-2024 12:31:19 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1335 ms
+11-11-2024 12:31:19 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11-11-2024 12:31:19 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:eventix user=SAS
+11-11-2024 12:31:19 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11-11-2024 12:31:19 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:eventix'
+11-11-2024 12:31:19 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+11-11-2024 12:31:19 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+11-11-2024 12:31:19 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11-11-2024 12:31:19 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+11-11-2024 12:31:19 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+11-11-2024 12:31:20 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11-11-2024 12:31:21 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11-11-2024 12:31:21 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-11-2024 12:31:21 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+11-11-2024 12:31:21 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+11-11-2024 12:31:21 INFO  com.core.timmy.config.WebMvcConfig - Dialects & TemplateResolvers:  > [org.thymeleaf.spring6.dialect.SpringStandardDialect@46c28400, nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect@2150dc64, org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect@3f33c5e4] >> [org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver@46c7c593] >>> 1
+11-11-2024 12:31:21 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+11-11-2024 12:31:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 14 mappings in 'requestMappingHandlerMapping'
+11-11-2024 12:31:21 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+11-11-2024 12:31:21 INFO  c.c.timmy.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@704ddfad, interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2cf92cc7, started on Mon Nov 11 12:31:17 CET 2024, class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@544faa01}
+11-11-2024 12:31:22 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+11-11-2024 12:31:22 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+11-11-2024 12:31:22 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/timmy'
+11-11-2024 12:31:22 INFO  com.core.timmy.TimmyApplication - Started TimmyApplication in 5.259 seconds (process running for 5.927)
+11-11-2024 12:31:30 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-11-2024 12:31:30 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11-11-2024 12:31:30 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+11-11-2024 12:31:30 DEBUG o.s.web.servlet.DispatcherServlet - Detected SessionLocaleResolver
+11-11-2024 12:31:30 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+11-11-2024 12:31:30 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5d4a1d2c
+11-11-2024 12:31:30 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@c32908c
+11-11-2024 12:31:30 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+11-11-2024 12:31:30 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+11-11-2024 12:31:30 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginPost", parameters={}
+11-11-2024 12:31:30 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+11-11-2024 12:31:30 DEBUG o.s.web.servlet.DispatcherServlet - Completed 405 METHOD_NOT_ALLOWED
+11-11-2024 12:31:30 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+11-11-2024 12:31:30 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+11-11-2024 12:31:30 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+11-11-2024 12:31:30 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:31:35 DEBUG o.s.web.servlet.DispatcherServlet - POST "/timmy/loginPost", parameters={masked}
+11-11-2024 12:31:35 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginPost(Login, BindingResult, HttpServletRequest, Model)
+11-11-2024 12:31:36 INFO  com.core.timmy.data.model.User - Roles from ana: {ADMIN|USER}
+11-11-2024 12:31:36 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:31:38 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customerListGet", parameters={}
+11-11-2024 12:31:38 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerControllerImpl#customerListGet(Principal, Model)
+11-11-2024 12:31:38 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:31:42 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customer/deleteGet/11", parameters={}
+11-11-2024 12:31:42 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerControllerImpl#customerDeleteGet(Long, Principal, Model, HttpServletRequest)
+11-11-2024 12:31:42 INFO  c.c.t.c.CustomerControllerImpl - customer= Customer(id=11, customerContactList=[], name=Carmolino, vatnumber=pirulo, address=ñandu 235, phone=+34 986 876 563)
+11-11-2024 12:31:42 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:31:43 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customer/deleteConfirmed/11", parameters={}
+11-11-2024 12:31:43 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerControllerImpl#customerDeleteConfirmed(Long, Principal, Model, HttpServletRequest)
+11-11-2024 12:31:43 INFO  c.c.t.c.CustomerControllerImpl - customer deleted= No Borrado
+11-11-2024 12:31:43 DEBUG o.s.web.servlet.view.RedirectView - View name [redirect:], model {}
+11-11-2024 12:31:43 DEBUG o.s.web.servlet.DispatcherServlet - Completed 302 FOUND
+11-11-2024 12:31:43 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customerListGet", parameters={}
+11-11-2024 12:31:43 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerControllerImpl#customerListGet(Principal, Model)
+11-11-2024 12:31:43 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:32:25 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customer/deleteGet/10", parameters={}
+11-11-2024 12:32:25 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerControllerImpl#customerDeleteGet(Long, Principal, Model, HttpServletRequest)
+11-11-2024 12:32:25 INFO  c.c.t.c.CustomerControllerImpl - customer= Customer(id=10, customerContactList=[CustomerContact(id=29, name=Sofía Morales, phone=+34 699 876 543, email=smorales@cafearomatico.com, observations=Encargada de marketing), CustomerContact(id=30, name=Fernando Rubio, phone=+34 699 987 654, email=frubio@cafearomatico.com, observations=Director de ventas), CustomerContact(id=31, name=Natalia Castro, phone=+34 699 123 456, email=ncastro@cafearomatico.com, observations=Coordinadora de logística)], name=Café Aromático SL, vatnumber=ESA12398765, address=Plaza Central 7, Vigo, España, phone=+34 986 876 543)
+11-11-2024 12:32:25 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:32:27 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customer/deleteConfirmed/10", parameters={}
+11-11-2024 12:32:27 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerControllerImpl#customerDeleteConfirmed(Long, Principal, Model, HttpServletRequest)
+11-11-2024 12:32:27 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 23503, SQLState: 23503
+11-11-2024 12:32:27 ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Violación de una restricción de Integridad Referencial: "FK3X9HLFBVHPKCA4AVLHE6DT7F7: PUBLIC.CUSTOMER_CONTACT FOREIGN KEY(IDCUSTOMER) REFERENCES PUBLIC.CUSTOMER(ID) (CAST(10 AS BIGINT))"
+Referential integrity constraint violation: "FK3X9HLFBVHPKCA4AVLHE6DT7F7: PUBLIC.CUSTOMER_CONTACT FOREIGN KEY(IDCUSTOMER) REFERENCES PUBLIC.CUSTOMER(ID) (CAST(10 AS BIGINT))"; SQL statement:
+delete from CUSTOMER where id=? [23503-224]
+11-11-2024 12:32:27 DEBUG o.s.web.servlet.DispatcherServlet - Failed to complete request: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Violación de una restricción de Integridad Referencial: "FK3X9HLFBVHPKCA4AVLHE6DT7F7: PUBLIC.CUSTOMER_CONTACT FOREIGN KEY(IDCUSTOMER) REFERENCES PUBLIC.CUSTOMER(ID) (CAST(10 AS BIGINT))"
+Referential integrity constraint violation: "FK3X9HLFBVHPKCA4AVLHE6DT7F7: PUBLIC.CUSTOMER_CONTACT FOREIGN KEY(IDCUSTOMER) REFERENCES PUBLIC.CUSTOMER(ID) (CAST(10 AS BIGINT))"; SQL statement:
+delete from CUSTOMER where id=? [23503-224]] [delete from CUSTOMER where id=?]; SQL [delete from CUSTOMER where id=?]; constraint [FK3X9HLFBVHPKCA4AVLHE6DT7F7: PUBLIC.CUSTOMER_CONTACT FOREIGN KEY(IDCUSTOMER) REFERENCES PUBLIC.CUSTOMER(ID) (CAST(10 AS BIGINT)); SQL statement:
+delete from CUSTOMER where id=? [23503-224]]
+11-11-2024 12:32:27 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/timmy] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Violación de una restricción de Integridad Referencial: "FK3X9HLFBVHPKCA4AVLHE6DT7F7: PUBLIC.CUSTOMER_CONTACT FOREIGN KEY(IDCUSTOMER) REFERENCES PUBLIC.CUSTOMER(ID) (CAST(10 AS BIGINT))"
+Referential integrity constraint violation: "FK3X9HLFBVHPKCA4AVLHE6DT7F7: PUBLIC.CUSTOMER_CONTACT FOREIGN KEY(IDCUSTOMER) REFERENCES PUBLIC.CUSTOMER(ID) (CAST(10 AS BIGINT))"; SQL statement:
+delete from CUSTOMER where id=? [23503-224]] [delete from CUSTOMER where id=?]; SQL [delete from CUSTOMER where id=?]; constraint [FK3X9HLFBVHPKCA4AVLHE6DT7F7: PUBLIC.CUSTOMER_CONTACT FOREIGN KEY(IDCUSTOMER) REFERENCES PUBLIC.CUSTOMER(ID) (CAST(10 AS BIGINT)); SQL statement:
+delete from CUSTOMER where id=? [23503-224]]] with root cause
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de una restricción de Integridad Referencial: "FK3X9HLFBVHPKCA4AVLHE6DT7F7: PUBLIC.CUSTOMER_CONTACT FOREIGN KEY(IDCUSTOMER) REFERENCES PUBLIC.CUSTOMER(ID) (CAST(10 AS BIGINT))"
+Referential integrity constraint violation: "FK3X9HLFBVHPKCA4AVLHE6DT7F7: PUBLIC.CUSTOMER_CONTACT FOREIGN KEY(IDCUSTOMER) REFERENCES PUBLIC.CUSTOMER(ID) (CAST(10 AS BIGINT))"; SQL statement:
+delete from CUSTOMER where id=? [23503-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:365)
+	at org.h2.constraint.ConstraintReferential.checkRowRefTable(ConstraintReferential.java:382)
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:256)
+	at org.h2.table.Table.fireConstraints(Table.java:1200)
+	at org.h2.table.Table.fireAfterRow(Table.java:1218)
+	at org.h2.command.dml.Delete.update(Delete.java:92)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:216)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:174)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:194)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.performNonBatchedMutation(AbstractMutationExecutor.java:134)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:55)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55)
+	at org.hibernate.persister.entity.mutation.AbstractDeleteCoordinator.doStaticDelete(AbstractDeleteCoordinator.java:279)
+	at org.hibernate.persister.entity.mutation.AbstractDeleteCoordinator.delete(AbstractDeleteCoordinator.java:87)
+	at org.hibernate.action.internal.EntityDeleteAction.execute(EntityDeleteAction.java:131)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:633)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:500)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:385)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:41)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1425)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:487)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2324)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1981)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:795)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:758)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:663)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:413)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy138.deleteById(Unknown Source)
+	at com.core.timmy.serviceImpl.CustomerServiceImpl.deleteById(CustomerServiceImpl.java:49)
+	at com.core.timmy.controllerImpl.CustomerControllerImpl.customerDeleteConfirmed(CustomerControllerImpl.java:97)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:142)
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+11-11-2024 12:32:27 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/timmy/error", parameters={}
+11-11-2024 12:32:27 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+11-11-2024 12:32:27 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 500
+11-11-2024 12:34:22 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginPost", parameters={}
+11-11-2024 12:34:22 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+11-11-2024 12:34:22 DEBUG o.s.web.servlet.DispatcherServlet - Completed 405 METHOD_NOT_ALLOWED
+11-11-2024 12:34:22 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/timmy/error", parameters={}
+11-11-2024 12:34:22 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+11-11-2024 12:34:22 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 405
+11-11-2024 12:40:56 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+11-11-2024 12:40:56 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11-11-2024 12:40:56 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11-11-2024 12:40:56 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11-11-2024 12:40:59 INFO  com.core.timmy.TimmyApplication - Starting TimmyApplication using Java 21.0.4 with PID 4120 (C:\Users\manana\eclipse-workspace\timmy\target\classes started by manana in C:\Users\manana\eclipse-workspace\timmy)
+11-11-2024 12:40:59 INFO  com.core.timmy.TimmyApplication - No active profile set, falling back to 1 default profile: "default"
+11-11-2024 12:40:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+11-11-2024 12:40:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-11-2024 12:41:00 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 7 JPA repository interfaces.
+11-11-2024 12:41:00 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11-11-2024 12:41:00 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11-11-2024 12:41:00 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+11-11-2024 12:41:00 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring embedded WebApplicationContext
+11-11-2024 12:41:00 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1317 ms
+11-11-2024 12:41:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11-11-2024 12:41:00 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:eventix user=SAS
+11-11-2024 12:41:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11-11-2024 12:41:00 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:eventix'
+11-11-2024 12:41:00 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+11-11-2024 12:41:00 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+11-11-2024 12:41:01 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11-11-2024 12:41:01 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+11-11-2024 12:41:01 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+11-11-2024 12:41:01 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11-11-2024 12:41:02 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11-11-2024 12:41:02 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-11-2024 12:41:02 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+11-11-2024 12:41:02 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+11-11-2024 12:41:03 INFO  com.core.timmy.config.WebMvcConfig - Dialects & TemplateResolvers:  > [org.thymeleaf.spring6.dialect.SpringStandardDialect@4a4979bf, nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect@77217c17, org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect@87276c4] >> [org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver@4f8488ef] >>> 1
+11-11-2024 12:41:03 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+11-11-2024 12:41:03 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 14 mappings in 'requestMappingHandlerMapping'
+11-11-2024 12:41:03 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+11-11-2024 12:41:03 INFO  c.c.timmy.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@650e6569, interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6175619b, started on Mon Nov 11 12:40:59 CET 2024, class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@3c9cab4}
+11-11-2024 12:41:03 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+11-11-2024 12:41:03 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+11-11-2024 12:41:04 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/timmy'
+11-11-2024 12:41:04 INFO  com.core.timmy.TimmyApplication - Started TimmyApplication in 5.322 seconds (process running for 6.043)
+11-11-2024 12:41:04 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-11-2024 12:41:04 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11-11-2024 12:41:04 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+11-11-2024 12:41:04 DEBUG o.s.web.servlet.DispatcherServlet - Detected SessionLocaleResolver
+11-11-2024 12:41:04 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+11-11-2024 12:41:04 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@136c3a6
+11-11-2024 12:41:04 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@4e132a9b
+11-11-2024 12:41:04 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+11-11-2024 12:41:04 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+11-11-2024 12:41:04 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+11-11-2024 12:41:04 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+11-11-2024 12:41:04 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+11-11-2024 12:41:05 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:41:11 DEBUG o.s.web.servlet.DispatcherServlet - POST "/timmy/loginPost", parameters={masked}
+11-11-2024 12:41:11 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginPost(Login, BindingResult, HttpServletRequest, Model)
+11-11-2024 12:41:11 INFO  com.core.timmy.data.model.User - Roles from ana: {ADMIN|USER}
+11-11-2024 12:41:11 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:41:14 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customerListGet", parameters={}
+11-11-2024 12:41:14 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerControllerImpl#customerListGet(Principal, Model)
+11-11-2024 12:41:15 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:46:04 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+11-11-2024 12:46:04 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11-11-2024 12:46:04 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11-11-2024 12:46:04 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11-11-2024 12:46:06 INFO  com.core.timmy.TimmyApplication - Starting TimmyApplication using Java 21.0.4 with PID 7968 (C:\Users\manana\eclipse-workspace\timmy\target\classes started by manana in C:\Users\manana\eclipse-workspace\timmy)
+11-11-2024 12:46:06 INFO  com.core.timmy.TimmyApplication - No active profile set, falling back to 1 default profile: "default"
+11-11-2024 12:46:07 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+11-11-2024 12:46:07 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-11-2024 12:46:07 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 7 JPA repository interfaces.
+11-11-2024 12:46:07 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11-11-2024 12:46:07 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11-11-2024 12:46:07 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+11-11-2024 12:46:07 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring embedded WebApplicationContext
+11-11-2024 12:46:07 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1305 ms
+11-11-2024 12:46:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11-11-2024 12:46:07 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:eventix user=SAS
+11-11-2024 12:46:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11-11-2024 12:46:08 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:eventix'
+11-11-2024 12:46:08 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+11-11-2024 12:46:08 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+11-11-2024 12:46:08 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11-11-2024 12:46:08 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+11-11-2024 12:46:08 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+11-11-2024 12:46:08 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11-11-2024 12:46:09 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11-11-2024 12:46:09 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-11-2024 12:46:10 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+11-11-2024 12:46:10 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+11-11-2024 12:46:10 INFO  com.core.timmy.config.WebMvcConfig - Dialects & TemplateResolvers:  > [org.thymeleaf.spring6.dialect.SpringStandardDialect@2d6abfc7, nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect@3f33c5e4, org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect@258ff54a] >> [org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver@6a4c4261] >>> 1
+11-11-2024 12:46:10 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+11-11-2024 12:46:10 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 14 mappings in 'requestMappingHandlerMapping'
+11-11-2024 12:46:10 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+11-11-2024 12:46:10 INFO  c.c.timmy.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@24673720, class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@5afbbf9b, interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5cc126dc, started on Mon Nov 11 12:46:06 CET 2024}
+11-11-2024 12:46:10 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+11-11-2024 12:46:10 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+11-11-2024 12:46:11 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/timmy'
+11-11-2024 12:46:11 INFO  com.core.timmy.TimmyApplication - Started TimmyApplication in 5.215 seconds (process running for 5.898)
+11-11-2024 12:46:16 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-11-2024 12:46:16 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11-11-2024 12:46:16 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+11-11-2024 12:46:16 DEBUG o.s.web.servlet.DispatcherServlet - Detected SessionLocaleResolver
+11-11-2024 12:46:16 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+11-11-2024 12:46:16 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@148c571c
+11-11-2024 12:46:16 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@348d1a5e
+11-11-2024 12:46:16 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+11-11-2024 12:46:16 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+11-11-2024 12:46:16 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+11-11-2024 12:46:16 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+11-11-2024 12:46:16 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+11-11-2024 12:46:17 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:46:21 DEBUG o.s.web.servlet.DispatcherServlet - POST "/timmy/loginPost", parameters={masked}
+11-11-2024 12:46:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginPost(Login, BindingResult, HttpServletRequest, Model)
+11-11-2024 12:46:21 INFO  com.core.timmy.data.model.User - Roles from ana: {ADMIN|USER}
+11-11-2024 12:46:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:46:24 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customerListGet", parameters={}
+11-11-2024 12:46:24 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerControllerImpl#customerListGet(Principal, Model)
+11-11-2024 12:46:24 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:46:25 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customer/deleteGet/1", parameters={}
+11-11-2024 12:46:25 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerControllerImpl#customerDeleteGet(Long, Principal, Model, HttpServletRequest)
+11-11-2024 12:46:25 INFO  c.c.t.c.CustomerControllerImpl - customer= Customer(id=1, customerContactList=[CustomerContact(id=1, name=Carlos Martínez, phone=+34 600 123 456, email=cmartinez@tecnovision.com, observations=Responsable de ventas), CustomerContact(id=2, name=Ana Pérez, phone=+34 600 654 321, email=aperez@tecnovision.com, observations=Encargada de proyectos), CustomerContact(id=3, name=Javier Gómez, phone=+34 600 987 654, email=jgomez@tecnovision.com, observations=Director de TI)], name=TecnoVisión S.A., vatnumber=ESB12345678, address=Calle Innovación 12, Madrid, España, phone=+34 911 234 567)
+11-11-2024 12:46:25 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:51:24 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+11-11-2024 12:51:24 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11-11-2024 12:51:24 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11-11-2024 12:51:24 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11-11-2024 12:51:26 INFO  com.core.timmy.TimmyApplication - Starting TimmyApplication using Java 21.0.4 with PID 14880 (C:\Users\manana\eclipse-workspace\timmy\target\classes started by manana in C:\Users\manana\eclipse-workspace\timmy)
+11-11-2024 12:51:26 INFO  com.core.timmy.TimmyApplication - No active profile set, falling back to 1 default profile: "default"
+11-11-2024 12:51:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+11-11-2024 12:51:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-11-2024 12:51:27 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 70 ms. Found 7 JPA repository interfaces.
+11-11-2024 12:51:27 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11-11-2024 12:51:27 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11-11-2024 12:51:27 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+11-11-2024 12:51:27 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring embedded WebApplicationContext
+11-11-2024 12:51:27 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1290 ms
+11-11-2024 12:51:27 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11-11-2024 12:51:27 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:eventix user=SAS
+11-11-2024 12:51:27 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11-11-2024 12:51:27 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:eventix'
+11-11-2024 12:51:27 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+11-11-2024 12:51:27 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+11-11-2024 12:51:28 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11-11-2024 12:51:28 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+11-11-2024 12:51:28 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+11-11-2024 12:51:28 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11-11-2024 12:51:29 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11-11-2024 12:51:29 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-11-2024 12:51:29 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+11-11-2024 12:51:29 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+11-11-2024 12:51:30 INFO  com.core.timmy.config.WebMvcConfig - Dialects & TemplateResolvers:  > [org.thymeleaf.spring6.dialect.SpringStandardDialect@5166fe7a, nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect@8947a4b, org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect@318155b1] >> [org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver@1ced1fb9] >>> 1
+11-11-2024 12:51:30 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+11-11-2024 12:51:30 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 14 mappings in 'requestMappingHandlerMapping'
+11-11-2024 12:51:30 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+11-11-2024 12:51:30 INFO  c.c.timmy.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2cf92cc7, started on Mon Nov 11 12:51:26 CET 2024, class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@5599f22f, interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@57f9f387}
+11-11-2024 12:51:30 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+11-11-2024 12:51:30 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+11-11-2024 12:51:30 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/timmy'
+11-11-2024 12:51:30 INFO  com.core.timmy.TimmyApplication - Started TimmyApplication in 5.119 seconds (process running for 5.781)
+11-11-2024 12:51:35 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-11-2024 12:51:35 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11-11-2024 12:51:35 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+11-11-2024 12:51:35 DEBUG o.s.web.servlet.DispatcherServlet - Detected SessionLocaleResolver
+11-11-2024 12:51:35 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+11-11-2024 12:51:35 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1b6441c9
+11-11-2024 12:51:35 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@17524c36
+11-11-2024 12:51:35 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+11-11-2024 12:51:35 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+11-11-2024 12:51:35 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+11-11-2024 12:51:35 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+11-11-2024 12:51:35 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+11-11-2024 12:51:35 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:51:39 DEBUG o.s.web.servlet.DispatcherServlet - POST "/timmy/loginPost", parameters={masked}
+11-11-2024 12:51:39 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginPost(Login, BindingResult, HttpServletRequest, Model)
+11-11-2024 12:51:39 INFO  com.core.timmy.data.model.User - Roles from ana: {ADMIN|USER}
+11-11-2024 12:51:39 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:51:42 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customerListGet", parameters={}
+11-11-2024 12:51:42 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerControllerImpl#customerListGet(Principal, Model)
+11-11-2024 12:51:42 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:51:44 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customer/deleteGet/1", parameters={}
+11-11-2024 12:51:44 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerControllerImpl#customerDeleteGet(Long, Principal, Model, HttpServletRequest)
+11-11-2024 12:51:44 INFO  c.c.t.c.CustomerControllerImpl - customer= Customer(id=1, customerContactList=[CustomerContact(id=1, name=Carlos Martínez, phone=+34 600 123 456, email=cmartinez@tecnovision.com, observations=Responsable de ventas), CustomerContact(id=2, name=Ana Pérez, phone=+34 600 654 321, email=aperez@tecnovision.com, observations=Encargada de proyectos), CustomerContact(id=3, name=Javier Gómez, phone=+34 600 987 654, email=jgomez@tecnovision.com, observations=Director de TI)], name=TecnoVisión S.A., vatnumber=ESB12345678, address=Calle Innovación 12, Madrid, España, phone=+34 911 234 567)
+11-11-2024 12:51:44 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:51:48 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customer/deleteGet/2", parameters={}
+11-11-2024 12:51:48 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerControllerImpl#customerDeleteGet(Long, Principal, Model, HttpServletRequest)
+11-11-2024 12:51:48 INFO  c.c.t.c.CustomerControllerImpl - customer= Customer(id=2, customerContactList=[CustomerContact(id=4, name=Lucía Fernández, phone=+34 611 234 567, email=lfernandez@solucionesglobales.com, observations=Asistente de dirección), CustomerContact(id=5, name=Pedro Sánchez, phone=+34 611 765 432, email=psanchez@solucionesglobales.com, observations=Jefe de operaciones), CustomerContact(id=6, name=María López, phone=+34 611 876 543, email=mlopez@solucionesglobales.com, observations=Departamento financiero)], name=Soluciones Globales SL, vatnumber=ESB87654321, address=Av. Empresarial 45, Barcelona, España, phone=+34 931 987 654)
+11-11-2024 12:51:48 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:52:54 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+11-11-2024 12:52:54 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11-11-2024 12:52:54 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11-11-2024 12:52:54 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11-11-2024 12:52:57 INFO  com.core.timmy.TimmyApplication - Starting TimmyApplication using Java 21.0.4 with PID 6252 (C:\Users\manana\eclipse-workspace\timmy\target\classes started by manana in C:\Users\manana\eclipse-workspace\timmy)
+11-11-2024 12:52:57 INFO  com.core.timmy.TimmyApplication - No active profile set, falling back to 1 default profile: "default"
+11-11-2024 12:52:57 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+11-11-2024 12:52:57 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-11-2024 12:52:58 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 7 JPA repository interfaces.
+11-11-2024 12:52:58 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11-11-2024 12:52:58 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11-11-2024 12:52:58 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+11-11-2024 12:52:58 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring embedded WebApplicationContext
+11-11-2024 12:52:58 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1304 ms
+11-11-2024 12:52:58 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11-11-2024 12:52:58 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:eventix user=SAS
+11-11-2024 12:52:58 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11-11-2024 12:52:58 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:eventix'
+11-11-2024 12:52:58 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+11-11-2024 12:52:58 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+11-11-2024 12:52:59 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11-11-2024 12:52:59 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+11-11-2024 12:52:59 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+11-11-2024 12:52:59 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11-11-2024 12:53:00 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11-11-2024 12:53:00 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-11-2024 12:53:00 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+11-11-2024 12:53:00 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+11-11-2024 12:53:01 INFO  com.core.timmy.config.WebMvcConfig - Dialects & TemplateResolvers:  > [org.thymeleaf.spring6.dialect.SpringStandardDialect@5d28e108, nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect@7fb02869, org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect@92fa950] >> [org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver@37e0614e] >>> 1
+11-11-2024 12:53:01 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+11-11-2024 12:53:01 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 14 mappings in 'requestMappingHandlerMapping'
+11-11-2024 12:53:01 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+11-11-2024 12:53:01 INFO  c.c.timmy.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@7649d350, interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@36109a76, interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6175619b, started on Mon Nov 11 12:52:57 CET 2024}
+11-11-2024 12:53:01 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+11-11-2024 12:53:01 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+11-11-2024 12:53:01 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/timmy'
+11-11-2024 12:53:01 INFO  com.core.timmy.TimmyApplication - Started TimmyApplication in 5.152 seconds (process running for 5.817)
+11-11-2024 12:53:10 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-11-2024 12:53:10 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11-11-2024 12:53:10 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+11-11-2024 12:53:10 DEBUG o.s.web.servlet.DispatcherServlet - Detected SessionLocaleResolver
+11-11-2024 12:53:10 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+11-11-2024 12:53:10 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5d4a1d2c
+11-11-2024 12:53:10 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@48d6248d
+11-11-2024 12:53:10 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+11-11-2024 12:53:10 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+11-11-2024 12:53:10 WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [i18n/message] not found for MessageSource: Can't find bundle for base name i18n/message, locale es_ES
+11-11-2024 12:53:10 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+11-11-2024 12:53:10 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+11-11-2024 12:53:11 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:53:15 DEBUG o.s.web.servlet.DispatcherServlet - POST "/timmy/loginPost", parameters={masked}
+11-11-2024 12:53:15 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginPost(Login, BindingResult, HttpServletRequest, Model)
+11-11-2024 12:53:15 INFO  com.core.timmy.data.model.User - Roles from ana: {ADMIN|USER}
+11-11-2024 12:53:15 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:53:17 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customerListGet", parameters={}
+11-11-2024 12:53:17 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerControllerImpl#customerListGet(Principal, Model)
+11-11-2024 12:53:17 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 12:53:24 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customer/deleteGet/11", parameters={}
+11-11-2024 12:53:24 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerControllerImpl#customerDeleteGet(Long, Principal, Model, HttpServletRequest)
+11-11-2024 12:53:24 INFO  c.c.t.c.CustomerControllerImpl - customer= Customer(id=11, customerContactList=[], name=Carmolino, vatnumber=pirulo, address=ñandu 235, phone=+34 986 876 563)
+11-11-2024 12:53:24 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11-11-2024 13:01:45 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+11-11-2024 13:01:45 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11-11-2024 13:01:45 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11-11-2024 13:01:45 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

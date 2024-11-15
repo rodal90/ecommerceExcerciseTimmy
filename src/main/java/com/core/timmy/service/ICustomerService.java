@@ -19,5 +19,7 @@ public interface ICustomerService {
 
 	public String deleteById(Long id);
 
+	public Customer newCustomer();
+
 }
 

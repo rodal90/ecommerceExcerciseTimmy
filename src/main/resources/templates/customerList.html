@@ -17,10 +17,16 @@
 		<div class="container">
 			<div class="row w-100">
 				<div class="col-lg-12 col-md-12 col-12">
-					<h3 class="display-5 mb-2 text-white">Customer List</h3>
+					<h3 class="display-5 mb-2 text-white" th:text="#{html.customerList.title}"></h3>
 					<!-- <p  th:text="${customerList}" class="mb-5"></p> -->
-					<p class="mb-5">Bitcoin is a revolutionary invention of the
-						last decade. Its essential meaning is money digitization.</p>
+					
+					
+					<p class="mb-2" th:text="#{html.customerList.subTitle}"></p>
+						<div>
+						<a th:text="'Add'" role="button" class="btn btn-success mb-2"
+						 th:href="@{/customer/addGet}">
+									</a>
+									</div>
 					<div class="table-responsive bg-light">
 						<table class="table   table-hover text-start text-dark">
 							<thead class="">

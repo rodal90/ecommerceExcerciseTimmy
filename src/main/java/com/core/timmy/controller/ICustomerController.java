@@ -15,22 +15,28 @@ import jakarta.validation.Valid;
 
 @Controller
 public interface ICustomerController {
-	
-	/*añadir public a las variables porque es obligatorio, sino no se va poder acceder a el desde los otros archivos*/
-	
+
+	/*
+	 * añadir public a las variables porque es obligatorio, sino no se va poder
+	 * acceder a el desde los otros archivos
+	 */
+
 	public String customerListGet(Principal principal, Model model);
 
-	 public String customerViewGet(Long id, Principal principal, Model model, HttpServletRequest request);
+	public String customerViewGet(Long id, Principal principal, Model model, HttpServletRequest request);
 
-	 public String customerUpdateGet(Long id, Principal principal, Model model, HttpServletRequest request);
+	public String customerUpdateGet(Long id, Principal principal, Model model, HttpServletRequest request);
 
-	public String customerUpdatePost(@Valid Customer customer, BindingResult bindingresult, Principal principal, Model model,
-			HttpServletRequest request);
+	public String customerUpdatePost(@Valid Customer customer, BindingResult bindingresult, Principal principal,
+			Model model, HttpServletRequest request);
 
-	 public String customerDeleteGet(Long id, Principal principal, Model model, HttpServletRequest request);
+	public String customerDeleteGet(Long id, Principal principal, Model model, HttpServletRequest request);
 
-	 public String customerDeleteConfirmed(Long id, Principal principal, Model model, HttpServletRequest request);
-	
-	
+	public String customerDeleteConfirmed(Long id, Principal principal, Model model, HttpServletRequest request);
+
+	public String customerAddGet(Principal principal, Model model, HttpServletRequest request);
+
+	public String customerAddPost(@Valid Customer customer, BindingResult bindingResult, Principal principal,
+			Model model, HttpServletRequest request);
 
 }

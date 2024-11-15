@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3,org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeLeaf/layout"
+	xmlns:sec="http://www.thymeLeaf.org/extras/spring-security">
+
+<div th:replace="~{standarLayouts/head :: head1}">AQUI DEBERIAMOS
+	USAR EL HEAD</div>
+
+<body>
+
+	<nav th:replace="~{standarLayouts/navbar :: navbar1}">AQUI
+		DEBERIA DE ALISR EL navbar</nav>
+
+
+	<section class="pb-5 pt-5 bg-dark text-light" style="">
+		<div class="container">
+			<div class="row text-center justify-content-center">
+				<div class="col-12 col-md-8 col-lg-7">
+					<h3 class="fw-bold display-4 text-white">Customer add</h3>
+
+				</div>
+			</div>
+			<div class="row pt-4">
+				<div class="col-12">
+
+					<form th:object="${customer}" method="POST"
+						th:action="@{/customer/addPost}">
+						<!-- agrupamos los que van a estar escondidos -->
+						<input th:field="*{id}" type="hidden">
+
+						<div class="row">
+							<div class="col-12 col-md">
+								<label>Name</label> <input type="text" class="form-control"
+									placeholder="Name" th:field="*{name}">
+							</div>
+							<div>
+								<label>Vat Number</label> <input type="text"
+									class="form-control" placeholder="Vat number"
+									th:field="*{vatnumber}">
+							</div>
+							<div>
+								<label>Address</label> <input type="text" class="form-control"
+									placeholder="Address" th:field="*{address}">
+							</div>
+							<div>
+								<label>Phone</label> <input type="text" class="form-control"
+									placeholder="Phone" th:field="*{phone}">
+							</div>
+						</div>
+
+						
+
+						<div class="row mt-4">
+							<div class="col text-center">
+								<button type="submit" class="btn btn-primary btn-lg">Save</button>
+							</div>
+
+							<div class="col text-center">
+								<button type="reset" class="btn btn-primary btn-lg">Undo</button>
+							</div>
+
+							<div class="col text-center">
+								<a type="button" th:href="@{/customerListGet}"
+									class="btn btn-primary w-100 btn-round mb-3 btn-rised">Back</a>
+							</div>
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<div th:replace="~{standarLayouts/sectionCards :: sectionCards1}">
+		AQUI DEBERIAMOS USAR El sectionCards</div>
+
+	<div th:replace="~{standarLayouts/sectionFooter :: sectionFooter1}">
+		AQUI DEBERIAMOS USAR EL sectionFooter</div>
+
+	<div th:replace="~{standarLayouts/script :: script1}">AQUI
+		DEBERIA DE ALISR EL script</div>
+
+
+</body>
+
+</html>
