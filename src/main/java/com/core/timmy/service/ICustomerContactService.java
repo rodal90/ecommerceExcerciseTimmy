@@ -4,6 +4,7 @@ import org.springframework.stereotype.Service;
 
 import com.core.timmy.data.model.CustomerContact;
 
+import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
@@ -16,5 +17,20 @@ public interface ICustomerContactService {
 	public Optional<CustomerContact> findById(Integer id);
 	
 	public List<CustomerContact> findAll();
+	
+	
+	public List<CustomerContact> findByName(String name);
+	public List<CustomerContact> findByNameOrderByEmailDesc(String name);//el Desc es para que ordene los datos de forma descendente
+	public List<CustomerContact> findByNameLike(String name);
+	public List<CustomerContact> findByNameAndPhone(String name, String phone);
+	public List<CustomerContact> findByIdBetween(Integer start, Integer end); 
+	public List<CustomerContact> findByIdLessThan(Integer id); 
+	public List<CustomerContact> findByObservationsContaining(String content); 
+	
+	public List<CustomerContact> findByObservationsIn(Collection<String>searchingWords);
+	
+	//como hacer joins con JPA
+	
+	public List<CustomerContact>findByCustomerName(String customerName);
 
 }

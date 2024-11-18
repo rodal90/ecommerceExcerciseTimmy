@@ -20,25 +20,23 @@
    </nav>
 
 
-    <section class="pt-5 pb-5 d-flex bg-drak"  style="min-height: 100vh">
+    <section class="pt-5 pb-5 d-flex bg-dark"  style="min-height: 100vh">
       <div class="container">
         <div class="row align-items-center justify-content-between ">
           <div class="col-12 col-md-4 ">
-            <h1 class="mb-3 mt-5 fw-bold text-light">Section with video</h1>
-            <p class="lead text-light">A collection of coded HTML and CSS elements to help
-              your build your new website. Clean design, fully responsive and
-              based on Bootstrap.</p>
+            <h1 class="mb-3 mt-5 fw-bold text-light" th:text="#{html.index.title}"></h1>
+            <p class="lead text-light" th:text="#{html.index.subtitle}"></p>
             <div class="  d-flex mt-3 mb-1">
               <a class="btn btn-primary btn-raised    mt-md-3 " href="#"
                 role="button">Download Now</a>
               <a class="btn btn-outline-secondary  mt-md-3 ms-md-3" th:href="@{/loginGet}"
-                role="button">Usted sepa mas</a>
+                role="button" th:text="#{html.button.welcome}"></a>
             </div>
           </div>
           <div class="col-12 col-md-7   mt-4 mt-md-0">
             <div class="ratio ratio-16x9">
               <iframe class=""
-                src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+                src="https://www.youtube.com/embed/rUciAUbZHf8?rel=0"
                 allowfullscreen=""></iframe>
             </div>
           </div>

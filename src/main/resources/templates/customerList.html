@@ -76,14 +76,28 @@
 									</td>
 									
 									<td>
-									<a   th:if="${customer.getCustomerContactList().size()> 0}"
+									<!-- ESTA ES OTRA FORMA DE HACERLO<a   th:if="${customer.getCustomerContactList().size()> 0}"
 									th:text="'Delete'" role="button" class="btn btn-danger" th:href="@{/customer/deleteGet/} + ${customer.getId()}" th:style="'pointer-events:none; color:grey;'">
 									</a>
+									
 									<a   th:if="${customer.getCustomerContactList().size() <= 0}"
 									th:text="'Delete'" role="button" class="btn btn-danger" th:href="@{/customer/deleteGet/} + ${customer.getId()}">
 									</a>
 									
 									</td>
+									-->
+									
+									
+									 <button  th:if="${customer.getCustomerContactList().size() > 0}" disabled
+									th:text="'Delete'" role="button" class="btn btn-danger">
+									</button>
+									
+									<a  th:unless="${customer.getCustomerContactList().size() > 0}"
+									th:text="'Delete'" role="button" class="btn btn-danger" th:href="@{/customer/deleteGet/} + ${customer.getId()}">
+									</a>
+									
+									</td>
+									
 									
 								</tr>
 							</tbody>

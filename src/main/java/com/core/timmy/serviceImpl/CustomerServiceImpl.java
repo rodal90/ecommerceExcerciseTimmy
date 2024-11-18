@@ -54,6 +54,12 @@ public class CustomerServiceImpl implements ICustomerService {
 	public Customer newCustomer() {
 		return new Customer();
 	}
+
+	@Override
+	public String findByNameLike(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 

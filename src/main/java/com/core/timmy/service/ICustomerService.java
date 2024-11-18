@@ -21,5 +21,7 @@ public interface ICustomerService {
 
 	public Customer newCustomer();
 
+	public String findByNameLike(String string);
+
 }
 
