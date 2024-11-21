@@ -42,14 +42,15 @@
             <li class="nav-item dropdown">
             <a class="nav-link" href="#" id="navbarDropdown" role="button"
                 data-bs-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">Data
+                aria-expanded="false" th:text="#{html.navbar.menu.data}">Data
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" th:href="@{/customerListGet}">Customer</a>
-                <a class="dropdown-item" th:href="@{/contactListGet}">Contacts</a>
+                <a class="dropdown-item" th:href="@{/customerListGet}" th:text="#{html.navbar.menu.customer}">Customer</a>
+                <a class="dropdown-item" th:href="@{/providerListGet}" th:text="#{html.navbar.menu.provider}">Provider</a>
+                <a class="dropdown-item" th:href="@{/providerListGet}" th:text="#{html.navbar.menu.contacts}">Contacts</a>
                 <a class="dropdown-item" href="#">Products and Services</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" th:href="@{/dumpDBGet}">Dump DataBase</a>
+                <a class="dropdown-item" th:href="@{/dumpDBGet}" th:text="#{html.navbar.menu.dump}">Dump DataBase</a>
               </div>
             </li>
               <li class="nav-item dropdown">

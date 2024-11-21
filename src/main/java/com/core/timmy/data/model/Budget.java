@@ -3,6 +3,8 @@ package com.core.timmy.data.model;
 import java.io.Serializable;
 
 import java.util.List;
+
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -10,6 +12,10 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
+import jakarta.validation.constraints.DecimalMax;
+import jakarta.validation.constraints.DecimalMin;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -44,19 +50,24 @@ public class Budget implements Serializable {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
+	@Positive
+	private Long id;
 	
 	
+	@NotNull
+	@DecimalMax(value="999999999.99")//decimal máx y decimal min acepta valores númericos y strings con valores númerico por eso va entre comillas
+	@DecimalMin(value="0.00")
+	@Column(nullable=false, columnDefinition="DECIMAL(10,2) DEFAULT 0 CHECK(CURRENTAMOUNT >= 0.0)")
 	private Double currentAmount;
 	
 	
 	
 	@ManyToOne
-	@JoinColumn(name="idCurrentStatus", referencedColumnName="statusName")
+	@JoinColumn(name="idCurrentStatus", referencedColumnName="id")
 	private Status currentstatus;
 	
 	
-	@OneToMany(mappedBy ="budget") //la comunicación desde budget hacia las comunicaciònes
+	@OneToMany(mappedBy ="budget") //la comunicación desde budget hacia las comunicaciones
     private List<Comunication> ComunicationList;
 	
 	

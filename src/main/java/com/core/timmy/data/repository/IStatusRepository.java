@@ -10,6 +10,6 @@ import com.core.timmy.data.model.Status;
 //para que identifique esto como un repository le hacemos la anotación así sabe que es una entity o entidad
 
 @Repository
-public interface IStatusRepository extends JpaRepository<Status, String> {
+public interface IStatusRepository extends JpaRepository<Status, Long> {
 
 }

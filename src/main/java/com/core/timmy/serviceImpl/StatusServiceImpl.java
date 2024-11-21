@@ -25,10 +25,10 @@ public class StatusServiceImpl implements IStatusService {
 	}
 
 	@Override
-	public Optional<Status> findById(String statusName) {
+	public Optional<Status> findById(Long id) {
 		
 		
-		return this.statusRepository.findById(statusName);
+		return this.statusRepository.findById(id);
 		
 	}
 
