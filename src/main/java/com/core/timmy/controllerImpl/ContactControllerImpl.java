@@ -39,7 +39,7 @@ public class ContactControllerImpl implements IContactController {
 		
 		log.info("Nombres y Teléfono: " + this.customerContactService.findByNameAndPhone("Sergio Álvarez", "+34 622 123 987"));
 		
-		//public List<CustomerContact> findByIdBetween(Integer start, Integer end);
+		//Ejemplo de que muestre entre rangos de info.;
 		
 		log.info("IDs entre 4 y 10 : " + this.customerContactService.findByIdBetween(4, 10));
 			
