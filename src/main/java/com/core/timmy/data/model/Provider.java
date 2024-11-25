@@ -67,8 +67,8 @@ public class Provider implements Serializable {
 	private String email;
 	
       
-	@Column(columnDefinition="VARCHAR(9) CHECK(LENGTH(NIF) >= 2)")
-	@Size(min=2,max=9, message="{model.data.validation.Provider.nif}")//Cif must be from 9 to 18 characters
+	@Column(columnDefinition="VARCHAR(9) CHECK(LENGTH(NIF) >= 2) CHECK(NIF REGEXP '^[0-9]{1,8}[A-Za-z]{1}')") //Esto solo funciona en la base de datos es una constraint para la base de datos
+	@Size(min=2,max=9, message="{model.data.validation.Provider.nif}")//Cif must be from 2 to 9 characters
 	private String nif;
 	
 	

@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import com.core.timmy.controller.IStartController;
 import com.core.timmy.data.model.Login;
+import com.core.timmy.data.validation.NifValidator;
 import com.core.timmy.service.ILoginService;
 import com.core.timmy.service.ISqlScriptCreatorService;
 
@@ -124,6 +125,12 @@ public class StartControllerImpl implements IStartController {
 		model.addAttribute("username", principal.getName());
 		model.addAttribute("userPicture", "");
 		
+		//Testing NifValidator el metodo(funcion):
+		/*NifValidator.nifIsCorrectAndNotNull("12345678A");
+		NifValidator.nifIsCorrectAndNotNull("12345678Z"); //la Z nos da correcto porque el calculo de los números nos da Z usando el listado
+		NifValidator.nifIsCorrectAndNotNull("12345678z");
+		NifValidator.nifIsCorrectAndNotNull("abc45678");
+		NifValidator.nifIsCorrectAndNotNull(null);*/
 		return "masterfull";
 	}
 

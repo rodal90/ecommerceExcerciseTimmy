@@ -23,40 +23,62 @@
       <div class="container">
         <div class="row text-center ">
           <div class="col-12 col-md-8 col-lg-7">
-            <h3 class="fw-bold display-4 text-white">Customer view</h3>
+            <h3 class="fw-bold display-4 text-white" th:text = "#{html.providerView.title}">Provider view</h3>
           </div>
         </div>
         
        <div class="row pt-4">
           <div class="col-12">
-             <div th:object="${customer}">
+             <div th:object="${provider}">
             
               <div class="row">
+              
+              <div class="col input-group mb-2">
+				  <span class="input-group-text bg-secondary text-light" id="inputGroup-sizing-default">Id</span>
+				  <input readonly th:value="${provider.id}" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+				</div>
+              
+              
 				<div class="col input-group mb-2">
-				  <span class="input-group-text bg-secondary text-light" id="inputGroup-sizing-default">Name</span>
-				  <input readonly th:value="${customer.name}" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+				  <span class="input-group-text bg-secondary text-light" id="inputGroup-sizing-default"  th:text= "#{html.providerX.input.text.name}"></span>
+				  <input readonly th:value="${provider.name}" type="text" class="form-control" placeholder="Name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
+				  th:placeholder="#{html.providerX.input.placeholder.name}" 
+                  th:title="#{html.providerX.input.title.name}">
 				</div>
              
 				<div class="col input-group mb-2">
-				  <span class="input-group-text bg-secondary text-light" id="inputGroup-sizing-default">VAT Number</span>
-                  <input readonly th:value="${customer.vatnumber}" type="text" class="form-control" placeholder="Vat number">
+				  <span class="input-group-text bg-secondary text-light" id="inputGroup-sizing-default" th:text= "#{html.providerX.input.text.cif}"></span>
+                  <input readonly th:value="${provider.cif}" type="text" class="form-control" th:placeholder="#{html.providerX.input.placeholder.cif}" 
+                  th:title="#{html.providerX.input.title.cif}">
+                  <!-- th:tooltip="#{html.providerView.input.tooltip.cif}"> -->
                 </div>
 
 				<div class="col input-group mb-2">
-				  <span class="input-group-text bg-secondary text-light" id="inputGroup-sizing-default">Phone</span>
-                  <input readonly th:value="${customer.phone}" type="text" class="form-control" placeholder="Phone">
+				  <span class="input-group-text bg-secondary text-light" id="inputGroup-sizing-default" th:text= "#{html.providerX.input.text.phone}"></span>
+                  <input readonly th:value="${provider.phone}" type="text" class="form-control" 
+                  th:placeholder="#{html.providerX.input.placeholder.phone}" 
+                  th:title="#{html.providerX.input.title.phone}">
                 </div>
 
               </div>
 
               <div class="row mt-4">
 				<div class="input-group mb-2">
-				  <span class="input-group-text bg-secondary text-light" id="inputGroup-sizing-default">Address</span>
-                  <input readonly th:value="${customer.address}" type="text" class="form-control" placeholder="Address">
+				  <span class="input-group-text bg-secondary text-light" id="inputGroup-sizing-default" th:text= "#{html.providerX.input.text.email}"></span>
+                  <input readonly th:value="${provider.email}" type="text" class="form-control"  
+                  th:placeholder="#{html.providerX.input.placeholder.email}" 
+                  th:title="#{html.providerX.input.title.email}">
+                </div>
+                
+                <div class="input-group mb-2">
+				  <span class="input-group-text bg-secondary text-light" id="inputGroup-sizing-default" th:text= "#{html.providerX.input.text.nif}"></span>
+                  <input readonly th:value="${provider.nif}" type="text" class="form-control"  
+                  th:placeholder="#{html.providerX.input.placeholder.nif}" 
+                  th:title="#{html.providerX.input.title.nif}">
                 </div>
               </div>
               
-              <div class="row mt-4">
+             <!--  <div class="row mt-4">
                 <div class="col">
                    	<div th:if="${customer.getCustomerContactList().size() != 0}">
 					<p th:text="'This customer has following contacts:'">                   		
@@ -73,18 +95,18 @@
                   		th:text="'This customer has not contacts'">
                    	</p>
                 </div>     		              		
-			  </div>
+			  </div> -->
 
               <div class="row mt-4">
 			    <div class="col text-center">
- 	               <a type="button" th:href="@{/customerListGet}"
+ 	               <a type="button" th:href="@{/providerListGet}"
     	              class="btn btn-success w-100 btn-round mb-3 btn-rised">
         	          Back 
             	    </a>
             	</div>
               
                 <div class="col text-center">
- 	               <a type="button" th:href="@{/customer/deleteConfirmed/} + ${customer.getId()}"
+ 	               <a type="button" th:href="@{/provider/deleteConfirmed/} + ${provider.getId()}"
     	              class="btn btn-danger w-100 btn-round mb-3 btn-rised">
         	          Delete 
             	    </a>

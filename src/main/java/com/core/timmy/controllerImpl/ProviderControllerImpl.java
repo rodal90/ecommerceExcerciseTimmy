@@ -31,9 +31,25 @@ public class ProviderControllerImpl implements IProviderController {
 
 	private IProviderService providerService;
 	
-	/*
-	 * hay que asegurarse que el boton que vamos a pinchar tenga este enlace para
-	 * que se conecte con este método*/
+	@Override
+	@GetMapping({ "/provider/viewGet/{id}" }) /*
+												 * hay que asegurarse que el boton que vamos a pinchar tenga este enlace
+												 * para que se conecte con este método
+												 */
+	public String providerViewGet(@PathVariable("id") Long id, Principal principal, Model model,
+			HttpServletRequest request) {
+		System.out.println("TRAZA providerViewGet");
+		model.addAttribute("username", principal.getName());
+		model.addAttribute("userPicture", "");
+
+		// inyectar los registros de los customer, siempre debemos tirar de los
+		// servicios. aca hemos pedido la lista
+
+		model.addAttribute("provider", this.providerService.findById(id).get());
+
+		return "provider/providerView";
+	}
+
 
 
 	@Override
@@ -55,7 +71,7 @@ public class ProviderControllerImpl implements IProviderController {
 		
 		//model.addAttribute("providerList", this.providerService.findAllByOrderByName());
 
-		return "providerList";
+		return "provider/providerList";
 	}
 
 	
