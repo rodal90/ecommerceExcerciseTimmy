@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 import java.util.List;
 
+import com.core.timmy.data.validation.INifConstraint;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -66,12 +68,10 @@ public class Provider implements Serializable {
 	@Size(min=0, max=255,message="{model.data.validation.Provider.email}")//email must have from 0 to 255 characters
 	private String email;
 	
-      
+	@INifConstraint
 	@Column(columnDefinition="VARCHAR(9) CHECK(LENGTH(NIF) >= 2) CHECK(NIF REGEXP '^[0-9]{1,8}[A-Za-z]{1}')") //Esto solo funciona en la base de datos es una constraint para la base de datos
 	@Size(min=2,max=9, message="{model.data.validation.Provider.nif}")//Cif must be from 2 to 9 characters
 	private String nif;
-	
-	
 	
 	
 	

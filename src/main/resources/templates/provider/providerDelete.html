@@ -23,7 +23,7 @@
       <div class="container">
         <div class="row text-center ">
           <div class="col-12 col-md-8 col-lg-7">
-            <h3 class="fw-bold display-4 text-white" th:text = "#{html.providerView.title}">Provider view</h3>
+            <h3 class="fw-bold display-4 text-white" th:text = "#{html.providerDelete.title}"></h3>
           </div>
         </div>
         
@@ -33,10 +33,10 @@
             
               <div class="row">
               
-              <div class="col input-group mb-2">
+             <!-- <div class="col input-group mb-2">
 				  <span class="input-group-text bg-secondary text-light" id="inputGroup-sizing-default">Id</span>
 				  <input readonly th:value="${provider.id}" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-				</div>
+				</div>-->
               
               
 				<div class="col input-group mb-2">
@@ -99,13 +99,18 @@
 
               <div class="row mt-4">
 			    <div class="col text-center">
- 	               <a type="button" th:href="@{/providerListGet}"
+ 	               <a type="button" th:text=#{html.table.button.back} th:href="@{/providerListGet}"
     	              class="btn btn-success w-100 btn-round mb-3 btn-rised">
-        	          Back 
+        	          
             	    </a>
             	</div>
               
-            
+                <div class="col text-center">
+ 	               <a type="button" th:text=#{html.table.button.delete} th:href="@{/provider/deleteConfirmed/} + ${provider.getId()}"
+    	              class="btn btn-danger w-100 btn-round mb-3 btn-rised">
+        	        
+            	    </a>
+            	</div>
               </div>
                           
             </div>

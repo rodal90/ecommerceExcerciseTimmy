@@ -246,16 +246,16 @@ public class TimmyApplication extends SpringBootServletInitializer {
 			
 			
 			providerRepository.save(new Provider(1L, "Tech Innovators", "CIF12345A", "600123456", "contact@techinnovators.com", "12345678Z"));
-			providerRepository.save(new Provider(2L, "Green Solutions", "CIF12346B", "600234567", "info@greensolutions.com", "23456789Y"));
-			providerRepository.save(new Provider(3L, "Logistics Plus", "CIF12347C", "600345678", "support@logisticsplus.com", "34567890X"));
-			providerRepository.save(new Provider(4L, "Quantum Supplies", "CIF12348D", "600456789", "sales@quantumsupplies.com", "45678901W"));
-			providerRepository.save(new Provider(5L, "Blue Ocean", "CIF12349E", "600567890", "contact@blueocean.com", "56789012V"));
-			providerRepository.save(new Provider(6L, "Eco Future", "CIF12350F", "600678901", "hello@ecofuture.com", "67890123U"));
-			providerRepository.save(new Provider(7L, "Bright Horizons", "CIF12351G", "600789012", "services@brighthorizons.com", "78901234T"));
-			providerRepository.save(new Provider(8L, "Smart Goods", "CIF12352H", "600890123", "info@smartgoods.com", "89012345S"));
-			providerRepository.save(new Provider(9L, "Urban Ventures", "CIF12353I", "600901234", "team@urbanventures.com", "90123456R"));
-			providerRepository.save(new Provider(10L, "Prime Essentials", "CIF12354J", "601012345", "contact@primeessentials.com", "01234567Q"));
-			providerRepository.save(new Provider(11L, "Tech Innovators","CIF12454J", "600123456","", "12346678Z"));
+			providerRepository.save(new Provider(2L, "Green Solutions", "CIF12346B", "600234567", "info@greensolutions.com", "31109745Z"));
+			providerRepository.save(new Provider(3L, "Logistics Plus", "CIF12347C", "600345678", "support@logisticsplus.com", "34184427X"));
+			providerRepository.save(new Provider(4L, "Quantum Supplies", "CIF12348D", "600456789", "sales@quantumsupplies.com", "18005672F"));
+			providerRepository.save(new Provider(5L, "Blue Ocean", "CIF12349E", "600567890", "contact@blueocean.com", "52811876N"));
+			providerRepository.save(new Provider(6L, "Eco Future", "CIF12350F", "600678901", "hello@ecofuture.com", "64609646R"));
+			providerRepository.save(new Provider(7L, "Bright Horizons", "CIF12351G", "600789012", "services@brighthorizons.com", "78714828L"));
+			providerRepository.save(new Provider(8L, "Smart Goods", "CIF12352H", "600890123", "info@smartgoods.com", "25754313V"));
+			providerRepository.save(new Provider(9L, "Urban Ventures", "CIF12353I", "600901234", "team@urbanventures.com", "00754132P"));
+			providerRepository.save(new Provider(10L, "Prime Essentials", "CIF12354J", "601012345", "contact@primeessentials.com", "55956442H"));
+			providerRepository.save(new Provider(11L, "Tech Innovators","CIF12454J", "600123456","", "99490643A"));
 
 
 			

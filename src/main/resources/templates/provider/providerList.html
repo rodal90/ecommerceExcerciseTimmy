@@ -35,9 +35,9 @@
 									<th th:text="#{html.providerList.table.name}"></th>
 									<th th:text="#{html.providerList.table.phone}"></th>
 									<th th:text="#{html.providerList.table.email}"></th>
-									<th th:text="#{html.table.view}" class="text-primary">View</th>
-									<th th:text="#{html.table.update}" class="text-warning">Update</th>
-									<th th:text="#{html.table.delete}" class="text-danger">Delete</th>
+									<th th:text="#{html.table.button.view}" class="text-primary">View</th>
+									<th th:text="#{html.table.button.update}" class="text-warning">Update</th>
+									<th th:text="#{html.table.button.delete}" class="text-danger">Delete</th>
 									
 								</tr>
 							</thead>
@@ -51,18 +51,18 @@
 
 								
 									<!-- referencia a en view a cada id específico -->
-									<td> <a th:text="#{html.table.view}" role="button" class="btn btn-primary" th:href="@{/provider/viewGet/} + ${provider.getId()}">
+									<td> <a th:text="#{html.table.button.view}" role="button" class="btn btn-primary" th:href="@{/provider/viewGet/} + ${provider.getId()}">
 									</a>
 									
 									
 									</td>
 									
-									<td><a th:text="#{html.table.update}" role="button" class="btn btn-warning" th:href="@{/provider/updateGet/} + ${provider.getId()}">
+									<td><a th:text="#{html.table.button.update}" role="button" class="btn btn-warning" th:href="@{/provider/updateGet/} + ${provider.getId()}">
 									</a>
 									
 									</td>
 									
-									<td><a th:text="#{html.table.delete}" role="button" class="btn btn-danger" th:href="@{/provider/deleteGet/} + ${provider.getId()}">
+									<td><a th:text="#{html.table.button.delete}" role="button" class="btn btn-danger" th:href="@{/provider/deleteGet/} + ${provider.getId()}">
 									</a>
 									
 									</td>

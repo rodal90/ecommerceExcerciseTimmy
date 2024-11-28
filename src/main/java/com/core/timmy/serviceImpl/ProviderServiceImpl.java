@@ -26,7 +26,7 @@ public class ProviderServiceImpl implements IProviderService {
 	@Override
 	public Provider save(Provider provider ) {
 		
-		return this.save(provider);
+		return this.providerRepository.save(provider);
 		
 	}
 

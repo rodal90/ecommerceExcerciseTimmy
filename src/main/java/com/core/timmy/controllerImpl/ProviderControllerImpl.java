@@ -73,6 +73,135 @@ public class ProviderControllerImpl implements IProviderController {
 
 		return "provider/providerList";
 	}
+	
+	@Override
+	@GetMapping({ "/provider/deleteGet/{id}" }) /*
+												 * hay que asegurarse que el boton que vamos a pinchar tenga este enlace
+												 * para que se conecte con este método
+												 */
+	public String providerDeleteGet(@PathVariable("id") Long id, Principal principal, Model model,
+			HttpServletRequest request) {
+		System.out.println("TRAZA providerDeleteGet");
+		model.addAttribute("username", principal.getName());
+		model.addAttribute("userPicture", "");
 
+		// inyectar los registros de los customer, siempre debemos tirar de los
+		// servicios. aca hemos pedido la lista
+
+		log.info("provider= " + this.providerService.findById(id).get());
+
+		model.addAttribute("provider", this.providerService.findById(id).get());
+
+		return "provider/providerDelete";
+	}
+
+	@Override
+	@GetMapping({ "/provider/deleteConfirmed/{id}" }) /*
+														 * hay que asegurarse que el boton que vamos a pinchar tenga
+														 * este enlace para que se conecte con este método
+														 */
+	public String providerDeleteConfirmed(@PathVariable("id") Long id, Principal principal, Model model,
+			HttpServletRequest request) {
+		System.out.println("TRAZA providerDeleteConfirmed");
+		model.addAttribute("username", principal.getName());
+		model.addAttribute("userPicture", "");
+
+		// inyectar los registros de los customer, siempre debemos tirar de los
+		// servicios. aca hemos pedido la lista
+
+		log.info("provider deleted= " + this.providerService.deleteById(id));
+
+		return "redirect:/providerListGet";
+	}
+	
+	@Override
+	@GetMapping({ "/provider/updateGet/{id}" }) /*
+												 * hay que asegurarse que el boton que vamos a pinchar tenga este enlace
+												 * para que se conecte con este método
+												 */
+	public String providerUpdateGet(@PathVariable("id") Long id, Principal principal, Model model,
+			HttpServletRequest request) {
+		System.out.println("TRAZA providerUpdateGet");
+		model.addAttribute("username", principal.getName());
+		model.addAttribute("userPicture", "");
+
+		// inyectar los registros de los customer, siempre debemos tirar de los
+		// servicios. aca hemos pedido la lista
+
+		/* log.info("customer= " + this.customerService.findById(id)); */
+
+		model.addAttribute("provider", this.providerService.findById(id).get());
+
+		return "provider/providerUpdate";
+	}
+	
+	@Override
+	@PostMapping({ "/provider/updatePost" }) /*
+												 * hay que asegurarse que el boton que vamos a pinchar tenga este enlace
+												 * para que se conecte con este método
+												 */
+	public String providerUpdatePost(@Valid Provider provider, BindingResult bindingResult, Principal principal,
+			Model model, HttpServletRequest request) {
+		System.out.println("TRAZA providerUpdatePost");
+
+		if (bindingResult.hasErrors()) {
+			log.error("el formulario de provider tiene errores" + bindingResult.getAllErrors());
+
+			return "redirect:/provider/updateGet/" + provider.getId(); // Redirect the manda a un mapeo especifico
+
+		} else {
+
+			log.info("Formulario correcto: " + provider);
+			this.providerService.save(provider);
+
+			return "redirect:/providerListGet";
+
+		}
+
+	}
+
+	@Override
+	@GetMapping({ "/provider/addGet" }) /*
+										 * hay que asegurarse que el boton que vamos a pinchar tenga este enlace para
+										 * que se conecte con este método
+										 */
+	public String providerAddGet(Principal principal, Model model, HttpServletRequest request) {
+		System.out.println("TRAZA providerAddGet");
+		model.addAttribute("username", principal.getName());
+		model.addAttribute("userPicture", "");
+
+		// inyectar los registros de los customer, siempre debemos tirar de los
+		// servicios. aca hemos pedido la lista
+
+		model.addAttribute("provider", this.providerService.newProvider());
+
+		return "provider/providerAdd";
+	}
+
+	@Override
+	@PostMapping({ "/provider/addPost" }) /*
+											 * hay que asegurarse que el boton que vamos a pinchar tenga este enlace
+											 * para que se conecte con este método
+											 */
+	public String providerAddPost(@Valid Provider provider, BindingResult bindingResult, Principal principal,
+			Model model, HttpServletRequest request) {
+		System.out.println("TRAZA providerAddPost");
+
+		// comprueba las validaciones, vemos que error y luego reemenviarle a donde
+		if (bindingResult.hasErrors()) {
+			log.error("el formulario de provider tiene errores" + bindingResult.getAllErrors());
+
+			return "provider/providerAdd"; // Redirect the manda a un mapeo especifico
+
+		} else {
+
+			log.info("Formulario correcto: " + provider);
+			this.providerService.save(provider);
+         // me regresa a la lista customer
+			return "redirect:/providerListGet";
+
+		}
+
+	}
 	
 }

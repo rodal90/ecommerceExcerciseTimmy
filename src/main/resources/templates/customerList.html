@@ -35,9 +35,9 @@
 									<th>Name</th>
 									<th>Phone</th>
 									<th>Contacts</th>
-									<th class="text-primary">View</th>
-									<th class="text-warning">Update</th>
-									<th class="text-danger">Delete</th>
+									<th class="text-primary" th:text=#{html.table.button.view}></th>
+									<th class="text-warning" th:text=#{html.table.button.update}></th>
+									<th class="text-danger" th:text=#{html.table.button.delete}></th>
 									
 								</tr>
 							</thead>
@@ -64,13 +64,13 @@
 
 									</td>
 									<!-- referencia a en view a cada id específico -->
-									<td> <a th:text="'View'" role="button" class="btn btn-primary" th:href="@{/customer/viewGet/} + ${customer.getId()}">
+									<td> <a th:text=#{html.table.button.view} role="button" class="btn btn-primary" th:href="@{/customer/viewGet/} + ${customer.getId()}">
 									</a>
 									
 									
 									</td>
 									
-									<td><a th:text="'Update'" role="button" class="btn btn-warning" th:href="@{/customer/updateGet/} + ${customer.getId()}">
+									<td><a th:text=#{html.table.button.update} role="button" class="btn btn-warning" th:href="@{/customer/updateGet/} + ${customer.getId()}">
 									</a>
 									
 									</td>
@@ -89,11 +89,11 @@
 									
 									
 									 <button  th:if="${customer.getCustomerContactList().size() > 0}" disabled
-									th:text="'Delete'" role="button" class="btn btn-danger">
+									th:text=#{html.table.button.delete} role="button" class="btn btn-danger">
 									</button>
 									
 									<a  th:unless="${customer.getCustomerContactList().size() > 0}"
-									th:text="'Delete'" role="button" class="btn btn-danger" th:href="@{/customer/deleteGet/} + ${customer.getId()}">
+									th:text=#{html.table.button.delete} role="button" class="btn btn-danger" th:href="@{/customer/deleteGet/} + ${customer.getId()}">
 									</a>
 									
 									</td>

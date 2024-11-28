@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3,org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeLeaf/layout"
+	xmlns:sec="http://www.thymeLeaf.org/extras/spring-security">
+
+<div th:replace="~{standarLayouts/head :: head1}">AQUI DEBERIAMOS
+	USAR EL HEAD</div>
+
+<body>
+
+	<nav th:replace="~{standarLayouts/navbar :: navbar1}">AQUI
+		DEBERIA DE ALISR EL navbar</nav>
+
+
+	<section class="pb-5 pt-5 bg-dark text-light" style="">
+		<div class="container">
+			<div class="row text-center justify-content-center">
+				<div class="col-12 col-md-8 col-lg-7">
+					<h3 class="fw-bold display-4 text-white" th:text=#{html.providerUpdate.title}>Provider Update</h3>
+
+				</div>
+			</div>
+			<div class="row pt-4">
+				<div class="col-12">
+
+					<form th:object="${provider}" method="POST"
+						th:action="@{/provider/updatePost}">
+						<!--fields nos sirve cuando estamos dentro del formulario y tenemos un objeto. Y nos deja saber si todos los errores, el binding result bolca los errores aqui -->
+						<div th:if="${#fields.hasAnyErrors()}" class="alert alert-danger">
+						
+						<p th:text="#{html.generic.errors.message.title}"></p>
+						<ul>
+						  <li th:each="err : ${#fields.allErrors()}" th:text="${err}"/>
+						  
+						</ul>
+						
+						</div>
+						
+						
+						
+						
+						<!-- agrupamos los que van a estar escondidos -->
+						<input th:field="*{id}" type="hidden">
+
+						<div class="row">
+							<div class="col-12 col-md">
+								<label th:text=#{html.providerX.input.text.name}></label> <input type="text" class="form-control"
+									placeholder="Name" th:field="*{name}">
+							</div>
+							<div>
+								<label th:text=#{html.providerX.input.text.cif}></label> <input type="text"
+									class="form-control" placeholder="Cif Number"
+									th:field="*{cif}">
+							</div>
+							<div>
+								<label th:text=#{html.providerX.input.text.email}></label> <input type="text" class="form-control"
+									placeholder="Email" th:field="*{email}">
+							</div>
+							<div>
+								<label th:text=#{html.providerX.input.text.phone}></label> <input type="text" class="form-control"
+									placeholder="Phone" th:field="*{phone}">
+							</div>
+							<div>
+								<label th:text=#{html.providerX.input.text.nif}></label> <input type="text" class="form-control"
+									placeholder="Nif" th:field="*{nif}">
+							</div>
+						</div>
+
+						<!--<div class="row mt-4">
+							<div class="col">
+
+								<p th:unless="${provider.getProviderContactList().size() !=0}"
+									></p>
+
+								<ul th:if="${provider.getProviderContactList().size() != 0}">
+									<li
+										th:each="customerContact : ${customer.getCustomerContactList()}"
+										th:value="${customerContact.getId()}"
+										th:text="${customerContact.getName()} + '>' + ${customerContact.getPhone()}  + '>>' + ${customerContact.getObservations()}">
+
+									</li>
+
+								</ul>
+							</div>
+
+						</div>-->
+
+						<div class="row mt-4">
+							<div class="col text-center">
+								<button type="submit" th:text=#{html.table.button.save} class="btn btn-light btn-lg"></button>
+							</div>
+
+							<div class="col text-center">
+								<button type="reset" th:text=#{html.table.button.undo} class="btn btn-warning btn-lg"></button>
+							</div>
+
+							<div class="col text-center">
+								<a type="button" th:href="@{/providerListGet}" th:text=#{html.table.button.back}
+									class="btn btn-success w-100 btn-round mb-3 btn-rised"></a>
+							</div>
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<div th:replace="~{standarLayouts/sectionCards :: sectionCards1}">
+		AQUI DEBERIAMOS USAR El sectionCards</div>
+
+	<div th:replace="~{standarLayouts/sectionFooter :: sectionFooter1}">
+		AQUI DEBERIAMOS USAR EL sectionFooter</div>
+
+	<div th:replace="~{standarLayouts/script :: script1}">AQUI
+		DEBERIA DE ALISR EL script</div>
+
+
+</body>
+
+</html>
