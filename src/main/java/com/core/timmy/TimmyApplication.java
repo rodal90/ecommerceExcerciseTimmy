@@ -106,87 +106,87 @@ public class TimmyApplication extends SpringBootServletInitializer {
 					"ñandu 235", "+34 986 876 563"));
                   /*es importante poner detras del numbero la "L" para que sepa que es un long*/
 			customerContactRepository.save(new CustomerContact(1L, "Carlos Martínez", "+34 600 123 456",
-					"cmartinez@tecnovision.com", "Responsable de ventas", customerRepository.findById(1L).get()));
+					"cmartinez@tecnovision.com", "Responsable de ventas", customerRepository.findById(1L).get(),null));
 			customerContactRepository.save(new CustomerContact(2L, "Ana Pérezosa", "+34 600 654 321",
-					"aperez@tecnovision.com", "Encargada de proyectos", customerRepository.findById(1l).get()));
+					"aperez@tecnovision.com", "Encargada de proyectos", customerRepository.findById(1l).get(),null));
 			customerContactRepository.save(new CustomerContact(3L, "Javier Gómez", "+34 600 987 654",
-					"jgomez@tecnovision.com", "Director de TI", customerRepository.findById(1L).get()));
+					"jgomez@tecnovision.com", "Director de TI", customerRepository.findById(1L).get(),null));
 
 			// Contactos para Soluciones Globales SL
 			customerContactRepository.save(
 					new CustomerContact(4L, "Lucía Fernández", "+34 611 234 567", "lfernandez@solucionesglobales.com",
-							"Asistente de dirección", customerRepository.findById(2L).get()));
+							"Asistente de dirección", customerRepository.findById(2L).get(),null));
 			customerContactRepository.save(new CustomerContact(5L, "Pedro Sánchez", "+34 611 765 432",
-					"psanchez@solucionesglobales.com", "Jefe de operaciones", customerRepository.findById(2L).get()));
+					"psanchez@solucionesglobales.com", "Jefe de operaciones", customerRepository.findById(2L).get(),null));
 			customerContactRepository.save(new CustomerContact(6L, "María López", "+34 611 876 543",
-					"mlopez@solucionesglobales.com", "Departamento financiero", customerRepository.findById(2L).get()));
+					"mlopez@solucionesglobales.com", "Departamento financiero", customerRepository.findById(2L).get(),null));
 
 			// Contactos para EcoEnergía Renovable
 			customerContactRepository.save(new CustomerContact(7L, "Sergio Álvarez", "+34 622 123 987",
-					"salvarez@ecoenergia.com", "Consultor técnico", customerRepository.findById(3L).get()));
+					"salvarez@ecoenergia.com", "Consultor técnico", customerRepository.findById(3L).get(),null));
 			customerContactRepository.save(new CustomerContact(8L, "Laura Ramos", "+34 622 654 321",
-					"lramos@ecoenergia.com", "Ingeniera ambiental", customerRepository.findById(3L).get()));
+					"lramos@ecoenergia.com", "Ingeniera ambiental", customerRepository.findById(3L).get(),null));
 			customerContactRepository.save(new CustomerContact(9L, "Elena García", "+34 622 789 654",
-					"egarcia@ecoenergia.com", "Gerente de proyectos", customerRepository.findById(3L).get()));
+					"egarcia@ecoenergia.com", "Gerente de proyectos", customerRepository.findById(3L).get(),null));
 
 			// Contactos para Digital Innovación SL
 			customerContactRepository.save(new CustomerContact(10L, "Pablo Torres", "+34 633 321 654",
-					"ptorres@digitalinnovacion.com", "CEO", customerRepository.findById(4L).get()));
+					"ptorres@digitalinnovacion.com", "CEO", customerRepository.findById(4L).get(),null));
 			customerContactRepository
 					.save(new CustomerContact(11L, "Raquel Jiménez", "+34 633 432 765", "rjimenez@digitalinnovacion.com",
-							"Coordinadora de marketing", customerRepository.findById(4L).get()));
+							"Coordinadora de marketing", customerRepository.findById(4L).get(),null));
 			customerContactRepository.save(new CustomerContact(12L, "José Ruizes", "+34 633 543 876",
-					"jruiz@digitalinnovacion.com", "Desarrollador de software", customerRepository.findById(4L).get()));
+					"jruiz@digitalinnovacion.com", "Desarrollador de software", customerRepository.findById(4L).get(),null));
 			customerContactRepository.save(new CustomerContact(13L, "Verónica Sáez", "+34 633 654 987",
-					"vsaez@digitalinnovacion.com", "Atención al cliente", customerRepository.findById(4L).get()));
+					"vsaez@digitalinnovacion.com", "Atención al cliente", customerRepository.findById(4L).get(),null));
 
 			// Contactos para Alimentos Naturales SL
 			customerContactRepository.save(new CustomerContact(14L, "Isabel Cano", "+34 644 567 123",
-					"icano@alimentosnaturales.com", "Encargada de compras", customerRepository.findById(5L).get()));
+					"icano@alimentosnaturales.com", "Encargada de compras", customerRepository.findById(5L).get(),null));
 			customerContactRepository.save(new CustomerContact(15L, "Ricardo Castro", "+34 644 678 234",
-					"rcastro@alimentosnaturales.com", "Gerente de distribución", customerRepository.findById(5L).get()));
+					"rcastro@alimentosnaturales.com", "Gerente de distribución", customerRepository.findById(5L).get(),null));
 			customerContactRepository.save(new CustomerContact(16L, "Marta Vegass", "+34 644 789 345",
-					"mvega@alimentosnaturales.com", "Responsable de calidad", customerRepository.findById(5L).get()));
+					"mvega@alimentosnaturales.com", "Responsable de calidad", customerRepository.findById(5L).get(),null));
 
 			// Contactos para Transportes Rápidos SA
 			customerContactRepository.save(new CustomerContact(17L, "Héctor Navarro", "+34 655 765 432",
-					"hnavarro@transportesrapidos.com", "Jefe de logística", customerRepository.findById(6L).get()));
+					"hnavarro@transportesrapidos.com", "Jefe de logística", customerRepository.findById(6L).get(),null));
 			customerContactRepository.save(new CustomerContact(18L, "Sonia Blanco", "+34 655 876 543",
-					"sblanco@transportesrapidos.com", "Encargada de tráfico", customerRepository.findById(6L).get()));
+					"sblanco@transportesrapidos.com", "Encargada de tráfico", customerRepository.findById(6L).get(),null));
 			customerContactRepository.save(new CustomerContact(19L, "Luis Moreno", "+34 655 987 654",
-					"lmoreno@transportesrapidos.com", "Supervisor de rutas", customerRepository.findById(6L).get()));
+					"lmoreno@transportesrapidos.com", "Supervisor de rutas", customerRepository.findById(6L).get(),null));
 
 			// Contactos para Diseño Creativo SL
 			customerContactRepository.save(new CustomerContact(20L, "Alberto Díaz", "+34 666 231 765",
-					"adiaz@diseñocreativo.com", "Director de arte", customerRepository.findById(7L).get()));
+					"adiaz@diseñocreativo.com", "Director de arte", customerRepository.findById(7L).get(),null));
 			customerContactRepository.save(new CustomerContact(21L, "Patricia Mena", "+34 666 342 876",
-					"pmena@diseñocreativo.com", "Ilustradora", customerRepository.findById(7L).get()));
+					"pmena@diseñocreativo.com", "Ilustradora", customerRepository.findById(7L).get(),null));
 			customerContactRepository.save(new CustomerContact(22L, "Jorge Ortega", "+34 666 453 987",
-					"jortega@diseñocreativo.com", "Diseñador gráfico", customerRepository.findById(7L).get()));
+					"jortega@diseñocreativo.com", "Diseñador gráfico", customerRepository.findById(7L).get(),null));
 
 			// Contactos para Construcciones Modernas SL
 			customerContactRepository.save(new CustomerContact(23L, "Miguel Serrano", "+34 677 123 789",
-					"mserrano@construccionesmodernas.com", "Arquitecto jefe", customerRepository.findById(8L).get()));
+					"mserrano@construccionesmodernas.com", "Arquitecto jefe", customerRepository.findById(8L).get(),null));
 			customerContactRepository.save(new CustomerContact(24L, "Andrea Medina", "+34 677 234 890",
-					"amedina@construccionesmodernas.com", "Jefa de obra", customerRepository.findById(8L).get()));
+					"amedina@construccionesmodernas.com", "Jefa de obra", customerRepository.findById(8L).get(),null));
 			customerContactRepository.save(new CustomerContact(25L, "Víctor Gómez", "+34 677 345 901",
-					"vgomez@construccionesmodernas.com", "Ingeniero civil", customerRepository.findById(8L).get()));
+					"vgomez@construccionesmodernas.com", "Ingeniero civil", customerRepository.findById(8L).get(),null));
 
 			// Contactos para Tecnología Futuro SL
 			customerContactRepository.save(new CustomerContact(26L, "David Romero", "+34 688 432 876",
-					"dromero@tecnologiafuturo.com", "Desarrollador senior", customerRepository.findById(9L).get()));
+					"dromero@tecnologiafuturo.com", "Desarrollador senior", customerRepository.findById(9L).get(),null));
 			customerContactRepository.save(new CustomerContact(27L, "Beatriz González", "+34 688 543 987",
-					"bgonzalez@tecnologiafuturo.com", "Gerente de producto", customerRepository.findById(9L).get()));
+					"bgonzalez@tecnologiafuturo.com", "Gerente de producto", customerRepository.findById(9L).get(),null));
 			customerContactRepository.save(new CustomerContact(28L, "Carlos Vázquez", "+34 688 654 098",
-					"cvazquez@tecnologiafuturo.com", "Analista de datos", customerRepository.findById(9L).get()));
+					"cvazquez@tecnologiafuturo.com", "Analista de datos", customerRepository.findById(9L).get(),null));
 
 			// Contactos para Café Aromático SL
 			customerContactRepository.save(new CustomerContact(29L, "Sofía Morales", "+34 699 876 543",
-					"smorales@cafearomatico.com", "Encargada de marketing", customerRepository.findById(10L).get()));
+					"smorales@cafearomatico.com", "Encargada de marketing", customerRepository.findById(10L).get(),null));
 			customerContactRepository.save(new CustomerContact(30L, "Fernando Rubio", "+34 699 987 654",
-					"frubio@cafearomatico.com", "Director de ventas", customerRepository.findById(10L).get()));
+					"frubio@cafearomatico.com", "Director de ventas", customerRepository.findById(10L).get(),null));
 			customerContactRepository.save(new CustomerContact(31L, "Natalia Castro", "+34 699 123 456",
-					"ncastro@cafearomatico.com", "Coordinadora de logística", customerRepository.findById(10L).get()));
+					"ncastro@cafearomatico.com", "Coordinadora de logística", customerRepository.findById(10L).get(),null));
 
 			budgetRepository.save(new Budget(null, 15000.50, statusRepository.findById(1L).get(), null));
 			budgetRepository.save(new Budget(null, 8500.00, statusRepository.findById(3L).get(), null));
@@ -204,44 +204,44 @@ public class TimmyApplication extends SpringBootServletInitializer {
 			/*
 			 * id budget status customer contact message message date amouunt
 			 */
-			comunicationRepository.save(new Comunication(null, budgetRepository.findById(1).get(),
-					statusRepository.findById(1L).get(), customerContactRepository.findById(1).get(),
+			comunicationRepository.save(new Comunication(null, budgetRepository.findById(1L).get(),
+					statusRepository.findById(1L).get(), customerContactRepository.findById(1L).get(),
 					"Revisando detalles del presupuesto.", LocalDate.of(2024, 9, 20), 1500.50));
 			
-			comunicationRepository.save(new Comunication(null, budgetRepository.findById(2).get(),
-					statusRepository.findById(3L).get(), customerContactRepository.findById(4).get(),
+			comunicationRepository.save(new Comunication(null, budgetRepository.findById(2L).get(),
+					statusRepository.findById(3L).get(), customerContactRepository.findById(4L).get(),
 					"Pendiente de aprobación por el equipo financiero.", LocalDate.parse("2024-09-23"), 8500.00));
 			
-			comunicationRepository.save(new Comunication(null, budgetRepository.findById(3).get(),
-					statusRepository.findById(4L).get(), customerContactRepository.findById(7).get(),
+			comunicationRepository.save(new Comunication(null, budgetRepository.findById(3L).get(),
+					statusRepository.findById(4L).get(), customerContactRepository.findById(7L).get(),
 					"Presupuesto aprobado. Adelante con el proyecto.", LocalDate.parse("2024-09-12"), 12000.75));
 			
-			comunicationRepository.save(new Comunication(null, budgetRepository.findById(4).get(),
-					statusRepository.findById(2L).get(), customerContactRepository.findById(10).get(),
+			comunicationRepository.save(new Comunication(null, budgetRepository.findById(4L).get(),
+					statusRepository.findById(2L).get(), customerContactRepository.findById(10L).get(),
 					"Presupuesto fuera del alcance del cliente.", LocalDate.parse("2024-09-06"), 6000.00));
 			
-			comunicationRepository.save(new Comunication(null, budgetRepository.findById(5).get(),
-					statusRepository.findById(1L).get(), customerContactRepository.findById(14).get(),
+			comunicationRepository.save(new Comunication(null, budgetRepository.findById(5L).get(),
+					statusRepository.findById(1L).get(), customerContactRepository.findById(14L).get(),
 					 "Hemos recibido el presupuesto, en revisión.", LocalDate.parse("2024-09-26"), 20000.00));
 			
-			comunicationRepository.save(new Comunication(null, budgetRepository.findById(6).get(),
-					statusRepository.findById(3L).get(), customerContactRepository.findById(17).get(),
+			comunicationRepository.save(new Comunication(null, budgetRepository.findById(6L).get(),
+					statusRepository.findById(3L).get(), customerContactRepository.findById(17L).get(),
 					"Esperando respuesta de su parte.", LocalDate.parse("2024-09-19"), 9500.00));
 			
-			comunicationRepository.save(new Comunication(null, budgetRepository.findById(7).get(),
-					statusRepository.findById(4L).get(), customerContactRepository.findById(20).get(),
+			comunicationRepository.save(new Comunication(null, budgetRepository.findById(7L).get(),
+					statusRepository.findById(4L).get(), customerContactRepository.findById(20L).get(),
 					"Todo listo para iniciar el proyecto.", LocalDate.parse("2024-09-21"), 18000.00));
 			
-			comunicationRepository.save(new Comunication(null, budgetRepository.findById(8).get(),
-					statusRepository.findById(2L).get(), customerContactRepository.findById(23).get(),
+			comunicationRepository.save(new Comunication(null, budgetRepository.findById(8L).get(),
+					statusRepository.findById(2L).get(), customerContactRepository.findById(23L).get(),
 					"No podemos proceder con el presupuesto.", LocalDate.parse("2024-09-09"), 18000.00));
 			
-			comunicationRepository.save(new Comunication(null, budgetRepository.findById(9).get(),
-					statusRepository.findById(1L).get(), customerContactRepository.findById(26).get(),
+			comunicationRepository.save(new Comunication(null, budgetRepository.findById(9L).get(),
+					statusRepository.findById(1L).get(), customerContactRepository.findById(26L).get(),
 					"En proceso de revisión por el equipo.", LocalDate.parse("2024-09-28"), 25000.00));
 			
-			comunicationRepository.save(new Comunication(null, budgetRepository.findById(10).get(),
-					statusRepository.findById(3L).get(), customerContactRepository.findById(29).get(),
+			comunicationRepository.save(new Comunication(null, budgetRepository.findById(10L).get(),
+					statusRepository.findById(3L).get(), customerContactRepository.findById(29L).get(),
 					"Presupuesto enviado, pendiente de revisión.", LocalDate.parse("2024-09-22"), 14000.50));
 			
 			

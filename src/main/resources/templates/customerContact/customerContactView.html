@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html 
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	>
+
+
+  <div th:replace="~{standarLayouts/head :: head1}">
+  	AQUI DEBERIA SALIR EL head
+  </div>
+
+  <body>
+
+  <div class="pb-5 pt-5 bg-dark text-light min-vw-100 min-vh-100">
+  
+    <div th:replace="~{standarLayouts/navbar :: navbar1}">
+  		AQUI DEBERIA SALIR EL navbar
+  	</div>
+  	
+    <section class="pb-5 pt-5 bg-dark text-light min-vw-100 min-vh-100">
+      <div class="container">
+        <div class="row text-center ">
+          <div class="col-12 col-md-8 col-lg-7">
+            <h3 class="fw-bold display-4 text-white" th:text= "#{html.customerContactView.title}">Customer view</h3>
+          </div>
+        </div>
+        
+       <div class="row pt-4">
+          <div class="col-12">
+             <div th:object="${entity}">
+            
+              <div class="row">
+				<div class="col input-group mb-2">
+				  <span class="input-group-text bg-secondary text-light" id="inputGroup-sizing-default">Name</span>
+				  <input readonly th:value="${entity.name}" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+				</div>
+             		
+
+				<div class="col input-group mb-2">
+				  <span class="input-group-text bg-secondary text-light" id="inputGroup-sizing-default">Phone</span>
+                  <input readonly th:value="${entity.phone}" type="text" class="form-control" placeholder="Phone">
+                </div>
+                
+                <div class="col input-group mb-2">
+				  <span class="input-group-text bg-secondary text-light" id="inputGroup-sizing-default">Email</span>
+                  <input readonly th:value="${entity.email}" type="text" class="form-control" placeholder="Email">
+                </div>
+
+              </div>
+
+              <div class="row mt-4">
+				<div class="input-group mb-2">
+				  <span class="input-group-text bg-secondary text-light" id="inputGroup-sizing-default">Observations</span>
+                  <input readonly th:value="${entity.observations}" type="text" class="form-control" placeholder="Observations">
+                </div>
+                
+                 <div class="row mt-4">
+				<div class="input-group mb-2">
+				  <span class="input-group-text bg-secondary text-light" id="inputGroup-sizing-default">Customer Name</span>
+                  <input readonly th:value="${entity.getCustomer().getName()}" type="text" class="form-control" placeholder="Customer Name">
+                </div>
+              </div>
+              
+              <div class="row mt-4">
+                <div class="col">
+                   	<div th:if="${entity.getComunicationList().size() != 0}">
+					<p th:text="'This customer has following communications:'">                   		
+                   	<ul>
+                   		<li th:each="comunication : ${entity.getComunicationList()}"
+                   			th:value="${comunication.getId()}"
+                   			th:text="${comunication.getMessageDate()} + ' > ' 
+                   				   + ${comunication.getMessage()} + ' >> '
+                   				   + ${comunication.getStatus()} + ' >> '
+                   				   + ${comunication.getBudget().getCurrentAmount()} + ' >>> '
+                   				   + ${comunication.getBudget().getCurrentStatus()}" >                    		
+                   		</li>
+                   	</ul>
+                   	</div> 
+           	        <p th:unless="${entity.getComunicationList().size() != 0}"
+                  		th:text="'This customer has not comunications'">
+                   	</p>
+                </div>     		              		
+			  </div>
+
+              <div class="row mt-4">
+			    <div class="col text-center">
+ 	               <a type="button" th:href="@{/customerContactListGet}"
+    	              class="btn btn-success w-100 btn-round mb-3 btn-rised">
+        	          Back 
+            	    </a>
+            	</div>
+              
+                
+              </div>
+                          
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <div th:replace="~{standarLayouts/sectionCards :: sectionCards1}">
+  		AQUI DEBERIA SALIR EL cover
+  	</div>
+
+    <div th:replace="~{standarLayouts/sectionFooter :: sectionFooter1}">
+  		AQUI DEBERIA SALIR EL footer
+  	</div>  	
+  	
+  	<div th:replace="~{standarLayouts/sectionMain :: sectionMain1}">
+  		AQUI DEBERIA SALIR EL script
+  	</div>
+
+  </div>
+  
+  </body>
+
+</html>

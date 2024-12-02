@@ -21,7 +21,7 @@ public interface ICustomerController {
 	 * acceder a el desde los otros archivos
 	 */
 
-	public String customerListGet(Principal principal, Model model);
+	public String customerListGet(Principal principal, Model model, HttpServletRequest request);
 
 	public String customerViewGet(Long id, Principal principal, Model model, HttpServletRequest request);
 

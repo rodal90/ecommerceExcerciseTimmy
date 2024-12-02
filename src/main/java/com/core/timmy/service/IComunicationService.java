@@ -13,7 +13,7 @@ public interface IComunicationService {
 	
 	public Comunication save(Comunication comunication);
 	
-	public Optional<Comunication> findById(Integer id);
+	public Optional<Comunication> findById(Long id);
 	
 	public List<Comunication> findAll();
 

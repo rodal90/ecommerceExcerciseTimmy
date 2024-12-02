@@ -67,8 +67,9 @@ public class Budget implements Serializable {
 	private Status currentstatus;
 	
 	
+	@ToString.Exclude
 	@OneToMany(mappedBy ="budget") //la comunicación desde budget hacia las comunicaciones
-    private List<Comunication> ComunicationList;
+    private List<Comunication> comunicationList;
 	
 	
 	

@@ -76,5 +76,8 @@ public class CustomerContact implements Serializable {
 	@JoinColumn(name= "idCustomer", referencedColumnName= "id")
     private Customer customer;
 	
+	@OneToMany(mappedBy = "customerContact")
+	private List<Comunication> comunicationList;
+	
 	
 }

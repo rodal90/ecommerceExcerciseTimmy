@@ -26,7 +26,7 @@ public class BudgetServiceImpl implements IBudgetService {
 	}
 
 	@Override
-	public Optional<Budget> findById(Integer id) {
+	public Optional<Budget> findById(Long id) {
 		
 		return this.budgetRepository.findById(id);
 		

@@ -30,9 +30,28 @@ public class CustomerContactServiceImpl implements ICustomerContactService {
 		return this.customerContactRepository.save(customerContact);
 		
 	}
+	
+	@Override
+	public Boolean deleteById(Long id) {
+		
+		this.customerContactRepository.deleteById(id);
+		return !this.customerContactRepository.existsById(id);
+		
+		
+	}
+	
+	@Override
+	public CustomerContact newCustomerContact() {
+		
+		CustomerContact customerContact = new CustomerContact();
+		customerContact.setId(0L);
+		
+		return customerContact;
+		
+	}
 
 	@Override
-	public Optional<CustomerContact> findById(Integer id) {
+	public Optional<CustomerContact> findById(Long id) {
 		
 		
 		return this.customerContactRepository.findById(id);
@@ -48,19 +67,19 @@ public class CustomerContactServiceImpl implements ICustomerContactService {
 
 	@Override
 	public List<CustomerContact> findByName(String name) {
-		// TODO Auto-generated method stub
+		
 		return this.customerContactRepository.findByName(name);
 	}
 
 	@Override
 	public List<CustomerContact> findByNameOrderByEmailDesc(String name) {
-		// TODO Auto-generated method stub
+		
 		return this.customerContactRepository.findByNameOrderByEmailDesc(name);
 	}
 
 	@Override
 	public List<CustomerContact> findByNameLike(String name) {
-		// TODO Auto-generated method stub
+		
 		return this.customerContactRepository.findByNameLike( name);
 	}
 
@@ -71,13 +90,13 @@ public class CustomerContactServiceImpl implements ICustomerContactService {
 	}
 
 	@Override
-	public List<CustomerContact> findByIdBetween(Integer start, Integer end) {
+	public List<CustomerContact> findByIdBetween(Long start, Long end) {
 		// TODO Auto-generated method stub
 		return this.customerContactRepository.findByIdBetween( start, end);
 	}
 
 	@Override
-	public List<CustomerContact> findByIdLessThan(Integer id) {
+	public List<CustomerContact> findByIdLessThan(Long id) {
 		// TODO Auto-generated method stub
 		return this.customerContactRepository.findByIdLessThan( id);
 	}

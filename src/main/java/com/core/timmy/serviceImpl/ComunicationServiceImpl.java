@@ -30,7 +30,7 @@ public class ComunicationServiceImpl implements IComunicationService {
 	}
 
 	@Override
-	public Optional<Comunication> findById(Integer id) {
+	public Optional<Comunication> findById(Long id) {
 		
 		
 		return this.comunicationRepository.findById(id);

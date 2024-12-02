@@ -8,7 +8,7 @@ import com.core.timmy.data.model.Comunication;
 
 
 @Repository
-public interface IComunicationRepository extends JpaRepository<Comunication, Integer> { /* solo le tenemos que decir para que tabla y que tipo
+public interface IComunicationRepository extends JpaRepository<Comunication, Long> { /* solo le tenemos que decir para que tabla y que tipo
 de dato es el primarykey de user*/ 
 
 }

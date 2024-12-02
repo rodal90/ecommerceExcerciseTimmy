@@ -11,7 +11,7 @@ import com.core.timmy.data.model.CustomerContact;
 
 
 @Repository
-public interface ICustomerContactRepository extends JpaRepository<CustomerContact, Integer> { /* solo le tenemos que decir para que tabla y que tipo
+public interface ICustomerContactRepository extends JpaRepository<CustomerContact, Long> { /* solo le tenemos que decir para que tabla y que tipo
 de dato es el primarykey de user*/ 
 	
 	//public Optional<CustomerContact> findByName(String name); //para buscar en base de datos un name
@@ -25,8 +25,8 @@ de dato es el primarykey de user*/
 	public List<CustomerContact> findByNameOrderByEmailDesc(String name);//el Desc es para que ordene los datos de forma descendente
 	public List<CustomerContact> findByNameLike(String name);
 	public List<CustomerContact> findByNameAndPhone(String name, String phone);
-	public List<CustomerContact> findByIdBetween(Integer start, Integer end); 
-	public List<CustomerContact> findByIdLessThan(Integer id); 
+	public List<CustomerContact> findByIdBetween(Long start, Long end); 
+	public List<CustomerContact> findByIdLessThan(Long id); 
 	public List<CustomerContact> findByObservationsContaining(String content); 
 	
 	public List<CustomerContact> findByObservationsIn(Collection<String>searchingWords);

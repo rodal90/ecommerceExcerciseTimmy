@@ -7,6 +7,7 @@ import java.util.Objects;
 import java.util.Set;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -46,7 +47,7 @@ public class Comunication implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.EAGER) //lo usamos para seleccionar que tipo de fetch queremos que haga
 	@JoinColumn(name="idBudget", referencedColumnName="id")
 	private Budget budget;
 	
@@ -56,10 +57,11 @@ public class Comunication implements Serializable {
 	
 	private Status status;
 	
+	@ToString.Exclude
 	@ManyToOne
 	@JoinColumn(name="idCustomerContact", referencedColumnName="id")
 	
-	private CustomerContact CustomerContact;
+	private CustomerContact customerContact;
 	
 	
 	private String message;

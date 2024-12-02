@@ -31,7 +31,7 @@ public class CustomerControllerImpl implements ICustomerController {
 										 * hay que asegurarse que el boton que vamos a pinchar tenga este enlace para
 										 * que se conecte con este método
 										 */
-	public String customerListGet(Principal principal, Model model) {
+	public String customerListGet(Principal principal, Model model ,HttpServletRequest request) {
 		System.out.println("TRAZA customerListGet");
 		model.addAttribute("username", principal.getName());
 		model.addAttribute("userPicture", "");
@@ -203,5 +203,6 @@ public class CustomerControllerImpl implements ICustomerController {
 		}
 
 	}
+
 
 }

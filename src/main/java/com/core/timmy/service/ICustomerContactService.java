@@ -14,7 +14,7 @@ public interface ICustomerContactService {
 	
 	public CustomerContact save(CustomerContact customerContact);
 	
-	public Optional<CustomerContact> findById(Integer id);
+	public Optional<CustomerContact> findById(Long id);
 	
 	public List<CustomerContact> findAll();
 	
@@ -23,8 +23,8 @@ public interface ICustomerContactService {
 	public List<CustomerContact> findByNameOrderByEmailDesc(String name);//el Desc es para que ordene los datos de forma descendente
 	public List<CustomerContact> findByNameLike(String name);
 	public List<CustomerContact> findByNameAndPhone(String name, String phone);
-	public List<CustomerContact> findByIdBetween(Integer start, Integer end); 
-	public List<CustomerContact> findByIdLessThan(Integer id); 
+	public List<CustomerContact> findByIdBetween(Long start, Long end); 
+	public List<CustomerContact> findByIdLessThan(Long id); 
 	public List<CustomerContact> findByObservationsContaining(String content); 
 	
 	public List<CustomerContact> findByObservationsIn(Collection<String>searchingWords);
@@ -32,5 +32,9 @@ public interface ICustomerContactService {
 	//como hacer joins con JPA
 	
 	public List<CustomerContact>findByCustomerName(String customerName);
+
+	public Boolean deleteById(Long id);
+
+	public CustomerContact newCustomerContact();
 
 }

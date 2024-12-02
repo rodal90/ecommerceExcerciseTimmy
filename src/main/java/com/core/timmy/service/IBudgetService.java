@@ -12,7 +12,7 @@ public interface IBudgetService {
 	
 	public Budget save(Budget budget);
 	
-	public Optional<Budget> findById(Integer id);
+	public Optional<Budget> findById(Long id);
 	
 	//cuando la cardinalidade es de muchos a muchos  lo que se utiliza es colleciones de tipo Set,
 	//pero cuando es de M:1 o 1:M lo que se usa es list.

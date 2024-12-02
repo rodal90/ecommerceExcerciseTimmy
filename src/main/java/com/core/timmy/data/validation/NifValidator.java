@@ -16,7 +16,7 @@ public class NifValidator implements ConstraintValidator<INifConstraint, String>
 		// Calcula la letra correcta
 		return nif !=null                            
 				&& nif.matches("[0-9]{1,8}[A-Za-z]{1}")
-				&& this.letterOfNifIsCorrect(nif);
+				&& letterOfNifIsCorrect(nif);
 				//los strings tiene un metodo que se llama matches para comparar y ver si son verdaderos. 
 		
 	}
@@ -34,11 +34,11 @@ public static boolean letterOfNifIsCorrect(String nif) {
 			.substring(numbersOfNif % letters.length(), (numbersOfNif % letters.length()) + 1);
 	
 	
-	log.info("nif= "+ nif 
+	/*log.info("nif= "+ nif 
 			+ "> nifLetter: " + nifLetter 
 			+ ">> numbersOfNif: " + numbersOfNif 
 			+" >>> rightLetter: " + rightLetter 
-			+">>>> Validacion= " + nifLetter.equalsIgnoreCase(rightLetter));
+			+">>>> Validacion= " + nifLetter.equalsIgnoreCase(rightLetter));*/
 	
 	
 
