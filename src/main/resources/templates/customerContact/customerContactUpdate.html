@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html 
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	>
+
+
+  <div th:replace="~{standarLayouts/head :: head1}">
+  	AQUI DEBERIA SALIR EL head
+  </div>
+
+  <body>
+
+  <div class="pb-5 pt-5 bg-dark text-light min-vw-100 min-vh-100">
+  
+    <div th:replace="~{standarLayouts/navbar :: navbar1}">
+  		AQUI DEBERIA SALIR EL navbar
+  	</div>
+  	
+    <section class="pb-5 pt-5 bg-dark text-light min-vw-100 min-vh-100">
+      
+        <div class="row text-center ">
+          <div class="col-12 col-md-8 col-lg-7">
+            <h3 class="fw-bold display-4 text-white" th:text= "#{html.customerContactUpdate.title}"></h3>
+          </div>
+        </div>
+        
+       <div class="row pt-4">
+          <div class="col-12">
+             <form method="POST" th:object="${entity}" th:action="@{/customerContact/updatePost}">
+             
+           <!--    <div th:if="${#fields.hasAnyErrors()}" class="alert alert-danger">
+						
+						<p th:text="#{html.generic.errors.message.title}"></p>
+						<ul>
+						  <li th:each="err : ${#fields.allErrors()}" th:text="${err}"/>
+						  
+						</ul>
+						
+						</div> -->
+             
+             <input th:field="*{id}" type="hidden"></input>
+               <input th:field="*{customer}" type="hidden"></input>
+                 <input th:field="*{comunicationList}" type="hidden"></input>
+            
+              <div class="row">
+				<div class="col input-group mb-2">  <!-- * el dato va y vuelve el asterisco tambien  -->
+				  <span class="input-group-text bg-secondary text-light" id="inputGroup-sizing-default">Name</span>
+				  <input  th:field="*{name}" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+				</div>
+             		
+
+				<div class="col input-group mb-2">
+				  <span class="input-group-text bg-secondary text-light" id="inputGroup-sizing-default">Phone</span>
+                  <input th:field="*{phone}" type="text" class="form-control" placeholder="Phone">
+                </div>
+                
+                <div class="col input-group mb-2">
+				  <span class="input-group-text bg-secondary text-light" id="inputGroup-sizing-default">Email</span>
+                  <input th:field="*{email}" type="text" class="form-control" placeholder="Email">
+                </div>
+
+              </div>
+
+              <div class="row mt-4">
+				<div class="input-group mb-2">
+				  <span class="input-group-text bg-secondary text-light" id="inputGroup-sizing-default">Observations</span>
+                  <input th:field="*{observations}" type="text" class="form-control" placeholder="Observations">
+                </div>
+                
+                 <div class="row mt-4">
+				<div class="input-group mb-2">
+				  <span class="input-group-text bg-secondary text-light" id="inputGroup-sizing-default">Customer Name</span>
+                  <!-- input readonly th:field="*{customer}" type="text" class="form-control" placeholder="Customer Name"> -->
+                  
+                </div>
+              </div>
+              
+              <div class="row mt-4">
+                <div class="col">
+                   	<div th:if="${entity.getComunicationList().size() != 0}">
+					<p th:text="'This customer has following communications:'">                   		
+                   	<ul>
+                   		<li th:each="comunication : ${entity.getComunicationList()}"
+                   			th:value="${comunication.getId()}"
+                   			th:text="${comunication.getMessageDate()} + ' > ' 
+                   				   + ${comunication.getMessage()} + ' >> '
+                   				   + ${comunication.getStatus()} + ' >> '
+                   				   + ${comunication.getBudget().getCurrentAmount()} + ' >>> '
+                   				   + ${comunication.getBudget().getCurrentStatus()}" >                    		
+                   		</li>
+                   	</ul>
+                   	</div> 
+           	        <p th:unless="${entity.getComunicationList().size() != 0}"
+                  		th:text="'This customer has not comunications'">
+                   	</p>
+                </div>     		              		
+			  </div>
+
+              <div class="row mt-4">
+              
+              
+              <div class="col text-center">
+								<button type="submit" class="btn btn-primary btn-lg">Save</button>
+							</div>
+
+							<div class="col text-center">
+								<button type="reset" class="btn btn-primary btn-lg">Undo</button>
+							</div>
+							
+			    <div class="col text-center">
+ 	               <a type="button" th:href="@{/customerContactListGet}"
+    	              class="btn btn-success w-100 btn-round mb-3 btn-rised">
+        	          Back 
+            	    </a>
+            	</div>
+              
+                
+              </div>
+                      
+            </div>
+            
+           
+          </form>
+        </div>
+
+      </div>
+
+    </section>
+
+    <div th:replace="~{standarLayouts/sectionCards :: sectionCards1}">
+  		AQUI DEBERIA SALIR EL cover
+  	</div>
+
+    <div th:replace="~{standarLayouts/sectionFooter :: sectionFooter1}">
+  		AQUI DEBERIA SALIR EL footer
+  	</div>  	
+  	
+  	<div th:replace="~{standarLayouts/sectionMain :: sectionMain1}">
+  		AQUI DEBERIA SALIR EL script
+  	</div>
+
+  </div>
+  
+  </body>
+
+</html>

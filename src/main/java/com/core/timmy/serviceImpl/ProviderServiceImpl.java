@@ -15,9 +15,12 @@ import com.core.timmy.data.repository.IProviderRepository;
 
 import com.core.timmy.service.IProviderService;
 
+import lombok.extern.slf4j.Slf4j;
+
 
 
 @Service
+@Slf4j
 public class ProviderServiceImpl implements IProviderService {
 	
 	@Autowired
@@ -25,7 +28,7 @@ public class ProviderServiceImpl implements IProviderService {
 
 	@Override
 	public Provider save(Provider provider ) {
-		
+		log.warn("TRAZA: entrando en ProviderServiceImpl ->save");
 		return this.providerRepository.save(provider);
 		
 	}

@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,10 +14,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import com.core.timmy.controller.ICustomerContactController;
 import com.core.timmy.controller.IStartController;
 import com.core.timmy.data.model.CustomerContact;
+import com.core.timmy.data.model.Provider;
 import com.core.timmy.service.ICustomerContactService;
 import com.core.timmy.service.ICustomerService;
 
 import jakarta.servlet.http.HttpServletRequest;
+import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 
 @Controller
@@ -28,6 +31,99 @@ implements ICustomerContactController {
 	
 	@Autowired
 	private ICustomerContactService service; //customerContactService
+	
+	
+	@Override
+	@GetMapping({ "/customerContact/updateGet/{id}" }) /*
+												 * hay que asegurarse que el boton que vamos a pinchar tenga este enlace
+												 * para que se conecte con este método
+												 */
+	public String customerContactUpdateGet(@PathVariable("id") Long id, Principal principal, Model model,
+			HttpServletRequest request) {
+		log.info("TRAZA customerContactUpdateGet");
+		
+		  this.injectCommonAtrributesInHtmlPage(principal, model,request);
+
+		// inyectar los registros de los customer, siempre debemos tirar de los
+		// servicios. aca hemos pedido la lista
+
+		/* log.info("customer= " + this.customerService.findById(id)); */
+
+		model.addAttribute("entity", this.service.findById(id).get());
+
+		return "customerContact/customerContactUpdate";
+	}
+	
+	@Override
+	@PostMapping({ "/customerContact/updatePost" }) /*
+												 * hay que asegurarse que el boton que vamos a pinchar tenga este enlace
+												 * para que se conecte con este método
+												 */
+	public String customerContactUpdatePost(@Valid CustomerContact customerContact, BindingResult bindingResult, Principal principal,
+			Model model, HttpServletRequest request) {
+		log.info("TRAZA customerContactUpdatePost");
+
+		if (bindingResult.hasErrors()) {
+			log.error("el formulario de customerContact tiene errores" + bindingResult.getAllErrors());
+			
+			model.addAttribute("entity", customerContact);
+
+			return "customerContact/customerContactUpdate";
+
+		} else {
+
+			log.info("Formulario correcto: " + customerContact);
+			
+			this.service.save(customerContact);
+			
+			log.warn("TRAZA: después de salir de customerContactPost >> customerContactService -> save");
+
+			return "redirect:/customerContactListGet";
+
+		}
+
+	}
+	
+	
+	@Override
+	@GetMapping({ "/customerContact/deleteGet/{id}" }) /*
+												 * hay que asegurarse que el boton que vamos a pinchar tenga este enlace
+												 * para que se conecte con este método
+												 */
+	public String customerContactDeleteGet(@PathVariable("id") Long id, Principal principal, Model model,
+			HttpServletRequest request) {
+	    log.info("TRAZA customerContactDeleteGet");
+	    
+	    this.injectCommonAtrributesInHtmlPage(principal, model,request);
+
+		// inyectar los registros de los customer, siempre debemos tirar de los
+		// servicios. aca hemos pedido la lista
+
+		log.info("customerContact= " + this.service.findById(id).get());
+
+		model.addAttribute("entity", this.service.findById(id).get());
+
+		return "customerContact/customerContactDelete";
+	}
+
+	@Override
+	@GetMapping({ "/customerContact/deleteConfirmed/{id}" }) /*
+														 * hay que asegurarse que el boton que vamos a pinchar tenga
+														 * este enlace para que se conecte con este método
+														 */
+	public String customerContactDeleteConfirmed(@PathVariable("id") Long id, Principal principal, Model model,
+			HttpServletRequest request) {
+		log.info("TRAZA providerDeleteConfirmed");
+		
+		 this.injectCommonAtrributesInHtmlPage(principal, model,request);
+
+		// inyectar los registros de los customer, siempre debemos tirar de los
+		// servicios. aca hemos pedido la lista
+
+		log.info("customerContact deleted= " + this.service.deleteById(id));
+
+		return "redirect:/customerContactListGet";
+	}
 	
 	@Override
 	@GetMapping({ "/customerContact/viewGet/{id}" }) /*
@@ -80,5 +176,7 @@ implements ICustomerContactController {
 		
 		return "customerContact/customerContactList";
 	}
+	
+	
 
 }

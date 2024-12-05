@@ -152,7 +152,9 @@ public class ProviderControllerImpl implements IProviderController {
 		} else {
 
 			log.info("Formulario correcto: " + provider);
+			
 			this.providerService.save(provider);
+			log.warn("TRAZA: después de salir de providerUpdatePost >> ProviderService -> save");
 
 			return "redirect:/providerListGet";
 
@@ -196,7 +198,9 @@ public class ProviderControllerImpl implements IProviderController {
 		} else {
 
 			log.info("Formulario correcto: " + provider);
+		
 			this.providerService.save(provider);
+			log.warn("TRAZA: después de salir de providerAddPost >> ProviderService -> save");
          // me regresa a la lista customer
 			return "redirect:/providerListGet";
 

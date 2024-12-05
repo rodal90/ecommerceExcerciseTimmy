@@ -15,8 +15,10 @@ public class MasterControllerImpl implements IMasterController {
 			Principal principal,
 			Model model,
 			HttpServletRequest request) {
+		
+		model.addAttribute("username",principal.getName());
+		model.addAttribute("userPicture", "");
 	
-
 	}
 
 }

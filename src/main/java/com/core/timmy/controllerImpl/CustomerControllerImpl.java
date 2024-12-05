@@ -41,7 +41,7 @@ public class CustomerControllerImpl implements ICustomerController {
 
 		model.addAttribute("customerList", this.customerService.findAll());
 
-		return "customerList";
+		return "customer/customerList";
 	}
 
 	/*
@@ -71,7 +71,7 @@ public class CustomerControllerImpl implements ICustomerController {
 
 		model.addAttribute("customer", this.customerService.findById(id).get());
 
-		return "customerView";
+		return "customer/customerView";
 	}
 
 	@Override
@@ -92,7 +92,7 @@ public class CustomerControllerImpl implements ICustomerController {
 
 		model.addAttribute("customer", this.customerService.findById(id).get());
 
-		return "customerDelete";
+		return "customer/customerDelete";
 	}
 
 	@Override
@@ -132,7 +132,7 @@ public class CustomerControllerImpl implements ICustomerController {
 
 		model.addAttribute("customer", this.customerService.findById(id).get());
 
-		return "customerUpdate";
+		return "customer/customerUpdate";
 	}
 
 	@Override
@@ -150,7 +150,7 @@ public class CustomerControllerImpl implements ICustomerController {
 
 		model.addAttribute("customer", this.customerService.newCustomer());
 
-		return "customerAdd";
+		return "customer/customerAdd";
 	}
 
 	@Override

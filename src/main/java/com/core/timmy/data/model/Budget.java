@@ -64,7 +64,7 @@ public class Budget implements Serializable {
 	
 	@ManyToOne
 	@JoinColumn(name="idCurrentStatus", referencedColumnName="id")
-	private Status currentstatus;
+	private Status currentStatus;
 	
 	
 	@ToString.Exclude

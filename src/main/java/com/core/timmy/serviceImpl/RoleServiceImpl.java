@@ -12,6 +12,8 @@ import com.core.timmy.data.model.Role;
 import com.core.timmy.data.repository.IRoleRepository;
 import com.core.timmy.service.IRoleService;
 
+import jakarta.transaction.Transactional;
+
 
 
 @Service

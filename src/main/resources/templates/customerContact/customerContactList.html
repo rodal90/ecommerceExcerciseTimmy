@@ -68,7 +68,7 @@
                     
                     <td>
                     	<button th:if="${entity.getComunicationList().size() > 0}" disabled th:text="'Delete'" role="button" class="btn btn-danger"></button>
-                    	<a th:unless="${entity.getComunicationList().size() > 0}" th:text="'Delete'" role="button" class="btn btn-danger" th:href="@{/entity/deleteGet/} + ${entity.getId()}"></a>
+                    	<a th:unless="${entity.getComunicationList().size() > 0}" th:text="'Delete'" role="button" class="btn btn-danger" th:href="@{/customerContact/deleteGet/} + ${entity.getId()}"></a>
                     	
                     </td>
                     
