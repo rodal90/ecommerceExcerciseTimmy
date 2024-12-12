@@ -59,9 +59,9 @@ public class Comunication implements Serializable {
 	
 	@ToString.Exclude
 	@ManyToOne
-	@JoinColumn(name="idCustomerContact", referencedColumnName="id")
+	@JoinColumn(name="idContact", referencedColumnName="id")
 	
-	private CustomerContact customerContact;
+	private Contact contact;
 	
 	
 	private String message;

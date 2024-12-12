@@ -8,14 +8,7 @@ import com.core.timmy.data.validation.INifConstraint;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.PositiveOrZero;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -36,42 +29,37 @@ import lombok.extern.slf4j.Slf4j;
 @NoArgsConstructor // Nos crea el constructor vacio
 @ToString
 @Slf4j
-public class Provider implements Serializable {
+public class Provider extends PersonOfInterest implements Serializable {//Hibernate obliga a poner Serializable
 
 	
 	private static final long serialVersionUID = 1L;
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@PositiveOrZero
+
+	
+	/*@Id
 	private Long id;
 	
-	//@OneToMany(mappedBy ="provider")
-   // private List<BudgetItem> budgetItemList;
-	//las etiquetas solo afecta a el elemento justo debajo de la etiqueta
-	@NotNull
-	@Column(nullable=false, columnDefinition="VARCHAR(150) CHECK(LENGTH(NAME) >= 1)")//queremos que la columna no sea anulable . Si usamos name="nombre" se le asigna este nombre a esta columna name. en la tabla
-	@Size(min=1,max=520, message="{model.data.validation.Provider.name}") //Name must be from 1 to 520 characters
-	private String name;
+	@OneToOne
+	@MapsId
+	@JoinColumn(name="personOfInterest_id", referencedColumnName="id")
+	private PersonOfInterest personOfInterest; //tiene que coincidir con el nombre del mapeo que le dimos en person of interest*/
 	
-	@Column(columnDefinition="VARCHAR(30) CHECK(LENGTH(CIF) >= 9)")
-	@Size(min=9,max=30, message="{model.data.validation.Provider.cif}")//Cif must be from 9 to 30 characters
-	private String cif;
-	
-		
-	@Column(columnDefinition="CHAR(18) CHECK(LENGTH(PHONE) >= 9)")
-	@Size(min=9 ,max=20, message="{model.data.validation.Provider.phone}") //Phone must from 9 to 20 characters
-	@NotNull
-	private String phone; 
-	
-	@Email
-	@Size(min=0, max=255,message="{model.data.validation.Provider.email}")//email must have from 0 to 255 characters
-	private String email;
 	
 	@INifConstraint
 	@Column(columnDefinition="VARCHAR(9) CHECK(LENGTH(NIF) >= 2) CHECK(NIF REGEXP '^[0-9]{1,8}[A-Za-z]{1}')") //Esto solo funciona en la base de datos es una constraint para la base de datos
 	@Size(min=2,max=9, message="{model.data.validation.Provider.nif}")//Cif must be from 2 to 9 characters
 	private String nif;
+
+
+
+	public Provider(Long id, String name, String cif, String vatnumber, String address, String phone, String email,
+			List<Contact>contactList,
+			 String nif
+			) {
+		super(id, name, cif, vatnumber, address, phone, email, contactList);
+		this.nif = nif;
+	}
+	
 	
 	
 	

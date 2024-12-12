@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.core.timmy.controller.ICustomerContactController;
+import com.core.timmy.controller.IContactController;
 import com.core.timmy.controller.IStartController;
-import com.core.timmy.data.model.CustomerContact;
+import com.core.timmy.data.model.Contact;
 import com.core.timmy.data.model.Provider;
-import com.core.timmy.service.ICustomerContactService;
+import com.core.timmy.service.IContactService;
 import com.core.timmy.service.ICustomerService;
 
 import jakarta.servlet.http.HttpServletRequest;
@@ -24,23 +24,23 @@ import lombok.extern.slf4j.Slf4j;
 
 @Controller
 @Slf4j
-public class CustomerContactControllerImpl 
+public class ContactControllerImpl 
 extends MasterControllerImpl
-implements ICustomerContactController {
+implements IContactController {
 
 	
 	@Autowired
-	private ICustomerContactService service; //customerContactService
+	private IContactService service; //customerContactService
 	
 	
 	@Override
-	@GetMapping({ "/customerContact/updateGet/{id}" }) /*
+	@GetMapping({ "/contact/updateGet/{id}" }) /*
 												 * hay que asegurarse que el boton que vamos a pinchar tenga este enlace
 												 * para que se conecte con este método
 												 */
-	public String customerContactUpdateGet(@PathVariable("id") Long id, Principal principal, Model model,
+	public String contactUpdateGet(@PathVariable("id") Long id, Principal principal, Model model,
 			HttpServletRequest request) {
-		log.info("TRAZA customerContactUpdateGet");
+		log.info("TRAZA contactUpdateGet");
 		
 		  this.injectCommonAtrributesInHtmlPage(principal, model,request);
 
@@ -51,34 +51,34 @@ implements ICustomerContactController {
 
 		model.addAttribute("entity", this.service.findById(id).get());
 
-		return "customerContact/customerContactUpdate";
+		return "contact/contactUpdate";
 	}
 	
 	@Override
-	@PostMapping({ "/customerContact/updatePost" }) /*
+	@PostMapping({ "/contact/updatePost" }) /*
 												 * hay que asegurarse que el boton que vamos a pinchar tenga este enlace
 												 * para que se conecte con este método
 												 */
-	public String customerContactUpdatePost(@Valid CustomerContact customerContact, BindingResult bindingResult, Principal principal,
+	public String contactUpdatePost(@Valid Contact contact, BindingResult bindingResult, Principal principal,
 			Model model, HttpServletRequest request) {
-		log.info("TRAZA customerContactUpdatePost");
+		log.info("TRAZA contactUpdatePost");
 
 		if (bindingResult.hasErrors()) {
-			log.error("el formulario de customerContact tiene errores" + bindingResult.getAllErrors());
+			log.error("el formulario de contact tiene errores" + bindingResult.getAllErrors());
 			
-			model.addAttribute("entity", customerContact);
+			model.addAttribute("entity", contact);
 
-			return "customerContact/customerContactUpdate";
+			return "contact/contactUpdate";
 
 		} else {
 
-			log.info("Formulario correcto: " + customerContact);
+			log.info("Formulario correcto: " + contact);
 			
-			this.service.save(customerContact);
+			this.service.save(contact);
 			
-			log.warn("TRAZA: después de salir de customerContactPost >> customerContactService -> save");
+			log.warn("TRAZA: después de salir de contactPost >> contactService -> save");
 
-			return "redirect:/customerContactListGet";
+			return "redirect:/contactListGet";
 
 		}
 
@@ -86,32 +86,32 @@ implements ICustomerContactController {
 	
 	
 	@Override
-	@GetMapping({ "/customerContact/deleteGet/{id}" }) /*
+	@GetMapping({ "/contact/deleteGet/{id}" }) /*
 												 * hay que asegurarse que el boton que vamos a pinchar tenga este enlace
 												 * para que se conecte con este método
 												 */
-	public String customerContactDeleteGet(@PathVariable("id") Long id, Principal principal, Model model,
+	public String contactDeleteGet(@PathVariable("id") Long id, Principal principal, Model model,
 			HttpServletRequest request) {
-	    log.info("TRAZA customerContactDeleteGet");
+	    log.info("TRAZA contactDeleteGet");
 	    
 	    this.injectCommonAtrributesInHtmlPage(principal, model,request);
 
 		// inyectar los registros de los customer, siempre debemos tirar de los
 		// servicios. aca hemos pedido la lista
 
-		log.info("customerContact= " + this.service.findById(id).get());
+		log.info("contact= " + this.service.findById(id).get());
 
 		model.addAttribute("entity", this.service.findById(id).get());
 
-		return "customerContact/customerContactDelete";
+		return "contact/contactDelete";
 	}
 
 	@Override
-	@GetMapping({ "/customerContact/deleteConfirmed/{id}" }) /*
+	@GetMapping({ "/contact/deleteConfirmed/{id}" }) /*
 														 * hay que asegurarse que el boton que vamos a pinchar tenga
 														 * este enlace para que se conecte con este método
 														 */
-	public String customerContactDeleteConfirmed(@PathVariable("id") Long id, Principal principal, Model model,
+	public String contactDeleteConfirmed(@PathVariable("id") Long id, Principal principal, Model model,
 			HttpServletRequest request) {
 		log.info("TRAZA providerDeleteConfirmed");
 		
@@ -120,19 +120,19 @@ implements ICustomerContactController {
 		// inyectar los registros de los customer, siempre debemos tirar de los
 		// servicios. aca hemos pedido la lista
 
-		log.info("customerContact deleted= " + this.service.deleteById(id));
+		log.info("contact deleted= " + this.service.deleteById(id));
 
-		return "redirect:/customerContactListGet";
+		return "redirect:/contactListGet";
 	}
 	
 	@Override
-	@GetMapping({ "/customerContact/viewGet/{id}" }) /*
+	@GetMapping({ "/contact/viewGet/{id}" }) /*
 												 * hay que asegurarse que el boton que vamos a pinchar tenga este enlace
 												 * para que se conecte con este método
 												 */
-	public String customerContactViewGet(@PathVariable("id") Long id, Principal principal, Model model,
+	public String contactViewGet(@PathVariable("id") Long id, Principal principal, Model model,
 			HttpServletRequest request) {
-		System.out.println("TRAZA customerContactViewGet");
+		System.out.println("TRAZA contactViewGet");
 		
 		this.injectCommonAtrributesInHtmlPage(principal, model,request);
 		
@@ -140,16 +140,16 @@ implements ICustomerContactController {
 		// inyectar los registros de los customer, siempre debemos tirar de los
 		// servicios. aca hemos pedido la lista
 
-		log.info("customerContact= " + this.service.findById(id));
+		log.info("contact= " + this.service.findById(id));
 
 		model.addAttribute("entity", this.service.findById(id).get());
 
-		return "customerContact/customerContactView";
+		return "contact/contactView";
 	}
 	
 	@Override
-	@GetMapping({"/customerContactListGet"}) /*hay que asegurarse que el boton que vamos a pinchar tenga este enlace para que se conecte con este método*/
-	public String customerContactListGet(
+	@GetMapping({"/contactListGet"}) /*hay que asegurarse que el boton que vamos a pinchar tenga este enlace para que se conecte con este método*/
+	public String contactListGet(
 			Principal principal,
 			Model model,
 			HttpServletRequest request) {//que es principal?
@@ -174,7 +174,7 @@ implements ICustomerContactController {
 			
 		
 		
-		return "customerContact/customerContactList";
+		return "contact/contactList";
 	}
 	
 	

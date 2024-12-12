@@ -40,7 +40,7 @@ import lombok.extern.slf4j.Slf4j;
 @ToString
 @Slf4j
 
-public class CustomerContact implements Serializable {
+public class Contact implements Serializable {
 
 	
 	private static final long serialVersionUID = 1L;
@@ -54,29 +54,29 @@ public class CustomerContact implements Serializable {
 	
 	@NotNull
 	@Column(nullable=false, columnDefinition="VARCHAR(150)  CHECK(LENGTH(NAME) >= 10)")//queremos que la columna no sea anulable . Si usamos name="nombre" se le asigna este nombre a esta columna name. en la tabla
-	@Size(min=10,max=150, message="{model.data.validation.CustomerContact.name}") //Name must be from 10 to 150 characters
+	@Size(min=10,max=150, message="{model.data.validation.Contact.name}") //Name must be from 10 to 150 characters
 	private String name;
 	
 	@Column(columnDefinition="CHAR(18) CHECK(LENGTH(PHONE) >= 9)")
-	@Size(min=9 ,max=20, message="{model.data.validation.CustomerContact.phone}") //Phone must from 9 to 20 characters
+	@Size(min=9 ,max=20, message="{model.data.validation.Contact.phone}") //Phone must from 9 to 20 characters
 	@NotNull
 	private String phone; 
 	
 	
 	@Email
-	@Size(min=3, max=255,message="{model.data.validation.CustomerContact.email}")//email must have from 0 to 255 characters
+	@Size(min=3, max=255,message="{model.data.validation.Contact.email}")//email must have from 0 to 255 characters
 	private String email;
 	
 	
-	@Size(min=0, max=255,message="{model.data.validation.CustomerContact.observations}")
+	@Size(min=0, max=255,message="{model.data.validation.Contact.observations}")
 	private String observations;
 	//to string to exclud lo que hace es excluir este campo y no lo va a crear?. es para evitar el bucle infinito
 	@ToString.Exclude
 	@ManyToOne
-	@JoinColumn(name= "idCustomer", referencedColumnName= "id")
-    private Customer customer;
+	@JoinColumn(name= "idPersonOfInterest", referencedColumnName= "id")
+    private PersonOfInterest personOfInterest;
 	
-	@OneToMany(mappedBy = "customerContact")
+	@OneToMany(mappedBy = "contact")
 	private List<Comunication> comunicationList;
 	
 	

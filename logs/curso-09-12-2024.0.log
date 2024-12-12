@@ -1,0 +1,117 @@
+09-12-2024 11:19:55 INFO  com.core.timmy.TimmyApplication - Starting TimmyApplication using Java 21.0.4 with PID 6900 (C:\Users\manana\eclipse-workspace\timmy\target\classes started by manana in C:\Users\manana\eclipse-workspace\timmy)
+09-12-2024 11:19:55 INFO  com.core.timmy.TimmyApplication - No active profile set, falling back to 1 default profile: "default"
+09-12-2024 11:19:56 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+09-12-2024 11:19:56 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09-12-2024 11:19:56 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 88 ms. Found 8 JPA repository interfaces.
+09-12-2024 11:19:57 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+09-12-2024 11:19:57 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09-12-2024 11:19:57 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+09-12-2024 11:19:57 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring embedded WebApplicationContext
+09-12-2024 11:19:57 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2041 ms
+09-12-2024 11:19:57 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+09-12-2024 11:19:57 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:eventix user=SAS
+09-12-2024 11:19:57 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+09-12-2024 11:19:57 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:eventix'
+09-12-2024 11:19:57 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+09-12-2024 11:19:57 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+09-12-2024 11:19:58 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+09-12-2024 11:19:58 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+09-12-2024 11:19:58 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+09-12-2024 11:19:58 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+09-12-2024 11:19:59 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+09-12-2024 11:19:59 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09-12-2024 11:20:00 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+09-12-2024 11:20:00 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+09-12-2024 11:20:00 INFO  com.core.timmy.config.WebMvcConfig - Dialects & TemplateResolvers:  > [org.thymeleaf.spring6.dialect.SpringStandardDialect@3b75b7b4, nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect@1203c259, org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect@3bd552f7] >> [org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver@40949bb0] >>> 1
+09-12-2024 11:20:00 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+09-12-2024 11:20:00 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 29 mappings in 'requestMappingHandlerMapping'
+09-12-2024 11:20:01 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+09-12-2024 11:20:01 INFO  c.c.timmy.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@f2e28c7, interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6175619b, started on Mon Dec 09 11:19:55 CET 2024, interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@259647f2}
+09-12-2024 11:20:01 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+09-12-2024 11:20:01 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+09-12-2024 11:20:01 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/timmy'
+09-12-2024 11:20:01 INFO  com.core.timmy.TimmyApplication - Started TimmyApplication in 6.976 seconds (process running for 7.896)
+09-12-2024 11:20:11 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09-12-2024 11:20:11 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+09-12-2024 11:20:11 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+09-12-2024 11:20:11 DEBUG o.s.web.servlet.DispatcherServlet - Detected SessionLocaleResolver
+09-12-2024 11:20:11 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+09-12-2024 11:20:11 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7dc6ce7d
+09-12-2024 11:20:11 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@640890bc
+09-12-2024 11:20:11 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+09-12-2024 11:20:11 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+09-12-2024 11:20:11 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/", parameters={}
+09-12-2024 11:20:11 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+09-12-2024 11:20:11 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/img/Eventixpro_recortado_5.jpg", parameters={}
+09-12-2024 11:20:11 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+09-12-2024 11:20:11 DEBUG o.s.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+09-12-2024 11:20:11 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/img/lion.ico", parameters={}
+09-12-2024 11:20:11 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+09-12-2024 11:20:11 DEBUG o.s.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+09-12-2024 11:20:13 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+09-12-2024 11:20:13 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+09-12-2024 11:20:13 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+09-12-2024 11:20:18 DEBUG o.s.web.servlet.DispatcherServlet - POST "/timmy/loginPost", parameters={masked}
+09-12-2024 11:20:18 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginPost(Login, BindingResult, HttpServletRequest, Model)
+09-12-2024 11:20:18 INFO  com.core.timmy.data.model.User - Roles from ana: {USER|ADMIN}
+09-12-2024 11:20:19 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+09-12-2024 11:20:22 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customerContactListGet", parameters={}
+09-12-2024 11:20:22 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerContactControllerImpl#customerContactListGet(Principal, Model, HttpServletRequest)
+09-12-2024 11:20:22 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+09-12-2024 11:20:24 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customerContact/addGet", parameters={}
+09-12-2024 11:20:24 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+09-12-2024 11:20:24 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+09-12-2024 11:20:24 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource customerContact/addGet.]
+09-12-2024 11:20:24 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+09-12-2024 11:20:24 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/timmy/error", parameters={}
+09-12-2024 11:20:24 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+09-12-2024 11:20:24 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+09-12-2024 11:20:29 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customerContact/viewGet/2", parameters={}
+09-12-2024 11:20:29 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerContactControllerImpl#customerContactViewGet(Long, Principal, Model, HttpServletRequest)
+09-12-2024 11:20:29 INFO  c.c.t.c.CustomerContactControllerImpl - customerContact= Optional[CustomerContact(id=2, name=Ana Pérezosa, phone=+34 600 654 321   , email=aperez@tecnovision.com, observations=Encargada de proyectos, comunicationList=[])]
+09-12-2024 11:20:29 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+09-12-2024 11:20:31 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customerContact/viewGet/1", parameters={}
+09-12-2024 11:20:31 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerContactControllerImpl#customerContactViewGet(Long, Principal, Model, HttpServletRequest)
+09-12-2024 11:20:31 INFO  c.c.t.c.CustomerContactControllerImpl - customerContact= Optional[CustomerContact(id=1, name=Carlos Martínez, phone=+34 600 123 456   , email=cmartinez@tecnovision.com, observations=Responsable de ventas, comunicationList=[Comunication(id=1, budget=Budget(id=1, currentAmount=15000.5, currentStatus=Status(id=1, statusName=INICIADO)), status=Status(id=1, statusName=INICIADO), message=Revisando detalles del presupuesto., messageDate=2024-09-20, amount=1500.5)])]
+09-12-2024 11:20:31 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+09-12-2024 11:20:33 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customerContactListGet", parameters={}
+09-12-2024 11:20:33 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerContactControllerImpl#customerContactListGet(Principal, Model, HttpServletRequest)
+09-12-2024 11:20:33 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+09-12-2024 11:20:35 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customerContact/viewGet/5", parameters={}
+09-12-2024 11:20:35 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerContactControllerImpl#customerContactViewGet(Long, Principal, Model, HttpServletRequest)
+09-12-2024 11:20:35 INFO  c.c.t.c.CustomerContactControllerImpl - customerContact= Optional[CustomerContact(id=5, name=Pedro Sánchez, phone=+34 611 765 432   , email=psanchez@solucionesglobales.com, observations=Jefe de operaciones, comunicationList=[])]
+09-12-2024 11:20:35 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+09-12-2024 11:20:36 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customerContactListGet", parameters={}
+09-12-2024 11:20:36 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerContactControllerImpl#customerContactListGet(Principal, Model, HttpServletRequest)
+09-12-2024 11:20:37 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+09-12-2024 11:20:37 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customerContact/updateGet/1", parameters={}
+09-12-2024 11:20:37 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerContactControllerImpl#customerContactUpdateGet(Long, Principal, Model, HttpServletRequest)
+09-12-2024 11:20:37 INFO  c.c.t.c.CustomerContactControllerImpl - TRAZA customerContactUpdateGet
+09-12-2024 11:20:37 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+09-12-2024 11:20:48 DEBUG o.s.web.servlet.DispatcherServlet - POST "/timmy/customerContact/updatePost", parameters={masked}
+09-12-2024 11:20:48 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerContactControllerImpl#customerContactUpdatePost(CustomerContact, BindingResult, Principal, Model, HttpServletRequest)
+09-12-2024 11:20:48 INFO  c.c.t.c.CustomerContactControllerImpl - TRAZA customerContactUpdatePost
+09-12-2024 11:20:48 INFO  c.c.t.c.CustomerContactControllerImpl - Formulario correcto: CustomerContact(id=1, name=Carlos MolinaCHuc, phone=+34 600 123 456   , email=cmartinez@tecnovision.com, observations=Responsable de ventas, comunicationList=[Comunication(id=1, budget=Budget(id=1, currentAmount=15000.5, currentStatus=Status(id=1, statusName=INICIADO)), status=Status(id=1, statusName=INICIADO), message=Revisando detalles del presupuesto., messageDate=2024-09-20, amount=1500.5)])
+09-12-2024 11:20:48 INFO  com.core.timmy.aop.Monitor - Monitor ANTES!! aspectAroundSave > CustomerContact com.core.timmy.serviceImpl.CustomerContactServiceImpl.save(CustomerContact) >> save
+09-12-2024 11:20:48 INFO  com.core.timmy.aop.Monitor - Monitor aspectBeforeSave > CustomerContact com.core.timmy.serviceImpl.CustomerContactServiceImpl.save(CustomerContact)
+09-12-2024 11:20:48 INFO  com.core.timmy.aop.Monitor - Monitor aspectAfterReturningSave > CustomerContact com.core.timmy.serviceImpl.CustomerContactServiceImpl.save(CustomerContact) >> save >>> CustomerContact(id=1, name=Carlos MolinaCHuc, phone=+34 600 123 456   , email=cmartinez@tecnovision.com, observations=Responsable de ventas, comunicationList=[Comunication(id=1, budget=Budget(id=1, currentAmount=15000.5, currentStatus=Status(id=1, statusName=INICIADO)), status=Status(id=1, statusName=INICIADO), message=Revisando detalles del presupuesto., messageDate=2024-09-20, amount=1500.5)])
+09-12-2024 11:20:48 INFO  com.core.timmy.aop.Monitor - Monitor aspectAfterSave > CustomerContact com.core.timmy.serviceImpl.CustomerContactServiceImpl.save(CustomerContact) >> save
+09-12-2024 11:20:48 INFO  com.core.timmy.aop.Monitor - Monitor DESPUES!! aspectAroundSave > CustomerContact com.core.timmy.serviceImpl.CustomerContactServiceImpl.save(CustomerContact) >> save
+09-12-2024 11:20:48 WARN  c.c.t.c.CustomerContactControllerImpl - TRAZA: después de salir de customerContactPost >> customerContactService -> save
+09-12-2024 11:20:48 DEBUG o.s.web.servlet.view.RedirectView - View name [redirect:], model {}
+09-12-2024 11:20:48 DEBUG o.s.web.servlet.DispatcherServlet - Completed 302 FOUND
+09-12-2024 11:20:48 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customerContactListGet", parameters={}
+09-12-2024 11:20:48 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.CustomerContactControllerImpl#customerContactListGet(Principal, Model, HttpServletRequest)
+09-12-2024 11:20:48 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+09-12-2024 11:20:54 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/customerContact/addGet", parameters={}
+09-12-2024 11:20:54 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+09-12-2024 11:20:54 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+09-12-2024 11:20:54 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource customerContact/addGet.]
+09-12-2024 11:20:54 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+09-12-2024 11:20:54 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/timmy/error", parameters={}
+09-12-2024 11:20:54 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+09-12-2024 11:20:54 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+09-12-2024 12:59:20 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+09-12-2024 12:59:20 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+09-12-2024 12:59:20 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+09-12-2024 12:59:20 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -58,18 +58,18 @@
               
               <div class="row mt-4">
                 <div class="col">
-                   	<div th:if="${customer.getCustomerContactList().size() != 0}">
+                   	<div th:if="${customer.getContactList().size() != 0}">
 					<p th:text="'This customer has following contacts:'">                   		
                    	<ul>
-                   		<li th:each="customerContact : ${customer.getCustomerContactList()}"
-                   			th:value="${customerContact.getId()}"
-                   			th:text="${customerContact.getName()} + ' > ' 
-                   				   + ${customerContact.getPhone()} + ' >> '
-                   				   + ${customerContact.getObservations()}">                    		
+                   		<li th:each="contact : ${customer.getContactList()}"
+                   			th:value="${contact.getId()}"
+                   			th:text="${contact.getName()} + ' > ' 
+                   				   + ${contact.getPhone()} + ' >> '
+                   				   + ${contact.getObservations()}">                    		
                    		</li>
                    	</ul>
                    	</div> 
-           	        <p th:unless="${customer.getCustomerContactList().size() != 0}"
+           	        <p th:unless="${customer.getContactList().size() != 0}"
                   		th:text="'This customer has not contacts'">
                    	</p>
                 </div>     		              		

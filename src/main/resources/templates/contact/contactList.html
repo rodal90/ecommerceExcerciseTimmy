@@ -24,10 +24,10 @@
             
             <!-- <p th:text="${customerList}" class="mb-5"></p> -->
               
-            <p class="mb-2" th:text="#{html.customerContactList.subtitle}"></p>
+            <p class="mb-2" th:text="#{html.contactList.subtitle}"></p>
              
             <div>
-            	<a th:text="'Add'" role="button" class="btn btn-success mb-1" th:href="@{/customerContact/addGet}"></a>
+            	<a th:text="'Add'" role="button" class="btn btn-success mb-1" th:href="@{/contact/addGet}"></a>
             </div>
             
             <div class="table-responsive bg-light">
@@ -37,7 +37,7 @@
                     <th>ID</th>
                     <th>Name</th>
                     <th>Phone</th>
-                    <th>Customer</th>
+                    <th>POI</th>
                     <th>Communications</th>
                     <th class="text-primary">View</th>
                     <th class="text-warning">Update</th>
@@ -49,15 +49,15 @@
                     <td th:text="${entity.getId()}"></td>
                     <td th:text="${entity.getName()}"></td>
                     <td th:text="${entity.getPhone()}"></td>
-                    <td th:text="${entity.getCustomer().getName()}"></td>
+                    <td th:text="${entity.getPersonOfInterest().getName()}"></td>
                     <td th:text="${entity.getComunicationList().size() > 0} ? 'Hay Comunications' : 'No hay Comunications'"
                      th:classappend="${(entity.getComunicationList().size() > 0)} ? 'text-danger' : 'text-dark'"></td>
                     
                     <td>
-                    	<a th:text="'View'" role="button" class="btn btn-primary" th:href="@{/customerContact/viewGet/} + ${entity.getId()}"></a>
+                    	<a th:text="'View'" role="button" class="btn btn-primary" th:href="@{/contact/viewGet/} + ${entity.getId()}"></a>
                     </td>
                     <td>
-                    	<a th:text="'Update'" role="button" class="btn btn-warning" th:href="@{/customerContact/updateGet/} + ${entity.getId()}"></a>
+                    	<a th:text="'Update'" role="button" class="btn btn-warning" th:href="@{/contact/updateGet/} + ${entity.getId()}"></a>
                     </td>
                     
                     <!--
@@ -68,7 +68,7 @@
                     
                     <td>
                     	<button th:if="${entity.getComunicationList().size() > 0}" disabled th:text="'Delete'" role="button" class="btn btn-danger"></button>
-                    	<a th:unless="${entity.getComunicationList().size() > 0}" th:text="'Delete'" role="button" class="btn btn-danger" th:href="@{/customerContact/deleteGet/} + ${entity.getId()}"></a>
+                    	<a th:unless="${entity.getComunicationList().size() > 0}" th:text="'Delete'" role="button" class="btn btn-danger" th:href="@{/contact/deleteGet/} + ${entity.getId()}"></a>
                     	
                     </td>
                     

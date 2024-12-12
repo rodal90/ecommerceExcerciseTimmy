@@ -59,7 +59,7 @@
                  <div class="row mt-4">
 				<div class="input-group mb-2">
 				  <span class="input-group-text bg-secondary text-light" id="inputGroup-sizing-default">Customer Name</span>
-                  <input readonly th:value="${entity.getCustomer().getName()}" type="text" class="form-control" placeholder="Customer Name">
+                  <input readonly th:value="${entity.getPersonOfInterest().getName()}" type="text" class="form-control" placeholder="Poi Name">
                 </div>
               </div>
               
@@ -86,14 +86,14 @@
 
               <div class="row mt-4">
 			    <div class="col text-center">
- 	               <a type="button" th:href="@{/customerContactListGet}"
+ 	               <a type="button" th:href="@{/contactListGet}"
     	              class="btn btn-success w-100 btn-round mb-3 btn-rised">
         	          Back 
             	    </a>
             	</div>
               
                <div class="col text-center">
- 	               <a type="button" th:text=#{html.table.button.delete} th:href="@{/customerContact/deleteConfirmed/} + ${entity.getId()}"
+ 	               <a type="button" th:text=#{html.table.button.delete} th:href="@{/contact/deleteConfirmed/} + ${entity.getId()}"
     	              class="btn btn-danger w-100 btn-round mb-3 btn-rised">
             	    </a>
             	</div>
