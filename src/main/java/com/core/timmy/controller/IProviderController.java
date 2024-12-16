@@ -13,7 +13,7 @@ import jakarta.validation.Valid;
 
 public interface IProviderController {
 
-	 public String providerListGet(Principal principal, Model model);
+	 public String providerListGet(Principal principal, Model model, HttpServletRequest request);
 
 	public String providerViewGet(Long id, Principal principal, Model model, HttpServletRequest request);
 

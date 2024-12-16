@@ -1,8 +1,6 @@
 package com.core.timmy.controllerImpl;
 
 import java.security.Principal;
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,11 +10,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.core.timmy.controller.IContactController;
-import com.core.timmy.controller.IStartController;
 import com.core.timmy.data.model.Contact;
-import com.core.timmy.data.model.Provider;
 import com.core.timmy.service.IContactService;
-import com.core.timmy.service.ICustomerService;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;

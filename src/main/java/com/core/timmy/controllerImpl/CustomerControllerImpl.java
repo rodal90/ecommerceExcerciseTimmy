@@ -21,7 +21,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Controller
-public class CustomerControllerImpl implements ICustomerController {
+public class CustomerControllerImpl extends MasterControllerImpl implements ICustomerController {
 	@Autowired
 
 	private ICustomerService customerService;
@@ -33,8 +33,8 @@ public class CustomerControllerImpl implements ICustomerController {
 										 */
 	public String customerListGet(Principal principal, Model model ,HttpServletRequest request) {
 		System.out.println("TRAZA customerListGet");
-		model.addAttribute("username", principal.getName());
-		model.addAttribute("userPicture", "");
+		
+		this.injectCommonAtrributesInHtmlPage(principal, model,request);
 
 		// inyectar los registros de los customer, siempre debemos tirar de los
 		// servicios. aca hemos pedido la lista
@@ -61,8 +61,8 @@ public class CustomerControllerImpl implements ICustomerController {
 	public String customerViewGet(@PathVariable("id") Long id, Principal principal, Model model,
 			HttpServletRequest request) {
 		System.out.println("TRAZA customerViewGet");
-		model.addAttribute("username", principal.getName());
-		model.addAttribute("userPicture", "");
+		
+		this.injectCommonAtrributesInHtmlPage(principal, model,request);
 
 		// inyectar los registros de los customer, siempre debemos tirar de los
 		// servicios. aca hemos pedido la lista
@@ -82,8 +82,9 @@ public class CustomerControllerImpl implements ICustomerController {
 	public String customerDeleteGet(@PathVariable("id") Long id, Principal principal, Model model,
 			HttpServletRequest request) {
 		System.out.println("TRAZA customerDeleteGet");
-		model.addAttribute("username", principal.getName());
-		model.addAttribute("userPicture", "");
+		
+		
+		this.injectCommonAtrributesInHtmlPage(principal, model,request);
 
 		// inyectar los registros de los customer, siempre debemos tirar de los
 		// servicios. aca hemos pedido la lista
@@ -122,9 +123,8 @@ public class CustomerControllerImpl implements ICustomerController {
 	public String customerUpdateGet(@PathVariable("id") Long id, Principal principal, Model model,
 			HttpServletRequest request) {
 		System.out.println("TRAZA customerUpdateGet");
-		model.addAttribute("username", principal.getName());
-		model.addAttribute("userPicture", "");
-
+		
+		this.injectCommonAtrributesInHtmlPage(principal, model,request);
 		// inyectar los registros de los customer, siempre debemos tirar de los
 		// servicios. aca hemos pedido la lista
 
@@ -142,8 +142,8 @@ public class CustomerControllerImpl implements ICustomerController {
 										 */
 	public String customerAddGet(Principal principal, Model model, HttpServletRequest request) {
 		System.out.println("TRAZA customerAddGet");
-		model.addAttribute("username", principal.getName());
-		model.addAttribute("userPicture", "");
+		
+		this.injectCommonAtrributesInHtmlPage(principal, model,request);
 
 		// inyectar los registros de los customer, siempre debemos tirar de los
 		// servicios. aca hemos pedido la lista

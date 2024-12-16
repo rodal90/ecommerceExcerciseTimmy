@@ -30,20 +30,22 @@ public class WebMvcConfig implements WebMvcConfigurer, ApplicationContextAware {
   
    // Bean to change Locale by default:
     @Bean
-    LocaleResolver localeResolver() {
+    LocaleResolver localeResolver() {//sirve para establecer un idioma como preestablecido al inicio de la aplicación
         SessionLocaleResolver sessionLocaleResolver = new SessionLocaleResolver();
-     // sessionLocaleResolver.setDefaultLocale(new Locale("es", "ES"));
+     sessionLocaleResolver.setDefaultLocale(new Locale("es", "ES"));
         
-        sessionLocaleResolver.setDefaultLocale(Locale.US);
+        // sessionLocaleResolver.setDefaultLocale(Locale.of("es", "ES",""));
+        
         
         return sessionLocaleResolver;
     }
 
     // Bean to apply an interceptor for changing Locale from web pages:
     @Bean
-    LocaleChangeInterceptor localeChangeInterceptor() {
+    LocaleChangeInterceptor localeChangeInterceptor() { //para interceptar  creamos obejeto localchangeinterceptor, y el nombre dle parametro que va a servir es "lang"
+    	//podemos interceptar para idioma, para seguridad, cuando no queremos que la pagina se reconstruya de 0, sino que solo se cambie lo que le pido. 
         LocaleChangeInterceptor localeChangeInterceptor = new LocaleChangeInterceptor();
-        localeChangeInterceptor.setParamName("lang");
+        localeChangeInterceptor.setParamName("lang"); //no cambiar lang aunque se pueda proque en ciertos espacios no funciona otra cosa que este
 	    localeChangeInterceptor.setIgnoreInvalidLocale(true);
 
         return localeChangeInterceptor;
@@ -51,7 +53,7 @@ public class WebMvcConfig implements WebMvcConfigurer, ApplicationContextAware {
    
     // Bean to allow changing languages (implementing WebMvcConfigurer):
     @Override
-    public void addInterceptors(InterceptorRegistry registry) {
+    public void addInterceptors(InterceptorRegistry registry) {//registro de interceptores, para ver que cambios van a afectar o no. Le pasamos la función de arriba.
         registry.addInterceptor(localeChangeInterceptor());
     }
    

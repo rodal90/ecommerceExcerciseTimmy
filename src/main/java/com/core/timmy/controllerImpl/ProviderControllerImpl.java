@@ -26,7 +26,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Controller
-public class ProviderControllerImpl implements IProviderController {
+public class ProviderControllerImpl extends MasterControllerImpl implements IProviderController {
 	@Autowired
 
 	private IProviderService providerService;
@@ -39,8 +39,8 @@ public class ProviderControllerImpl implements IProviderController {
 	public String providerViewGet(@PathVariable("id") Long id, Principal principal, Model model,
 			HttpServletRequest request) {
 		System.out.println("TRAZA providerViewGet");
-		model.addAttribute("username", principal.getName());
-		model.addAttribute("userPicture", "");
+		
+		this.injectCommonAtrributesInHtmlPage(principal, model,request);
 
 		// inyectar los registros de los customer, siempre debemos tirar de los
 		// servicios. aca hemos pedido la lista
@@ -54,11 +54,11 @@ public class ProviderControllerImpl implements IProviderController {
 
 	@Override
 	@GetMapping({ "/providerListGet" }) 
-	public String providerListGet(Principal principal, Model model) {
+	public String providerListGet(Principal principal, Model model, HttpServletRequest request) {
 		log.info("TRAZA providerListGet");
 		
-		model.addAttribute("username", principal.getName());
-		model.addAttribute("userPicture", "");
+		
+		this.injectCommonAtrributesInHtmlPage(principal, model,request);
 
 		// inyectar los registros de los customer, siempre debemos tirar de los
 		// servicios. aca hemos pedido la lista
@@ -82,8 +82,8 @@ public class ProviderControllerImpl implements IProviderController {
 	public String providerDeleteGet(@PathVariable("id") Long id, Principal principal, Model model,
 			HttpServletRequest request) {
 		System.out.println("TRAZA providerDeleteGet");
-		model.addAttribute("username", principal.getName());
-		model.addAttribute("userPicture", "");
+		
+		this.injectCommonAtrributesInHtmlPage(principal, model,request);
 
 		// inyectar los registros de los customer, siempre debemos tirar de los
 		// servicios. aca hemos pedido la lista
@@ -122,8 +122,8 @@ public class ProviderControllerImpl implements IProviderController {
 	public String providerUpdateGet(@PathVariable("id") Long id, Principal principal, Model model,
 			HttpServletRequest request) {
 		System.out.println("TRAZA providerUpdateGet");
-		model.addAttribute("username", principal.getName());
-		model.addAttribute("userPicture", "");
+		
+		this.injectCommonAtrributesInHtmlPage(principal, model,request);
 
 		// inyectar los registros de los customer, siempre debemos tirar de los
 		// servicios. aca hemos pedido la lista
@@ -169,8 +169,9 @@ public class ProviderControllerImpl implements IProviderController {
 										 */
 	public String providerAddGet(Principal principal, Model model, HttpServletRequest request) {
 		System.out.println("TRAZA providerAddGet");
-		model.addAttribute("username", principal.getName());
-		model.addAttribute("userPicture", "");
+		
+		
+		this.injectCommonAtrributesInHtmlPage(principal, model,request);
 
 		// inyectar los registros de los customer, siempre debemos tirar de los
 		// servicios. aca hemos pedido la lista

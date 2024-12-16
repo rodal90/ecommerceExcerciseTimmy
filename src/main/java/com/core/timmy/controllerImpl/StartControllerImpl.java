@@ -13,6 +13,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import com.core.timmy.config.LanguageResourceBundleMessage;
 import com.core.timmy.controller.IStartController;
 import com.core.timmy.data.model.Login;
 import com.core.timmy.data.validation.NifValidator;
@@ -31,7 +32,7 @@ import java.security.Principal;
 
 @Controller
 @Slf4j
-public class StartControllerImpl implements IStartController {
+public class StartControllerImpl extends MasterControllerImpl implements IStartController {
 	
 	//auto inyecto el servicio del login para poder usarlo abajo
 	@Autowired
@@ -42,6 +43,9 @@ public class StartControllerImpl implements IStartController {
 	
 	@Autowired
 	private ISqlScriptCreatorService sqlCreatorServiceImpl;
+	
+	@Autowired
+	private LanguageResourceBundleMessage languageResourceBundleMessage;
 	
 	
 	
@@ -112,7 +116,7 @@ public class StartControllerImpl implements IStartController {
 	@Override
 	@GetMapping({"/homeGet"}) /*hay que asegurarse que el boton que vamos a pinchar tenga este enlace para que se conecte con este método*/
 	
-	public String homeGet(Principal principal, Model model) {
+	public String homeGet(Principal principal, Model model, HttpServletRequest request) {
 		
 		System.out.println("TRAZA homeGet");
 		
@@ -122,8 +126,7 @@ public class StartControllerImpl implements IStartController {
 		//debido a que no se recomienda un controllador para 
 		//login dentro de html Inject data into html page
 		
-		model.addAttribute("username", principal.getName());
-		model.addAttribute("userPicture", "");
+		this.injectCommonAtrributesInHtmlPage(principal, model,request);
 		
 		//Testing NifValidator el metodo(funcion):
 		/*NifValidator.nifIsCorrectAndNotNull("12345678A");
@@ -184,10 +187,30 @@ public class StartControllerImpl implements IStartController {
 				}
 			
 		}
-		//TODO user/password test
-		model.addAttribute("username", login.getUsername());
+		
+		return "redirect:/homeGet";
+	}
+	
+	@Override
+	public void injectCommonAtrributesInHtmlPage(
+			
+		
+					//todas estas son inyecciones para poder usarlas en distintas partes del código
+			
+			Principal principal,
+			Model model,
+			HttpServletRequest request) {
+		
+		model.addAttribute("username",request.getUserPrincipal().getName()); //si ha recogido al usuario autenticado el getUserPrincipal por eso se debe usar aqui en vez del principal
 		model.addAttribute("userPicture", "");
-		return "masterfull";
+		
+		model.addAttribute("languageTagStringList", languageResourceBundleMessage.getLanguageTagStringListFromResourceArray());
+		model.addAttribute("requestURI", request.getRequestURI());
+		
+		log.warn("TRAZA: "+"languageTagStringList", languageResourceBundleMessage.getLanguageTagStringListFromResourceArray());
+		
+		log.warn("Traza2: "+"requestURI", request.getRequestURI());
+	
 	}
 
 }
