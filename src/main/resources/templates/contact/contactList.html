@@ -41,7 +41,7 @@
                     <th>Communications</th>
                     <th class="text-primary">View</th>
                     <th class="text-warning">Update</th>
-                    <th class="text-danger">Delete</th>
+                    <th sec:authorize="hasAuthority('MANAGER')" class="text-danger">Delete</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -66,7 +66,7 @@
                     </td>
                     -->
                     
-                    <td>
+                    <td sec:authorize="hasAuthority('MANAGER')">
                     	<button th:if="${entity.getComunicationList().size() > 0}" disabled th:text="'Delete'" role="button" class="btn btn-danger"></button>
                     	<a th:unless="${entity.getComunicationList().size() > 0}" th:text="'Delete'" role="button" class="btn btn-danger" th:href="@{/contact/deleteGet/} + ${entity.getId()}"></a>
                     	

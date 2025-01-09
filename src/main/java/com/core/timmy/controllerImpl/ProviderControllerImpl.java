@@ -20,6 +20,7 @@ import com.core.timmy.data.model.Provider;
 import com.core.timmy.service.ICustomerService;
 import com.core.timmy.service.IProviderService;
 
+import jakarta.annotation.security.RolesAllowed;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
@@ -75,6 +76,7 @@ public class ProviderControllerImpl extends MasterControllerImpl implements IPro
 	}
 	
 	@Override
+	@RolesAllowed({"MANAGER"})
 	@GetMapping({ "/provider/deleteGet/{id}" }) /*
 												 * hay que asegurarse que el boton que vamos a pinchar tenga este enlace
 												 * para que se conecte con este método
@@ -96,6 +98,7 @@ public class ProviderControllerImpl extends MasterControllerImpl implements IPro
 	}
 
 	@Override
+	@RolesAllowed({"MANAGER"})
 	@GetMapping({ "/provider/deleteConfirmed/{id}" }) /*
 														 * hay que asegurarse que el boton que vamos a pinchar tenga
 														 * este enlace para que se conecte con este método

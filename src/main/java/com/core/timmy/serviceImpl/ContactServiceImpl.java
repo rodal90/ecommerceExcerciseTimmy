@@ -7,8 +7,10 @@ import java.util.Optional;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Service;
 
+import com.core.timmy.aop.LogExecutionTimeAnnotation;
 import com.core.timmy.data.model.Contact;
 
 import com.core.timmy.data.repository.IContactRepository;
@@ -32,6 +34,7 @@ public class ContactServiceImpl implements IContactService {
 	}
 	
 	@Override
+	@Secured({"MANAGER"})
 	public Boolean deleteById(Long id) {
 		
 		this.contactRepository.deleteById(id);
@@ -59,6 +62,7 @@ public class ContactServiceImpl implements IContactService {
 	}
 
 	@Override
+	@LogExecutionTimeAnnotation
 	public List<Contact> findAll() {
 		
 		return this.contactRepository.findAll(); /*repositorio devuelve un objeto list, la mayoria de veces array list. 

@@ -37,7 +37,7 @@
 									<th th:text="#{html.providerList.table.email}"></th>
 									<th th:text="#{html.table.button.view}" class="text-primary">View</th>
 									<th th:text="#{html.table.button.update}" class="text-warning">Update</th>
-									<th th:text="#{html.table.button.delete}" class="text-danger">Delete</th>
+									<th sec:authorize="hasAuthority('MANAGER')" th:text="#{html.table.button.delete}" class="text-danger">Delete</th>
 									
 								</tr>
 							</thead>
@@ -62,7 +62,7 @@
 									
 									</td>
 									
-									<td><a th:text="#{html.table.button.delete}" role="button" class="btn btn-danger" th:href="@{/provider/deleteGet/} + ${provider.getId()}">
+									<td sec:authorize="hasAuthority('MANAGER')"><a th:text="#{html.table.button.delete}" role="button" class="btn btn-danger" th:href="@{/provider/deleteGet/} + ${provider.getId()}">
 									</a>
 									
 									</td>

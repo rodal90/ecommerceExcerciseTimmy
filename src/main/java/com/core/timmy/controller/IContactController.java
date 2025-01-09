@@ -31,6 +31,8 @@ public interface IContactController {
 
 	public String contactUpdatePost(@Valid Contact contact, BindingResult bindingResult,
 			Principal principal, Model model, HttpServletRequest request);
+
+	public String contactAddGet(Principal principal, Model model, HttpServletRequest request) throws Exception;
 	
 	
 

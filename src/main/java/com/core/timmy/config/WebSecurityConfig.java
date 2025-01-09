@@ -31,7 +31,10 @@ import lombok.extern.slf4j.Slf4j;
   *https://www.devglan.com/online-tools/bcrypt-has-generator
 		*/
 
-
+/*van juntas estas tres anotaciones*/
+/*los tres parametros de enableMethods Securtiy , prePost Enabled = activa las atiquetas "PreAuthorize" y "Post" las ponemos a false si no las queremos,
+ * securedEnabled = activa la etiqueta secured , jsr250Enabled= es un complemento hace lo mismo que las otras etiquetas pero a traves del estandar jsr250
+ * queremos poder usar estas etiquetas de forma independiente del lado del front o del lado del back*/
 @Configuration
 @EnableWebSecurity
 @EnableMethodSecurity(

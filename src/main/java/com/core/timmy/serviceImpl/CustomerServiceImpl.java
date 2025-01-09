@@ -7,8 +7,10 @@ import java.util.Optional;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Service;
 
+import com.core.timmy.aop.LogExecutionTimeAnnotation;
 import com.core.timmy.data.model.Customer;
 
 import com.core.timmy.data.repository.ICustomerRepository;
@@ -38,6 +40,7 @@ public class CustomerServiceImpl implements ICustomerService {
 	}
 
 	@Override
+	@LogExecutionTimeAnnotation
 	public List<Customer> findAll() {
 		
 		return this.customerRepository.findAll(); /*repositorio devuelve un objeto list, la mayoria de veces array list. 
@@ -45,6 +48,7 @@ public class CustomerServiceImpl implements ICustomerService {
 	}
 
 	@Override
+	@Secured({"MANAGER"})
 	public String deleteById(Long id) {
 		this.customerRepository.deleteById(id);		
 		return this.customerRepository.existsById(id)? "Borrado" : "No Borrado";

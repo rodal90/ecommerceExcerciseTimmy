@@ -169,9 +169,47 @@ implements IContactController {
 			
 		
 		
+		
 		return "contact/contactList";
 	}
 	
+	
+	@Override
+	@GetMapping({"/contact/addGet"})
+	public String contactAddGet(
+			Principal principal, 
+			Model model,
+			HttpServletRequest request) /*throws Exception */{
+		
+		// TODO pending addGet & addPost
+		try {
+			service.save(null);
+	} catch (Exception ex) {
+			// TODO Auto-generated catch block
+//			e.printStackTrace();
+			log.warn("Catched Exception: " + ex.getMessage());
+		}
+//		try {
+//			Random random = new Random();
+//			Boolean bool = random.nextBoolean();
+//			log.info("TRAZA contactAddGet > bool= " + bool);
+//			if (bool) { // i.e.: if (contactEntity == null) {
+//				throw new NullPointerException("Input is null!!!");
+//			}
+//		} catch (NullPointerException ex) {
+//			log.warn("Catched Exception: " + ex.getMessage());
+//		}
+		//
+		return "redirect:/contactListGet";
+		//
+		/*
+		this.injectCommonAttributesInHtmlPage(principal, model, request);
+		
+		model.addAttribute("contact", this.service.newContact());
+		
+		return "contact/contactAdd";
+		*/
+	}
 	
 
 }

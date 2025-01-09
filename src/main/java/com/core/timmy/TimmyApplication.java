@@ -55,11 +55,12 @@ public class TimmyApplication extends SpringBootServletInitializer {
 			userRepository.save(new User("ana", "ana@gmail.com",
 					"$2a$12$lNnVqBXnZjl3C9a8dnBkqurWXtMg0pOjQqYFlD76XJhF0.Wio6XXq"/* anaPass */, "Ana Perez",
 					LocalDate.now().plusMonths(1), LocalDate.now().plusMonths(1), true, false,
-					Set.of(roleRepository.findById("ADMIN").get(), roleRepository.findById("USER").get())));
+					Set.of(roleRepository.findById("MANAGER").get(), roleRepository.findById("USER").get())));
 
 			userRepository.save(new User("luis", "luis@gmail.com",
 					"$2a$12$V7GPq65lUeKLc.sFDPUhi.OUAg9uMWQJvxvXSgXsj/te/pucKozzS"/* luisPass */, "luis Gomez",
-					LocalDate.now().plusMonths(1), LocalDate.now().plusMonths(1), true, false, new HashSet<Role>()));// le
+					LocalDate.now().plusMonths(1), LocalDate.now().plusMonths(1), true, false, 
+					Set.of(roleRepository.findById("USER").get())));// le
 																														// hemos
 																														// dado
 																														// una

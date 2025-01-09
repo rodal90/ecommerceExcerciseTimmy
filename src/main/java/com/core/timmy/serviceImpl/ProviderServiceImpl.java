@@ -15,6 +15,7 @@ import com.core.timmy.data.repository.IProviderRepository;
 
 import com.core.timmy.service.IProviderService;
 
+import jakarta.annotation.security.RolesAllowed;
 import lombok.extern.slf4j.Slf4j;
 
 
@@ -49,6 +50,7 @@ public class ProviderServiceImpl implements IProviderService {
 	}
 
 	@Override
+	@RolesAllowed({"MANAGER"})
 	public String deleteById(Long id) {
 		this.providerRepository.deleteById(id);		
 		return this.providerRepository.existsById(id)? "Borrado" : "No Borrado";

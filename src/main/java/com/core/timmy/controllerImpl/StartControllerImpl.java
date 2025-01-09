@@ -17,6 +17,7 @@ import com.core.timmy.config.LanguageResourceBundleMessage;
 import com.core.timmy.controller.IStartController;
 import com.core.timmy.data.model.Login;
 import com.core.timmy.data.validation.NifValidator;
+import com.core.timmy.service.IEncryptionService;
 import com.core.timmy.service.ILoginService;
 import com.core.timmy.service.ISqlScriptCreatorService;
 
@@ -28,6 +29,7 @@ import lombok.extern.slf4j.Slf4j;
 //sirve para no tener que utilizar en los nombres de paquetes y de clases muy largos no necesitemos usar todo el nombre
 import static org.springframework.security.web.context.HttpSessionSecurityContextRepository.SPRING_SECURITY_CONTEXT_KEY;
 
+import java.security.NoSuchAlgorithmException;
 import java.security.Principal;
 
 @Controller
@@ -37,6 +39,9 @@ public class StartControllerImpl extends MasterControllerImpl implements IStartC
 	//auto inyecto el servicio del login para poder usarlo abajo
 	@Autowired
 	private ILoginService loginService;
+	
+	@Autowired
+	private IEncryptionService encryptionService;
 	
 	@Autowired
 	private AuthenticationManager authenticationManager;
@@ -134,6 +139,21 @@ public class StartControllerImpl extends MasterControllerImpl implements IStartC
 		NifValidator.nifIsCorrectAndNotNull("12345678z");
 		NifValidator.nifIsCorrectAndNotNull("abc45678");
 		NifValidator.nifIsCorrectAndNotNull(null);*/
+		
+		//Check Max key size for encryption:
+		/*try {
+			int maxKeySize = javax.crypto.Cipher.getMaxAllowedKeyLength("AES"); //Other aalgorithm
+			log.info("Max key size for AES algorithm= " + maxKeySize);
+			
+		} catch (NoSuchAlgorithmException e) {
+			//e.printStackTrace();
+			log.error("EXCEPTION when calculating MAx key size for AES algorithm= "+ e.getMessage());
+			// TODO: handle exception
+		}
+		*/
+		
+		encryptionService.findAllEncodersName();
+		
 		return "masterfull";
 	}
 
