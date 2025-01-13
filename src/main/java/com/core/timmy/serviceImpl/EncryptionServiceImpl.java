@@ -2,6 +2,7 @@ package com.core.timmy.serviceImpl;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,8 +30,23 @@ public class EncryptionServiceImpl implements IEncryptionService {
 
 	@Override
 	public Encryption encryptText(Encryption encryption) {
-		// TODO Auto-generated method stub
-		return null;
+		// Get textoToEncrypt and algorithm´s name
+		// Obtain the passwordEncoder related to the algorithm´s name
+		Optional<PasswordEncoder>passwordEncoder = this.encoderList
+		.stream()
+		.filter(x->x.getClass().getSimpleName().replace("PasswordEncoder","").equals(encryption.getPasswordEncoderString())) //en objetos se usa equals SIEMPRE.
+		.findFirst();
+		
+		if(passwordEncoder.isEmpty()){
+			encryption.setTextEncrypted("Error - NO ENCRYPTION ALGORITHM");
+			
+		}
+		else {
+			encryption.setTextEncrypted(passwordEncoder.get().encode(encryption.getTextToEncrypt()));//saco el encoder con el get... el encode para encryptar y el matches para comparar y verificar que 
+		}
+		
+		//Calculate and return the Encryption object with textEncrypted filled. 
+		return encryption;
 	}
 
 	@Override

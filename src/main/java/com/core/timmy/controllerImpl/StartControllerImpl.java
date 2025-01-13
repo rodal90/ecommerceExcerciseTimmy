@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import com.core.timmy.config.LanguageResourceBundleMessage;
 import com.core.timmy.controller.IStartController;
+import com.core.timmy.data.model.Encryption;
 import com.core.timmy.data.model.Login;
 import com.core.timmy.data.validation.NifValidator;
 import com.core.timmy.service.IEncryptionService;
@@ -151,9 +152,13 @@ public class StartControllerImpl extends MasterControllerImpl implements IStartC
 			// TODO: handle exception
 		}
 		*/
-		
+		//un obejto vacio de encryption para 
 		encryptionService.findAllEncodersName();
-		
+		Encryption encryption= encryptionService.newEntity();
+		encryption.setTextToEncrypt("En un lugar de la Mancha");
+		encryption.setPasswordEncoderString("Pbkdf2");
+		log.info("El texto encriptado es: "+ encryptionService.encryptText(encryption).getTextEncrypted());
+;		
 		return "masterfull";
 	}
 
