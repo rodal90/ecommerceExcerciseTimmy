@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html
+
+ xmlns="http://www.w3,org/1999/xhtml"
+ xmlns:th="http://www.thymeleaf.org"
+ xmlns:layout="http://www.ultraq.net.nz/thymeLeaf/layout"
+ xmlns:sec="http://www.thymeLeaf.org/extras/spring-security"
+>
+
+   
+
+  <div th:replace="~{standarLayouts/head :: head1}">
+   AQUI DEBERIAMOS USAR EL HEAD
+  </div>
+  
+    <nav th:replace="~{standarLayouts/navbar :: navbar1}">
+           AQUI DEBERIA DE ALISR EL navbar
+   </nav>
+
+  <body>
+
+    <section style="min-height: 100vh" class="pb-3 pt-3 bg-dark text-light">
+      <div class="block pt-3 pb-3 text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-10">
+
+              <h4 class="mt-2 mb-2 text-white">
+             
+              Text Encryption
+              </h4> <!-- el encryption es una inyecciòn del objeto encryption-->
+            <!--  <p th:text="${encoderList}"></p>-->
+              
+              <form th:object="${encryption}" method= "POST" th:action="@{/encryption/encryptionPost}" class="form-inline d-flex justify-content-center h-50">
+              <!--  -->
+                <input th:field="*{textToEncrypt}" class="form-control  form-control mb-3"
+                  placeholder="Text to Encrypt">
+                  
+                  <select th:field="*{passwordEncoderString}" required class="form-control">
+                  <!-- como no sabemos cuantos objetos tenemso en la lista, usamos th:each para recorrerla -->
+                   <!-- es importante saber cual es la selección del cliente  -->
+                  <option th:each="encoder : ${encoderList}"  th:text ="${encoder}" th:value="${encoder}">
+                     
+                     
+                  
+                   </option>
+                  
+                  </select>
+            
+            
+                <button type="submit" class="btn btn-primary w-100 btn-round mb-3 btn-rised" th:text="'Get encryption > '"></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <div th:replace="~{standarLayouts/sectionCards :: sectionCards1}">
+   AQUI DEBERIAMOS USAR El sectionCards
+  </div>
+    
+    <div th:replace="~{standarLayouts/sectionFooter :: sectionFooter1}">
+   AQUI DEBERIAMOS USAR EL sectionFooter
+  </div>
+
+    <div th:replace="~{standarLayouts/script :: script1}">
+           AQUI DEBERIA DE ALISR EL script
+   </div>
+
+
+
+  </body>
+
+</html>
