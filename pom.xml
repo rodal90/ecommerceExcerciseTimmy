@@ -77,6 +77,13 @@
 			<groupId>org.thymeleaf.extras</groupId>
 			<artifactId>thymeleaf-extras-springsecurity6</artifactId>
 		</dependency>
+		<!--If we want to use Scrypt Algorithm we need this next dependency-->
+		<!--In case you have an older version you need to change the version and the artifactId-->
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov-jdk18on</artifactId>
+			<version>1.76</version>		
+		</dependency>
 
 		<dependency>
 			<groupId>com.h2database</groupId>
