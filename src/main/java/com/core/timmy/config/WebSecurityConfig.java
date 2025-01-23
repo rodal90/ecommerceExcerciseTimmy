@@ -11,6 +11,7 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.crypto.argon2.Argon2PasswordEncoder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.crypto.password.Pbkdf2PasswordEncoder;
@@ -149,6 +150,19 @@ public class WebSecurityConfig {
 	@Bean
 	PasswordEncoder passwordEncoderPbkdf2() {
 		return Pbkdf2PasswordEncoder.defaultsForSpringSecurity_v5_8(); //new Pbkdf2PasswordEncoder();
+		// Don's use constructor, it needs several parameters.
+		// Instead use method defaultsForSpringSecurity_v5_8() that
+		// constructs a PBKDF2 password encoder with no additional secret value. 
+		// There will be a salt length of 16 bytes, 310,000 iterations, SHA-256 algorithm 
+		// and a hash length of 256 bits. The default is based upon aiming for .5 seconds 
+		// to validate the password when this class was added. Users should tune 
+		// password verification to their own systems.
+	}
+	
+
+	@Bean
+	PasswordEncoder passwordEncoderArgon2() {
+		return Argon2PasswordEncoder.defaultsForSpringSecurity_v5_8(); //new Pbkdf2PasswordEncoder();
 		// Don's use constructor, it needs several parameters.
 		// Instead use method defaultsForSpringSecurity_v5_8() that
 		// constructs a PBKDF2 password encoder with no additional secret value. 

@@ -1,47 +1,151 @@
-23-01-2025 09:54:43 INFO  com.core.timmy.TimmyApplication - Starting TimmyApplication using Java 21.0.4 with PID 496 (C:\Users\manana\eclipse-workspace\timmy\target\classes started by manana in C:\Users\manana\eclipse-workspace\timmy)
-23-01-2025 09:54:43 INFO  com.core.timmy.TimmyApplication - No active profile set, falling back to 1 default profile: "default"
-23-01-2025 09:54:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-23-01-2025 09:54:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-23-01-2025 09:54:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 79 ms. Found 8 JPA repository interfaces.
-23-01-2025 09:54:46 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-23-01-2025 09:54:46 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-23-01-2025 09:54:46 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
-23-01-2025 09:54:46 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring embedded WebApplicationContext
-23-01-2025 09:54:46 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2018 ms
-23-01-2025 09:54:46 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-23-01-2025 09:54:46 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:eventix user=SAS
-23-01-2025 09:54:46 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-23-01-2025 09:54:46 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:eventix'
-23-01-2025 09:54:46 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
-23-01-2025 09:54:46 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
-23-01-2025 09:54:46 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-23-01-2025 09:54:46 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
-23-01-2025 09:54:46 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-23-01-2025 09:54:46 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-23-01-2025 09:54:48 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-23-01-2025 09:54:48 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-23-01-2025 09:54:48 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
-23-01-2025 09:54:48 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-23-01-2025 09:54:49 INFO  com.core.timmy.config.WebMvcConfig - Dialects & TemplateResolvers:  > [org.thymeleaf.spring6.dialect.SpringStandardDialect@14cf30b3, nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect@5a640f98, org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect@39e0fe23] >> [org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver@60eacbbf] >>> 1
-23-01-2025 09:54:49 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
-23-01-2025 09:54:49 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 32 mappings in 'requestMappingHandlerMapping'
-23-01-2025 09:54:49 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-23-01-2025 09:54:49 INFO  c.c.timmy.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@5e136445, interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6175619b, started on Thu Jan 23 09:54:44 CET 2025, interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7356ec91}
-23-01-2025 09:54:49 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-23-01-2025 09:54:49 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-23-01-2025 09:54:50 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/timmy'
-23-01-2025 09:54:50 INFO  com.core.timmy.TimmyApplication - Started TimmyApplication in 6.661 seconds (process running for 7.985)
-23-01-2025 09:54:56 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-23-01-2025 09:54:56 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-23-01-2025 09:54:56 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
-23-01-2025 09:54:56 DEBUG o.s.web.servlet.DispatcherServlet - Detected SessionLocaleResolver
-23-01-2025 09:54:56 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
-23-01-2025 09:54:56 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@276511ca
-23-01-2025 09:54:56 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@4390b78f
-23-01-2025 09:54:56 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-23-01-2025 09:54:56 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-23-01-2025 09:54:56 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/", parameters={}
-23-01-2025 09:54:56 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
+20-01-2025 08:59:06 INFO  com.core.timmy.TimmyApplication - Starting TimmyApplication using Java 21.0.4 with PID 10760 (C:\Users\manana\eclipse-workspace\timmy\target\classes started by manana in C:\Users\manana\eclipse-workspace\timmy)
+20-01-2025 08:59:06 INFO  com.core.timmy.TimmyApplication - No active profile set, falling back to 1 default profile: "default"
+20-01-2025 08:59:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+20-01-2025 08:59:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20-01-2025 08:59:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 85 ms. Found 8 JPA repository interfaces.
+20-01-2025 08:59:09 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+20-01-2025 08:59:09 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20-01-2025 08:59:09 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+20-01-2025 08:59:09 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring embedded WebApplicationContext
+20-01-2025 08:59:09 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2228 ms
+20-01-2025 08:59:09 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20-01-2025 08:59:09 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:eventix user=SAS
+20-01-2025 08:59:09 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20-01-2025 08:59:09 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:eventix'
+20-01-2025 08:59:09 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+20-01-2025 08:59:09 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+20-01-2025 08:59:09 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+20-01-2025 08:59:09 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+20-01-2025 08:59:09 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+20-01-2025 08:59:10 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+20-01-2025 08:59:11 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+20-01-2025 08:59:11 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-01-2025 08:59:12 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+20-01-2025 08:59:12 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+20-01-2025 08:59:12 INFO  com.core.timmy.config.WebMvcConfig - Dialects & TemplateResolvers:  > [org.thymeleaf.spring6.dialect.SpringStandardDialect@201c1d99, nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect@71de943f, org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect@5e756b8d] >> [org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver@6ac0c3aa] >>> 1
+20-01-2025 08:59:12 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+20-01-2025 08:59:12 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 32 mappings in 'requestMappingHandlerMapping'
+20-01-2025 08:59:12 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+20-01-2025 08:59:12 INFO  c.c.timmy.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@5aa0d535, interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5cc126dc, started on Mon Jan 20 08:59:07 CET 2025, interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@57421e4e}
+20-01-2025 08:59:13 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+20-01-2025 08:59:13 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+20-01-2025 08:59:13 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/timmy'
+20-01-2025 08:59:13 INFO  com.core.timmy.TimmyApplication - Started TimmyApplication in 7.341 seconds (process running for 8.07)
+20-01-2025 08:59:34 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20-01-2025 08:59:34 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+20-01-2025 08:59:34 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+20-01-2025 08:59:34 DEBUG o.s.web.servlet.DispatcherServlet - Detected SessionLocaleResolver
+20-01-2025 08:59:34 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+20-01-2025 08:59:34 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@107ac2b6
+20-01-2025 08:59:34 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1f9009d3
+20-01-2025 08:59:34 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+20-01-2025 08:59:34 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+20-01-2025 08:59:34 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+20-01-2025 08:59:34 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+20-01-2025 08:59:35 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20-01-2025 08:59:43 DEBUG o.s.web.servlet.DispatcherServlet - POST "/timmy/loginPost", parameters={masked}
+20-01-2025 08:59:43 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginPost(Login, BindingResult, HttpServletRequest, Model)
+20-01-2025 08:59:44 INFO  com.core.timmy.data.model.User - Roles from ana: {MANAGER|USER}
+20-01-2025 08:59:44 DEBUG o.s.web.servlet.view.RedirectView - View name [redirect:], model {}
+20-01-2025 08:59:44 DEBUG o.s.web.servlet.DispatcherServlet - Completed 302 FOUND
+20-01-2025 08:59:44 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/homeGet", parameters={}
+20-01-2025 08:59:44 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#homeGet(Principal, Model, HttpServletRequest)
+20-01-2025 08:59:44 INFO  c.c.t.c.LanguageResourceBundleMessage - resourceArray= 3
+20-01-2025 08:59:44 INFO  c.c.t.c.LanguageResourceBundleMessage - message_en_US.properties
+20-01-2025 08:59:44 INFO  c.c.t.c.LanguageResourceBundleMessage - message_es_ES.properties
+20-01-2025 08:59:44 INFO  c.c.t.c.LanguageResourceBundleMessage - message_it_IT.properties
+20-01-2025 08:59:44 INFO  c.c.t.c.LanguageResourceBundleMessage - resourceArray= 3
+20-01-2025 08:59:44 INFO  c.c.t.c.LanguageResourceBundleMessage - message_en_US.properties
+20-01-2025 08:59:44 INFO  c.c.t.c.LanguageResourceBundleMessage - message_es_ES.properties
+20-01-2025 08:59:44 INFO  c.c.t.c.LanguageResourceBundleMessage - message_it_IT.properties
+20-01-2025 08:59:44 WARN  c.c.t.c.StartControllerImpl - TRAZA: languageTagStringList
+20-01-2025 08:59:44 WARN  c.c.t.c.StartControllerImpl - Traza2: requestURI
+20-01-2025 08:59:44 INFO  c.c.t.s.EncryptionServiceImpl - Beans - names of PaswordEncoder class registered in Spring Container: 
+20-01-2025 08:59:44 INFO  c.c.t.s.EncryptionServiceImpl - 		>> BCrypt
+20-01-2025 08:59:44 INFO  c.c.t.s.EncryptionServiceImpl - 		>> SCrypt
+20-01-2025 08:59:44 INFO  c.c.t.s.EncryptionServiceImpl - 		>> Pbkdf2
+20-01-2025 08:59:45 INFO  c.c.t.c.StartControllerImpl - El texto encriptado es: 9a0ce5c8918f2a9eec606e9a1c4bec670f664957c705b309b9c961cab52e73507d5a4a60d32a1365c38306b5205729af
+20-01-2025 08:59:45 INFO  com.core.timmy.data.model.User - Roles from ana: {USER|MANAGER}
+20-01-2025 08:59:45 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/img/world2.svg", parameters={}
+20-01-2025 08:59:45 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+20-01-2025 08:59:45 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/img/it_IT.svg", parameters={}
+20-01-2025 08:59:45 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/img/en_US.svg", parameters={}
+20-01-2025 08:59:45 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/img/es_ES.svg", parameters={}
+20-01-2025 08:59:45 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+20-01-2025 08:59:45 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+20-01-2025 08:59:45 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+20-01-2025 08:59:45 DEBUG o.s.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+20-01-2025 08:59:45 DEBUG o.s.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+20-01-2025 08:59:45 DEBUG o.s.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+20-01-2025 08:59:45 DEBUG o.s.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+20-01-2025 08:59:45 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20-01-2025 09:00:02 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/encryption/encryptionGet", parameters={}
+20-01-2025 09:00:02 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.EncryptionControllerImpl#encryptionGet(Principal, Model, HttpServletRequest)
+20-01-2025 09:00:02 INFO  c.c.t.c.EncryptionControllerImpl - TRAZA encryptionGet
+20-01-2025 09:00:02 INFO  c.c.t.c.LanguageResourceBundleMessage - resourceArray= 3
+20-01-2025 09:00:02 INFO  c.c.t.c.LanguageResourceBundleMessage - message_en_US.properties
+20-01-2025 09:00:02 INFO  c.c.t.c.LanguageResourceBundleMessage - message_es_ES.properties
+20-01-2025 09:00:02 INFO  c.c.t.c.LanguageResourceBundleMessage - message_it_IT.properties
+20-01-2025 09:00:02 INFO  c.c.t.c.LanguageResourceBundleMessage - resourceArray= 3
+20-01-2025 09:00:02 INFO  c.c.t.c.LanguageResourceBundleMessage - message_en_US.properties
+20-01-2025 09:00:02 INFO  c.c.t.c.LanguageResourceBundleMessage - message_es_ES.properties
+20-01-2025 09:00:02 INFO  c.c.t.c.LanguageResourceBundleMessage - message_it_IT.properties
+20-01-2025 09:00:02 WARN  c.c.t.c.MasterControllerImpl - TRAZA: languageTagStringList
+20-01-2025 09:00:02 WARN  c.c.t.c.MasterControllerImpl - Traza2: requestURI
+20-01-2025 09:00:02 INFO  c.c.t.s.EncryptionServiceImpl - Beans - names of PaswordEncoder class registered in Spring Container: 
+20-01-2025 09:00:02 INFO  c.c.t.s.EncryptionServiceImpl - 		>> BCrypt
+20-01-2025 09:00:02 INFO  c.c.t.s.EncryptionServiceImpl - 		>> SCrypt
+20-01-2025 09:00:02 INFO  c.c.t.s.EncryptionServiceImpl - 		>> Pbkdf2
+20-01-2025 09:00:02 INFO  com.core.timmy.data.model.User - Roles from ana: {USER|MANAGER}
+20-01-2025 09:00:02 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20-01-2025 09:01:09 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+20-01-2025 09:01:09 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+20-01-2025 09:01:09 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+20-01-2025 09:01:09 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+20-01-2025 10:14:02 INFO  com.core.timmy.TimmyApplication - Starting TimmyApplication using Java 21.0.4 with PID 12532 (C:\Users\manana\eclipse-workspace\timmy\target\classes started by manana in C:\Users\manana\eclipse-workspace\timmy)
+20-01-2025 10:14:02 INFO  com.core.timmy.TimmyApplication - No active profile set, falling back to 1 default profile: "default"
+20-01-2025 10:14:03 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+20-01-2025 10:14:03 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20-01-2025 10:14:03 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 79 ms. Found 8 JPA repository interfaces.
+20-01-2025 10:14:04 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+20-01-2025 10:14:04 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20-01-2025 10:14:04 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+20-01-2025 10:14:04 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring embedded WebApplicationContext
+20-01-2025 10:14:04 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1837 ms
+20-01-2025 10:14:04 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20-01-2025 10:14:04 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:eventix user=SAS
+20-01-2025 10:14:04 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20-01-2025 10:14:04 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:eventix'
+20-01-2025 10:14:04 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+20-01-2025 10:14:04 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+20-01-2025 10:14:04 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+20-01-2025 10:14:05 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+20-01-2025 10:14:05 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+20-01-2025 10:14:05 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+20-01-2025 10:14:06 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+20-01-2025 10:14:06 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-01-2025 10:14:07 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+20-01-2025 10:14:07 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+20-01-2025 10:14:07 INFO  com.core.timmy.config.WebMvcConfig - Dialects & TemplateResolvers:  > [org.thymeleaf.spring6.dialect.SpringStandardDialect@66fd9613, nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect@27ccf818, org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect@5f6ae1d] >> [org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver@6230a15a] >>> 1
+20-01-2025 10:14:07 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+20-01-2025 10:14:07 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 32 mappings in 'requestMappingHandlerMapping'
+20-01-2025 10:14:07 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+20-01-2025 10:14:07 INFO  c.c.timmy.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@5576eef4, class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@53e6c017, interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6175619b, started on Mon Jan 20 10:14:02 CET 2025}
+20-01-2025 10:14:08 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+20-01-2025 10:14:08 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+20-01-2025 10:14:08 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/timmy'
+20-01-2025 10:14:08 INFO  com.core.timmy.TimmyApplication - Started TimmyApplication in 6.454 seconds (process running for 7.139)
+20-01-2025 10:14:15 INFO  o.a.c.c.C.[.[localhost].[/timmy] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20-01-2025 10:14:15 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+20-01-2025 10:14:15 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+20-01-2025 10:14:15 DEBUG o.s.web.servlet.DispatcherServlet - Detected SessionLocaleResolver
+20-01-2025 10:14:15 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+20-01-2025 10:14:15 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@19cb3f
+20-01-2025 10:14:15 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@49afaf65
+20-01-2025 10:14:15 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+20-01-2025 10:14:15 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+20-01-2025 10:14:15 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/", parameters={}
+20-01-2025 10:14:15 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -172,7 +276,7 @@ Caused by: org.springframework.beans.NotReadablePropertyException: Invalid prope
 	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:617)
 	at org.thymeleaf.extras.springsecurity6.auth.AuthUtils.getAuthenticationProperty(AuthUtils.java:137)
 	... 117 common frames omitted
-23-01-2025 09:54:56 DEBUG o.s.web.servlet.DispatcherServlet - Error rendering view [org.thymeleaf.spring6.view.ThymeleafView@712175ff]
+20-01-2025 10:14:15 DEBUG o.s.web.servlet.DispatcherServlet - Error rendering view [org.thymeleaf.spring6.view.ThymeleafView@7fd0de80]
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -303,8 +407,8 @@ Caused by: org.springframework.beans.NotReadablePropertyException: Invalid prope
 	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:617)
 	at org.thymeleaf.extras.springsecurity6.auth.AuthUtils.getAuthenticationProperty(AuthUtils.java:137)
 	... 117 common frames omitted
-23-01-2025 09:54:56 DEBUG o.s.web.servlet.DispatcherServlet - Failed to complete request: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
-23-01-2025 09:54:56 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/timmy] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")] with root cause
+20-01-2025 10:14:15 DEBUG o.s.web.servlet.DispatcherServlet - Failed to complete request: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
+20-01-2025 10:14:15 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/timmy] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")] with root cause
 org.springframework.beans.NotReadablePropertyException: Invalid property 'principal.authorities' of bean class [org.springframework.security.authentication.AnonymousAuthenticationToken]: Bean property 'principal.authorities' is not readable or has an invalid getter method: Does the return type of the getter match the parameter type of the setter?
 	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:627)
 	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:617)
@@ -426,57 +530,109 @@ org.springframework.beans.NotReadablePropertyException: Invalid property 'princi
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-23-01-2025 09:54:56 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
-23-01-2025 09:54:56 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
-23-01-2025 09:54:56 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-23-01-2025 09:55:00 DEBUG o.s.web.servlet.DispatcherServlet - POST "/timmy/loginPost", parameters={masked}
-23-01-2025 09:55:00 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginPost(Login, BindingResult, HttpServletRequest, Model)
-23-01-2025 09:55:01 INFO  com.core.timmy.data.model.User - Roles from ana: {USER|MANAGER}
-23-01-2025 09:55:01 DEBUG o.s.web.servlet.view.RedirectView - View name [redirect:], model {}
-23-01-2025 09:55:01 DEBUG o.s.web.servlet.DispatcherServlet - Completed 302 FOUND
-23-01-2025 09:55:01 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/homeGet", parameters={}
-23-01-2025 09:55:01 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#homeGet(Principal, Model, HttpServletRequest)
-23-01-2025 09:55:01 INFO  c.c.t.c.LanguageResourceBundleMessage - resourceArray= 3
-23-01-2025 09:55:01 INFO  c.c.t.c.LanguageResourceBundleMessage - message_en_US.properties
-23-01-2025 09:55:01 INFO  c.c.t.c.LanguageResourceBundleMessage - message_es_ES.properties
-23-01-2025 09:55:01 INFO  c.c.t.c.LanguageResourceBundleMessage - message_it_IT.properties
-23-01-2025 09:55:01 INFO  c.c.t.c.LanguageResourceBundleMessage - resourceArray= 3
-23-01-2025 09:55:01 INFO  c.c.t.c.LanguageResourceBundleMessage - message_en_US.properties
-23-01-2025 09:55:01 INFO  c.c.t.c.LanguageResourceBundleMessage - message_es_ES.properties
-23-01-2025 09:55:01 INFO  c.c.t.c.LanguageResourceBundleMessage - message_it_IT.properties
-23-01-2025 09:55:01 WARN  c.c.t.c.StartControllerImpl - TRAZA: languageTagStringList
-23-01-2025 09:55:01 WARN  c.c.t.c.StartControllerImpl - Traza2: requestURI
-23-01-2025 09:55:01 INFO  c.c.t.s.EncryptionServiceImpl - Beans - names of PaswordEncoder class registered in Spring Container: 
-23-01-2025 09:55:01 INFO  c.c.t.s.EncryptionServiceImpl - 		>> BCrypt
-23-01-2025 09:55:01 INFO  c.c.t.s.EncryptionServiceImpl - 		>> SCrypt
-23-01-2025 09:55:01 INFO  c.c.t.s.EncryptionServiceImpl - 		>> Pbkdf2
-23-01-2025 09:55:01 INFO  c.c.t.s.EncryptionServiceImpl - 		>> Argon2
-23-01-2025 09:55:02 INFO  c.c.t.c.StartControllerImpl - El texto encriptado es: b83fb894aa7d4bdbfa6fb319d5c3e80d57c46340593fc850a21100c1a0ddc829fea8beed474fa41d5e0a3d1980d480b1
-23-01-2025 09:55:02 INFO  com.core.timmy.data.model.User - Roles from ana: {USER|MANAGER}
-23-01-2025 09:55:02 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-23-01-2025 09:55:04 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/encryption/encryptionGet", parameters={}
-23-01-2025 09:55:04 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.EncryptionControllerImpl#encryptionGet(Principal, Model, HttpServletRequest)
-23-01-2025 09:55:04 INFO  c.c.t.c.EncryptionControllerImpl - TRAZA encryptionGet
-23-01-2025 09:55:04 INFO  c.c.t.c.LanguageResourceBundleMessage - resourceArray= 3
-23-01-2025 09:55:04 INFO  c.c.t.c.LanguageResourceBundleMessage - message_en_US.properties
-23-01-2025 09:55:04 INFO  c.c.t.c.LanguageResourceBundleMessage - message_es_ES.properties
-23-01-2025 09:55:04 INFO  c.c.t.c.LanguageResourceBundleMessage - message_it_IT.properties
-23-01-2025 09:55:04 INFO  c.c.t.c.LanguageResourceBundleMessage - resourceArray= 3
-23-01-2025 09:55:04 INFO  c.c.t.c.LanguageResourceBundleMessage - message_en_US.properties
-23-01-2025 09:55:04 INFO  c.c.t.c.LanguageResourceBundleMessage - message_es_ES.properties
-23-01-2025 09:55:04 INFO  c.c.t.c.LanguageResourceBundleMessage - message_it_IT.properties
-23-01-2025 09:55:04 WARN  c.c.t.c.MasterControllerImpl - TRAZA: languageTagStringList
-23-01-2025 09:55:04 WARN  c.c.t.c.MasterControllerImpl - Traza2: requestURI
-23-01-2025 09:55:04 INFO  c.c.t.s.EncryptionServiceImpl - Beans - names of PaswordEncoder class registered in Spring Container: 
-23-01-2025 09:55:04 INFO  c.c.t.s.EncryptionServiceImpl - 		>> BCrypt
-23-01-2025 09:55:04 INFO  c.c.t.s.EncryptionServiceImpl - 		>> SCrypt
-23-01-2025 09:55:04 INFO  c.c.t.s.EncryptionServiceImpl - 		>> Pbkdf2
-23-01-2025 09:55:04 INFO  c.c.t.s.EncryptionServiceImpl - 		>> Argon2
-23-01-2025 09:55:04 INFO  com.core.timmy.data.model.User - Roles from ana: {MANAGER|USER}
-23-01-2025 09:55:04 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-23-01-2025 09:55:12 DEBUG o.s.web.servlet.DispatcherServlet - POST "/timmy/encryption/encryptionPost", parameters={masked}
-23-01-2025 09:55:12 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.EncryptionControllerImpl#encryptionPost(Encryption, BindingResult, Principal, Model, HttpServletRequest)
-23-01-2025 09:55:12 INFO  c.c.t.c.EncryptionControllerImpl - Formulario correcto: Encryption(textToEncrypt=Fang Loco, passwordEncoderString=Argon2, textEncrypted=null)
-23-01-2025 09:55:12 WARN  c.c.t.c.EncryptionControllerImpl - TRAZA: después de salir de encryptionPost >> EncryptionService -> encryptText
-23-01-2025 09:55:12 INFO  com.core.timmy.data.model.User - Roles from ana: {USER|MANAGER}
-23-01-2025 09:55:12 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20-01-2025 10:14:15 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+20-01-2025 10:14:15 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+20-01-2025 10:14:15 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20-01-2025 10:14:21 DEBUG o.s.web.servlet.DispatcherServlet - POST "/timmy/loginPost", parameters={masked}
+20-01-2025 10:14:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginPost(Login, BindingResult, HttpServletRequest, Model)
+20-01-2025 10:14:21 DEBUG o.s.web.servlet.DispatcherServlet - Failed to complete request: org.springframework.security.authentication.BadCredentialsException: Bad credentials
+20-01-2025 10:14:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/loginGet", parameters={}
+20-01-2025 10:14:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginGet(Model)
+20-01-2025 10:14:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20-01-2025 10:14:26 DEBUG o.s.web.servlet.DispatcherServlet - POST "/timmy/loginPost", parameters={masked}
+20-01-2025 10:14:26 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#loginPost(Login, BindingResult, HttpServletRequest, Model)
+20-01-2025 10:14:26 INFO  com.core.timmy.data.model.User - Roles from ana: {USER|MANAGER}
+20-01-2025 10:14:26 DEBUG o.s.web.servlet.view.RedirectView - View name [redirect:], model {}
+20-01-2025 10:14:26 DEBUG o.s.web.servlet.DispatcherServlet - Completed 302 FOUND
+20-01-2025 10:14:26 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/homeGet", parameters={}
+20-01-2025 10:14:26 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#homeGet(Principal, Model, HttpServletRequest)
+20-01-2025 10:14:26 INFO  c.c.t.c.LanguageResourceBundleMessage - resourceArray= 3
+20-01-2025 10:14:26 INFO  c.c.t.c.LanguageResourceBundleMessage - message_en_US.properties
+20-01-2025 10:14:26 INFO  c.c.t.c.LanguageResourceBundleMessage - message_es_ES.properties
+20-01-2025 10:14:26 INFO  c.c.t.c.LanguageResourceBundleMessage - message_it_IT.properties
+20-01-2025 10:14:26 INFO  c.c.t.c.LanguageResourceBundleMessage - resourceArray= 3
+20-01-2025 10:14:26 INFO  c.c.t.c.LanguageResourceBundleMessage - message_en_US.properties
+20-01-2025 10:14:26 INFO  c.c.t.c.LanguageResourceBundleMessage - message_es_ES.properties
+20-01-2025 10:14:26 INFO  c.c.t.c.LanguageResourceBundleMessage - message_it_IT.properties
+20-01-2025 10:14:26 WARN  c.c.t.c.StartControllerImpl - TRAZA: languageTagStringList
+20-01-2025 10:14:26 WARN  c.c.t.c.StartControllerImpl - Traza2: requestURI
+20-01-2025 10:14:26 INFO  c.c.t.s.EncryptionServiceImpl - Beans - names of PaswordEncoder class registered in Spring Container: 
+20-01-2025 10:14:26 INFO  c.c.t.s.EncryptionServiceImpl - 		>> BCrypt
+20-01-2025 10:14:26 INFO  c.c.t.s.EncryptionServiceImpl - 		>> SCrypt
+20-01-2025 10:14:26 INFO  c.c.t.s.EncryptionServiceImpl - 		>> Pbkdf2
+20-01-2025 10:14:27 INFO  c.c.t.c.StartControllerImpl - El texto encriptado es: 3106448b94833ed5104e96de9cab63c512caf92d73c3ec997423ac018504a7cf4a3ea569dd90aec046de79791733bd16
+20-01-2025 10:14:27 INFO  com.core.timmy.data.model.User - Roles from ana: {USER|MANAGER}
+20-01-2025 10:14:27 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20-01-2025 10:14:29 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/encryption/encryptionGet", parameters={}
+20-01-2025 10:14:29 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.EncryptionControllerImpl#encryptionGet(Principal, Model, HttpServletRequest)
+20-01-2025 10:14:29 INFO  c.c.t.c.EncryptionControllerImpl - TRAZA encryptionGet
+20-01-2025 10:14:29 INFO  c.c.t.c.LanguageResourceBundleMessage - resourceArray= 3
+20-01-2025 10:14:29 INFO  c.c.t.c.LanguageResourceBundleMessage - message_en_US.properties
+20-01-2025 10:14:29 INFO  c.c.t.c.LanguageResourceBundleMessage - message_es_ES.properties
+20-01-2025 10:14:29 INFO  c.c.t.c.LanguageResourceBundleMessage - message_it_IT.properties
+20-01-2025 10:14:29 INFO  c.c.t.c.LanguageResourceBundleMessage - resourceArray= 3
+20-01-2025 10:14:29 INFO  c.c.t.c.LanguageResourceBundleMessage - message_en_US.properties
+20-01-2025 10:14:29 INFO  c.c.t.c.LanguageResourceBundleMessage - message_es_ES.properties
+20-01-2025 10:14:29 INFO  c.c.t.c.LanguageResourceBundleMessage - message_it_IT.properties
+20-01-2025 10:14:29 WARN  c.c.t.c.MasterControllerImpl - TRAZA: languageTagStringList
+20-01-2025 10:14:29 WARN  c.c.t.c.MasterControllerImpl - Traza2: requestURI
+20-01-2025 10:14:29 INFO  c.c.t.s.EncryptionServiceImpl - Beans - names of PaswordEncoder class registered in Spring Container: 
+20-01-2025 10:14:29 INFO  c.c.t.s.EncryptionServiceImpl - 		>> BCrypt
+20-01-2025 10:14:29 INFO  c.c.t.s.EncryptionServiceImpl - 		>> SCrypt
+20-01-2025 10:14:29 INFO  c.c.t.s.EncryptionServiceImpl - 		>> Pbkdf2
+20-01-2025 10:14:29 INFO  com.core.timmy.data.model.User - Roles from ana: {USER|MANAGER}
+20-01-2025 10:14:29 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20-01-2025 10:14:36 DEBUG o.s.web.servlet.DispatcherServlet - POST "/timmy/encryption/encryptionPost", parameters={masked}
+20-01-2025 10:14:36 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.EncryptionControllerImpl#encryptionPost(Encryption, BindingResult, Principal, Model, HttpServletRequest)
+20-01-2025 10:14:36 INFO  c.c.t.c.EncryptionControllerImpl - Formulario correcto: Encryption(textToEncrypt=holalola, passwordEncoderString=SCrypt, textEncrypted=null)
+20-01-2025 10:14:36 WARN  c.c.t.c.EncryptionControllerImpl - TRAZA: después de salir de encryptionPost >> EncryptionService -> encryptText
+20-01-2025 10:14:36 INFO  com.core.timmy.data.model.User - Roles from ana: {USER|MANAGER}
+20-01-2025 10:14:36 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20-01-2025 10:15:23 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/homeGet", parameters={}
+20-01-2025 10:15:23 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.StartControllerImpl#homeGet(Principal, Model, HttpServletRequest)
+20-01-2025 10:15:23 INFO  c.c.t.c.LanguageResourceBundleMessage - resourceArray= 3
+20-01-2025 10:15:23 INFO  c.c.t.c.LanguageResourceBundleMessage - message_en_US.properties
+20-01-2025 10:15:23 INFO  c.c.t.c.LanguageResourceBundleMessage - message_es_ES.properties
+20-01-2025 10:15:23 INFO  c.c.t.c.LanguageResourceBundleMessage - message_it_IT.properties
+20-01-2025 10:15:23 INFO  c.c.t.c.LanguageResourceBundleMessage - resourceArray= 3
+20-01-2025 10:15:23 INFO  c.c.t.c.LanguageResourceBundleMessage - message_en_US.properties
+20-01-2025 10:15:23 INFO  c.c.t.c.LanguageResourceBundleMessage - message_es_ES.properties
+20-01-2025 10:15:23 INFO  c.c.t.c.LanguageResourceBundleMessage - message_it_IT.properties
+20-01-2025 10:15:23 WARN  c.c.t.c.StartControllerImpl - TRAZA: languageTagStringList
+20-01-2025 10:15:23 WARN  c.c.t.c.StartControllerImpl - Traza2: requestURI
+20-01-2025 10:15:23 INFO  c.c.t.s.EncryptionServiceImpl - Beans - names of PaswordEncoder class registered in Spring Container: 
+20-01-2025 10:15:23 INFO  c.c.t.s.EncryptionServiceImpl - 		>> BCrypt
+20-01-2025 10:15:23 INFO  c.c.t.s.EncryptionServiceImpl - 		>> SCrypt
+20-01-2025 10:15:23 INFO  c.c.t.s.EncryptionServiceImpl - 		>> Pbkdf2
+20-01-2025 10:15:24 INFO  c.c.t.c.StartControllerImpl - El texto encriptado es: 388bdcb3f838a6ba2af6c79cb40ee5aafe05c7b81f7c922420bad278ed3e294254df5216b098541e0dcd7a3525172d24
+20-01-2025 10:15:24 INFO  com.core.timmy.data.model.User - Roles from ana: {USER|MANAGER}
+20-01-2025 10:15:24 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20-01-2025 10:15:51 DEBUG o.s.web.servlet.DispatcherServlet - GET "/timmy/encryption/encryptionGet", parameters={}
+20-01-2025 10:15:51 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.EncryptionControllerImpl#encryptionGet(Principal, Model, HttpServletRequest)
+20-01-2025 10:15:51 INFO  c.c.t.c.EncryptionControllerImpl - TRAZA encryptionGet
+20-01-2025 10:15:51 INFO  c.c.t.c.LanguageResourceBundleMessage - resourceArray= 3
+20-01-2025 10:15:51 INFO  c.c.t.c.LanguageResourceBundleMessage - message_en_US.properties
+20-01-2025 10:15:51 INFO  c.c.t.c.LanguageResourceBundleMessage - message_es_ES.properties
+20-01-2025 10:15:51 INFO  c.c.t.c.LanguageResourceBundleMessage - message_it_IT.properties
+20-01-2025 10:15:51 INFO  c.c.t.c.LanguageResourceBundleMessage - resourceArray= 3
+20-01-2025 10:15:51 INFO  c.c.t.c.LanguageResourceBundleMessage - message_en_US.properties
+20-01-2025 10:15:51 INFO  c.c.t.c.LanguageResourceBundleMessage - message_es_ES.properties
+20-01-2025 10:15:51 INFO  c.c.t.c.LanguageResourceBundleMessage - message_it_IT.properties
+20-01-2025 10:15:51 WARN  c.c.t.c.MasterControllerImpl - TRAZA: languageTagStringList
+20-01-2025 10:15:51 WARN  c.c.t.c.MasterControllerImpl - Traza2: requestURI
+20-01-2025 10:15:51 INFO  c.c.t.s.EncryptionServiceImpl - Beans - names of PaswordEncoder class registered in Spring Container: 
+20-01-2025 10:15:51 INFO  c.c.t.s.EncryptionServiceImpl - 		>> BCrypt
+20-01-2025 10:15:51 INFO  c.c.t.s.EncryptionServiceImpl - 		>> SCrypt
+20-01-2025 10:15:51 INFO  c.c.t.s.EncryptionServiceImpl - 		>> Pbkdf2
+20-01-2025 10:15:51 INFO  com.core.timmy.data.model.User - Roles from ana: {USER|MANAGER}
+20-01-2025 10:15:51 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20-01-2025 10:16:04 DEBUG o.s.web.servlet.DispatcherServlet - POST "/timmy/encryption/encryptionPost", parameters={masked}
+20-01-2025 10:16:04 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.EncryptionControllerImpl#encryptionPost(Encryption, BindingResult, Principal, Model, HttpServletRequest)
+20-01-2025 10:16:04 INFO  c.c.t.c.EncryptionControllerImpl - Formulario correcto: Encryption(textToEncrypt=Locuras del Castor, passwordEncoderString=SCrypt, textEncrypted=null)
+20-01-2025 10:16:04 WARN  c.c.t.c.EncryptionControllerImpl - TRAZA: después de salir de encryptionPost >> EncryptionService -> encryptText
+20-01-2025 10:16:04 INFO  com.core.timmy.data.model.User - Roles from ana: {USER|MANAGER}
+20-01-2025 10:16:04 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+20-01-2025 10:16:52 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+20-01-2025 10:16:52 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+20-01-2025 10:16:52 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+20-01-2025 10:16:52 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
