@@ -42,7 +42,7 @@ public class WebMvcConfig implements WebMvcConfigurer, ApplicationContextAware {
 
     // Bean to apply an interceptor for changing Locale from web pages:
     @Bean
-    LocaleChangeInterceptor localeChangeInterceptor() { //para interceptar  creamos obejeto localchangeinterceptor, y el nombre dle parametro que va a servir es "lang"
+    LocaleChangeInterceptor localeChangeInterceptor() { //para interceptar  creamos obejeto localchangeinterceptor, y el nombre del parametro que va a servir es "lang"
     	//podemos interceptar para idioma, para seguridad, cuando no queremos que la pagina se reconstruya de 0, sino que solo se cambie lo que le pido. 
         LocaleChangeInterceptor localeChangeInterceptor = new LocaleChangeInterceptor();
         localeChangeInterceptor.setParamName("lang"); //no cambiar lang aunque se pueda proque en ciertos espacios no funciona otra cosa que este

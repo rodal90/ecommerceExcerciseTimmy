@@ -11,17 +11,12 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.crypto.password.Pbkdf2PasswordEncoder;
 import org.springframework.security.crypto.scrypt.SCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
-//import com.core.timmy.data.repository.IUserRepository;
-//import com.core.timmy.service.IUserService;
-//import com.core.timmy.serviceImpl.UserServiceImpl;
-import com.core.timmy.data.model.User;
 import com.core.timmy.service.IUserService;
 
 import lombok.extern.slf4j.Slf4j;

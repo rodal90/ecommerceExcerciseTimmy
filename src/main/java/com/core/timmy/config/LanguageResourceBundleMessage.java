@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 import lombok.extern.slf4j.Slf4j;
 
 
-/*Para tener lenguajes distintos. PAra meter un nuevo idioma: message_XX_XX_properties, las primeras XX son el pais
+/*Para tener lenguajes distintos. Para meter un nuevo idioma: message_XX_XX_properties, las primeras XX son el pais
  * las segundas XX son el lenguaje. */
 
 //un único objeto de los patrones de controller, de service y de repositories, son singleton solo uno. Entitie si son mas.
@@ -24,8 +24,8 @@ public class LanguageResourceBundleMessage {
 
 	private final Resource[] resourceArray;
 
-    public LanguageResourceBundleMessage(@Value("classpath:**/message_*.properties") Resource[] resourceArray) {//con el valor classpath value, deberia irse buscar los ficheros de imagenes en static img
-    	//prestar mucha atencion a los patrones de busqueda, tiene que ser una direccion relativa. el gión bajo es para que obvie el message.poperties gneral
+    public LanguageResourceBundleMessage(@Value("classpath:**/message_*.properties") Resource[] resourceArray) {//con el valor classpath value, deberia irse a buscar los ficheros de imagenes en static img
+    	//prestar mucha atencion a los patrones de busqueda, tiene que ser una direccion relativa. el gión bajo es para que obvie el message.poperties general
     	//los es_Es o en_US son todos objetos tipo Locale
         this.resourceArray = resourceArray;
     }
