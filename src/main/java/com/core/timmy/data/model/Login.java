@@ -1,7 +1,5 @@
 package com.core.timmy.data.model;
 
-import java.time.LocalDate;
-import java.util.Set;
 
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;

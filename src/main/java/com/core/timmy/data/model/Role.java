@@ -1,13 +1,8 @@
 package com.core.timmy.data.model;
 
 import java.io.Serializable;
-import java.time.LocalDate;
-import java.util.Set;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinTable;
-import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
