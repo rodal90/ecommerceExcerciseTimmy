@@ -480,3 +480,7 @@ org.springframework.beans.NotReadablePropertyException: Invalid property 'princi
 23-01-2025 09:55:12 WARN  c.c.t.c.EncryptionControllerImpl - TRAZA: después de salir de encryptionPost >> EncryptionService -> encryptText
 23-01-2025 09:55:12 INFO  com.core.timmy.data.model.User - Roles from ana: {USER|MANAGER}
 23-01-2025 09:55:12 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+23-01-2025 11:10:29 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+23-01-2025 11:10:29 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23-01-2025 11:10:29 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23-01-2025 11:10:29 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
