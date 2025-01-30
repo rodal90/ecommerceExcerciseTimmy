@@ -84,6 +84,14 @@
 			<artifactId>bcprov-jdk18on</artifactId>
 			<version>1.76</version>		
 		</dependency>
+		
+		<!--If we want to use JASYPT to encrypt property files we need next dependency-->
+		
+		<dependency>
+			<groupId>com.github.ulisesbocchio</groupId>
+			<artifactId>jasypt-spring-boot-starter</artifactId>
+			<version>3.0.5</version>	
+		</dependency>
 
 		<dependency>
 			<groupId>com.h2database</groupId>

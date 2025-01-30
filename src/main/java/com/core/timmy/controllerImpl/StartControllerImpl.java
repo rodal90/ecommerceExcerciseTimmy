@@ -21,6 +21,7 @@ import com.core.timmy.data.validation.NifValidator;
 import com.core.timmy.service.IEncryptionService;
 import com.core.timmy.service.ILoginService;
 import com.core.timmy.service.ISqlScriptCreatorService;
+import com.core.timmy.serviceImpl.PropertiesForJasyptServiceImpl;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
@@ -49,6 +50,9 @@ public class StartControllerImpl extends MasterControllerImpl implements IStartC
 	
 	@Autowired
 	private ISqlScriptCreatorService sqlCreatorServiceImpl;
+	
+	@Autowired
+	private PropertiesForJasyptServiceImpl propertiesForJasyptServiceImpl;
 	
 	@Autowired
 	private LanguageResourceBundleMessage languageResourceBundleMessage;
@@ -153,12 +157,20 @@ public class StartControllerImpl extends MasterControllerImpl implements IStartC
 		}
 		*/
 		//un obejto vacio de encryption para 
-		encryptionService.findAllEncodersName();
+		/*encryptionService.findAllEncodersName();
 		Encryption encryption= encryptionService.newEntity();
 		encryption.setTextToEncrypt("En un lugar de la Mancha");
 		encryption.setPasswordEncoderString("Pbkdf2");
-		log.info("El texto encriptado es: "+ encryptionService.encryptText(encryption).getTextEncrypted());
-;		
+		log.info("El texto encriptado es: "+ encryptionService.encryptText(encryption).getTextEncrypted());*/
+		
+		// Test JASYPT encryption for properties:
+				log.info("admin.name (environment)= " + propertiesForJasyptServiceImpl.getPropertyUsingEnvironment("admin.name"));
+				log.info("admin.email(value)= " + propertiesForJasyptServiceImpl.getAdminEmail());
+				log.info("admin.email(environment)= " + propertiesForJasyptServiceImpl.getPropertyUsingEnvironment("admin.email"));		
+				propertiesForJasyptServiceImpl.getEncryptedPropertiesMap();
+				log.info("spring.datasource.password for H2= " + propertiesForJasyptServiceImpl.getPropertyUsingEnvironment("spring.datasource.password"));		
+				//
+			
 		return "masterfull";
 	}
 
