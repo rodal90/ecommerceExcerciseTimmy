@@ -1,6 +1,5 @@
 package com.core.timmy.serviceImpl;
 
-import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
@@ -70,7 +69,7 @@ public class ProviderServiceImpl implements IProviderService {
 
 	@Override
 	public List<Provider> findAllByOrderByName() {
-		// TODO Auto-generated method stub
+		
 		return this.providerRepository.findAll()
 				.stream()
 				.sorted(Comparator.comparing(Provider::getName))

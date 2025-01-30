@@ -46,7 +46,7 @@ public class UserServiceImpl implements IUserService {
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		
-		//un método que nos permite hacer la busca. Vamos a recuperar y no nos devuelve un user sino un optional, para ver si el user
+		//un método que nos permite hacer la buscaqueda. Vamos a recuperar y no nos devuelve un user sino un optional, para ver si el user
 	 // exister o no existe. La clase optional es una clase envoltorio, cualquier otra clase la podemos meter aqui.  /*Queremos evitar*/
 		/*trabajar con nulos por eso usamos optional para luego preguntar por su contenido.*/
 		Optional<User> userOpt = this.findById(username);

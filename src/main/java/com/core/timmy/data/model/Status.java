@@ -36,14 +36,7 @@ import lombok.extern.slf4j.Slf4j;
 @NoArgsConstructor // Nos crea el constructor vacio
 @ToString
 @Slf4j
-/* El AllArgsConstructor no agregar los atributos final o static. */
 
-/*
- * con lombok se puede crear código fuente a través de comentar con @ y podemos
- * usarlo para generar Getters y Setters, cuando borrramos un atributo lombock
- * automáticamente borra los getters o setters o los modifica se por alguna
- * razón es necesario modificar el nombre
- */
 
 public class Status implements Serializable {
 
@@ -55,19 +48,10 @@ public class Status implements Serializable {
 	@PositiveOrZero
 	private Long id;
 	
-	
-	
-	
 	@NotNull
 	@Column(nullable = false, columnDefinition= "VARCHAR(50) DEFAULT 'STATUS'")
 	@Size(max =50, message= "{model.data.validation.status.statusName}")
 	private String statusName;
-	
-
-	
-	/*@ManyToMany
-    private Set<User> userSet; /*con esto como es una colección de objetos, tendre acceso a una colección completa de todos
-	los atributos de User, eso sería lo que colectaría*/
 
 
 }
