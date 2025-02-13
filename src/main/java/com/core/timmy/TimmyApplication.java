@@ -1,7 +1,6 @@
 package com.core.timmy;
 
 import java.time.LocalDate;
-import java.util.HashSet;
 import java.util.Set;
 
 import org.springframework.boot.CommandLineRunner;
