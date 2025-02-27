@@ -999,3 +999,324 @@ org.springframework.beans.NotReadablePropertyException: Invalid property 'princi
 05-02-2025 14:08:11 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 05-02-2025 14:08:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 05-02-2025 14:08:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+27-02-2025 11:14:10 INFO  c.c.t.c.ProviderControllerImplTest - Starting ProviderControllerImplTest using Java 21.0.4 with PID 9604 (started by manana in C:\Users\manana\eclipse-workspace\timmy)
+27-02-2025 11:14:10 INFO  c.c.t.c.ProviderControllerImplTest - No active profile set, falling back to 1 default profile: "default"
+27-02-2025 11:14:10 DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6bff19ff
+27-02-2025 11:14:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+27-02-2025 11:14:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+27-02-2025 11:14:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 97 ms. Found 8 JPA repository interfaces.
+27-02-2025 11:14:12 INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+27-02-2025 11:14:12 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Annotations [org.springframework.boot.test.autoconfigure.properties.AnnotationsPropertySource] to EncryptableEnumerablePropertySourceWrapper
+27-02-2025 11:14:12 INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+27-02-2025 11:14:12 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource test [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:14:12 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:14:12 INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+27-02-2025 11:14:12 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+27-02-2025 11:14:12 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:14:12 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+27-02-2025 11:14:12 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+27-02-2025 11:14:12 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:14:12 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource class path resource [properties/secretkey.properties] [org.springframework.core.io.support.ResourcePropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:14:29 INFO  c.c.t.c.ProviderControllerImplTest - Starting ProviderControllerImplTest using Java 21.0.4 with PID 1132 (started by manana in C:\Users\manana\eclipse-workspace\timmy)
+27-02-2025 11:14:29 INFO  c.c.t.c.ProviderControllerImplTest - No active profile set, falling back to 1 default profile: "default"
+27-02-2025 11:14:29 DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1450078a
+27-02-2025 11:14:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+27-02-2025 11:14:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+27-02-2025 11:14:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 104 ms. Found 8 JPA repository interfaces.
+27-02-2025 11:14:30 INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+27-02-2025 11:14:30 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Annotations [org.springframework.boot.test.autoconfigure.properties.AnnotationsPropertySource] to EncryptableEnumerablePropertySourceWrapper
+27-02-2025 11:14:30 INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+27-02-2025 11:14:30 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource test [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:14:30 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:14:30 INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+27-02-2025 11:14:30 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+27-02-2025 11:14:30 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:14:30 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+27-02-2025 11:14:30 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+27-02-2025 11:14:30 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:14:30 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource class path resource [properties/secretkey.properties] [org.springframework.core.io.support.ResourcePropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:14:32 INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+27-02-2025 11:14:32 INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+27-02-2025 11:14:32 INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+27-02-2025 11:14:32 INFO  c.u.j.encryptor.DefaultLazyEncryptor - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+27-02-2025 11:14:32 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+27-02-2025 11:14:32 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+27-02-2025 11:14:32 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+27-02-2025 11:14:32 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+27-02-2025 11:14:32 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+27-02-2025 11:14:32 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+27-02-2025 11:14:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+27-02-2025 11:14:32 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:eventix user=SAS
+27-02-2025 11:14:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+27-02-2025 11:14:33 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+27-02-2025 11:14:33 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+27-02-2025 11:14:33 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+27-02-2025 11:14:33 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+27-02-2025 11:14:34 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+27-02-2025 11:14:34 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+27-02-2025 11:14:35 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+27-02-2025 11:14:35 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+27-02-2025 11:14:36 INFO  com.core.timmy.config.WebMvcConfig - Dialects & TemplateResolvers:  > [org.thymeleaf.spring6.dialect.SpringStandardDialect@3f04847e, nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect@2fe6bcbb, org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect@4e92c6c2] >> [org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver@38e46ea] >>> 1
+27-02-2025 11:14:36 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+27-02-2025 11:14:36 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 32 mappings in 'requestMappingHandlerMapping'
+27-02-2025 11:14:36 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+27-02-2025 11:14:36 INFO  c.c.timmy.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@78e3bebd, interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@18a421ea, interface org.springframework.context.ApplicationContext=org.springframework.web.context.support.GenericWebApplicationContext@1450078a, started on Thu Feb 27 11:14:29 CET 2025}
+27-02-2025 11:14:37 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+27-02-2025 11:14:37 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+27-02-2025 11:14:37 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:eventix'
+27-02-2025 11:14:37 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+27-02-2025 11:14:37 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: 
+27-02-2025 11:14:37 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+27-02-2025 11:14:37 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+27-02-2025 11:14:37 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+27-02-2025 11:14:37 INFO  c.c.t.c.ProviderControllerImplTest - Started ProviderControllerImplTest in 9.015 seconds (process running for 10.188)
+27-02-2025 11:14:38 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.ProviderControllerImpl#providerListGet(Principal, Model, HttpServletRequest)
+27-02-2025 11:14:38 INFO  c.c.t.c.ProviderControllerImpl - TRAZA providerListGet
+27-02-2025 11:14:38 INFO  c.c.t.c.LanguageResourceBundleMessage - resourceArray= 0
+27-02-2025 11:14:38 INFO  c.c.t.c.LanguageResourceBundleMessage - resourceArray= 0
+27-02-2025 11:14:38 WARN  c.c.t.c.MasterControllerImpl - TRAZA: languageTagStringList
+27-02-2025 11:14:38 WARN  c.c.t.c.MasterControllerImpl - Traza2: requestURI
+27-02-2025 11:14:38 DEBUG o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@1450078a, started on Thu Feb 27 11:14:29 CET 2025
+27-02-2025 11:14:38 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+27-02-2025 11:14:38 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+27-02-2025 11:14:38 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+27-02-2025 11:14:55 INFO  c.c.t.c.ProviderControllerImplTest - Starting ProviderControllerImplTest using Java 21.0.4 with PID 6840 (started by manana in C:\Users\manana\eclipse-workspace\timmy)
+27-02-2025 11:14:55 INFO  c.c.t.c.ProviderControllerImplTest - No active profile set, falling back to 1 default profile: "default"
+27-02-2025 11:14:55 DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@203dd56b
+27-02-2025 11:14:56 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+27-02-2025 11:14:56 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+27-02-2025 11:14:56 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 107 ms. Found 8 JPA repository interfaces.
+27-02-2025 11:14:56 INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+27-02-2025 11:14:56 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Annotations [org.springframework.boot.test.autoconfigure.properties.AnnotationsPropertySource] to EncryptableEnumerablePropertySourceWrapper
+27-02-2025 11:14:56 INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+27-02-2025 11:14:56 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource test [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:14:56 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:14:56 INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+27-02-2025 11:14:56 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+27-02-2025 11:14:56 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:14:56 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+27-02-2025 11:14:56 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+27-02-2025 11:14:56 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:14:56 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource class path resource [properties/secretkey.properties] [org.springframework.core.io.support.ResourcePropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:14:58 INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+27-02-2025 11:14:58 INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+27-02-2025 11:14:58 INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+27-02-2025 11:14:58 INFO  c.u.j.encryptor.DefaultLazyEncryptor - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+27-02-2025 11:14:58 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+27-02-2025 11:14:58 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+27-02-2025 11:14:58 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+27-02-2025 11:14:58 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+27-02-2025 11:14:58 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+27-02-2025 11:14:58 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+27-02-2025 11:14:58 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+27-02-2025 11:14:58 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:eventix user=SAS
+27-02-2025 11:14:58 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+27-02-2025 11:14:59 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+27-02-2025 11:14:59 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+27-02-2025 11:14:59 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+27-02-2025 11:14:59 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+27-02-2025 11:15:00 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+27-02-2025 11:15:00 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+27-02-2025 11:15:01 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+27-02-2025 11:15:01 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+27-02-2025 11:15:02 INFO  com.core.timmy.config.WebMvcConfig - Dialects & TemplateResolvers:  > [org.thymeleaf.spring6.dialect.SpringStandardDialect@2fbc704a, nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect@6a53cddc, org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect@1e7245da] >> [org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver@11261fc9] >>> 1
+27-02-2025 11:15:02 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+27-02-2025 11:15:02 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 32 mappings in 'requestMappingHandlerMapping'
+27-02-2025 11:15:02 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+27-02-2025 11:15:02 INFO  c.c.timmy.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7ba5d307, class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@655e3f4c, interface org.springframework.context.ApplicationContext=org.springframework.web.context.support.GenericWebApplicationContext@203dd56b, started on Thu Feb 27 11:14:55 CET 2025}
+27-02-2025 11:15:03 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+27-02-2025 11:15:03 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+27-02-2025 11:15:03 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:eventix'
+27-02-2025 11:15:03 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+27-02-2025 11:15:03 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: 
+27-02-2025 11:15:03 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+27-02-2025 11:15:03 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+27-02-2025 11:15:03 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+27-02-2025 11:15:03 INFO  c.c.t.c.ProviderControllerImplTest - Started ProviderControllerImplTest in 9.136 seconds (process running for 10.336)
+27-02-2025 11:15:04 DEBUG o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@203dd56b, started on Thu Feb 27 11:14:55 CET 2025
+27-02-2025 11:15:04 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+27-02-2025 11:15:04 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+27-02-2025 11:15:04 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+27-02-2025 11:15:21 INFO  c.c.t.c.ProviderControllerImplTest - Starting ProviderControllerImplTest using Java 21.0.4 with PID 2984 (started by manana in C:\Users\manana\eclipse-workspace\timmy)
+27-02-2025 11:15:21 INFO  c.c.t.c.ProviderControllerImplTest - No active profile set, falling back to 1 default profile: "default"
+27-02-2025 11:15:21 DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1450078a
+27-02-2025 11:15:22 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+27-02-2025 11:15:22 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+27-02-2025 11:15:22 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 100 ms. Found 8 JPA repository interfaces.
+27-02-2025 11:15:22 INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+27-02-2025 11:15:22 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Annotations [org.springframework.boot.test.autoconfigure.properties.AnnotationsPropertySource] to EncryptableEnumerablePropertySourceWrapper
+27-02-2025 11:15:22 INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+27-02-2025 11:15:22 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource test [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:15:22 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:15:22 INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+27-02-2025 11:15:22 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+27-02-2025 11:15:22 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:15:22 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+27-02-2025 11:15:22 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+27-02-2025 11:15:22 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:15:22 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource class path resource [properties/secretkey.properties] [org.springframework.core.io.support.ResourcePropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:15:24 INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+27-02-2025 11:15:24 INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+27-02-2025 11:15:24 INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+27-02-2025 11:15:24 INFO  c.u.j.encryptor.DefaultLazyEncryptor - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+27-02-2025 11:15:24 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+27-02-2025 11:15:24 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+27-02-2025 11:15:24 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+27-02-2025 11:15:24 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+27-02-2025 11:15:24 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+27-02-2025 11:15:24 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+27-02-2025 11:15:24 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+27-02-2025 11:15:24 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:eventix user=SAS
+27-02-2025 11:15:24 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+27-02-2025 11:15:25 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+27-02-2025 11:15:25 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+27-02-2025 11:15:25 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+27-02-2025 11:15:25 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+27-02-2025 11:15:26 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+27-02-2025 11:15:26 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+27-02-2025 11:15:27 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+27-02-2025 11:15:27 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+27-02-2025 11:15:28 INFO  com.core.timmy.config.WebMvcConfig - Dialects & TemplateResolvers:  > [org.thymeleaf.spring6.dialect.SpringStandardDialect@147a8d7c, nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect@122557f8, org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect@1e8f20bf] >> [org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver@6f66ab8f] >>> 1
+27-02-2025 11:15:28 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+27-02-2025 11:15:28 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 32 mappings in 'requestMappingHandlerMapping'
+27-02-2025 11:15:28 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+27-02-2025 11:15:28 INFO  c.c.timmy.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@349e166, class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@3d3a3738, interface org.springframework.context.ApplicationContext=org.springframework.web.context.support.GenericWebApplicationContext@1450078a, started on Thu Feb 27 11:15:21 CET 2025}
+27-02-2025 11:15:29 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+27-02-2025 11:15:29 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+27-02-2025 11:15:29 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:eventix'
+27-02-2025 11:15:29 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+27-02-2025 11:15:29 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: 
+27-02-2025 11:15:29 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+27-02-2025 11:15:29 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+27-02-2025 11:15:29 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+27-02-2025 11:15:29 INFO  c.c.t.c.ProviderControllerImplTest - Started ProviderControllerImplTest in 9.03 seconds (process running for 10.27)
+27-02-2025 11:15:30 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.ProviderControllerImpl#providerListGet(Principal, Model, HttpServletRequest)
+27-02-2025 11:15:30 INFO  c.c.t.c.ProviderControllerImpl - TRAZA providerListGet
+27-02-2025 11:15:30 INFO  c.c.t.c.LanguageResourceBundleMessage - resourceArray= 0
+27-02-2025 11:15:30 INFO  c.c.t.c.LanguageResourceBundleMessage - resourceArray= 0
+27-02-2025 11:15:30 WARN  c.c.t.c.MasterControllerImpl - TRAZA: languageTagStringList
+27-02-2025 11:15:30 WARN  c.c.t.c.MasterControllerImpl - Traza2: requestURI
+27-02-2025 11:15:30 DEBUG o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@1450078a, started on Thu Feb 27 11:15:21 CET 2025
+27-02-2025 11:15:30 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+27-02-2025 11:15:30 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+27-02-2025 11:15:30 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+27-02-2025 11:18:48 INFO  c.c.t.c.ProviderControllerImplTest - Starting ProviderControllerImplTest using Java 21.0.4 with PID 6644 (started by manana in C:\Users\manana\eclipse-workspace\timmy)
+27-02-2025 11:18:48 INFO  c.c.t.c.ProviderControllerImplTest - No active profile set, falling back to 1 default profile: "default"
+27-02-2025 11:18:49 DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@29f0802c
+27-02-2025 11:18:50 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+27-02-2025 11:18:50 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+27-02-2025 11:18:50 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 102 ms. Found 8 JPA repository interfaces.
+27-02-2025 11:18:50 INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+27-02-2025 11:18:50 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Annotations [org.springframework.boot.test.autoconfigure.properties.AnnotationsPropertySource] to EncryptableEnumerablePropertySourceWrapper
+27-02-2025 11:18:50 INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+27-02-2025 11:18:50 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource test [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:18:50 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:18:50 INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+27-02-2025 11:18:50 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+27-02-2025 11:18:50 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:18:50 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+27-02-2025 11:18:50 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+27-02-2025 11:18:50 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:18:50 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource class path resource [properties/secretkey.properties] [org.springframework.core.io.support.ResourcePropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:18:52 INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+27-02-2025 11:18:52 INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+27-02-2025 11:18:52 INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+27-02-2025 11:18:52 INFO  c.u.j.encryptor.DefaultLazyEncryptor - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+27-02-2025 11:18:52 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+27-02-2025 11:18:52 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+27-02-2025 11:18:52 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+27-02-2025 11:18:52 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+27-02-2025 11:18:52 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+27-02-2025 11:18:52 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+27-02-2025 11:18:52 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+27-02-2025 11:18:52 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:eventix user=SAS
+27-02-2025 11:18:52 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+27-02-2025 11:18:52 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+27-02-2025 11:18:52 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+27-02-2025 11:18:53 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+27-02-2025 11:18:53 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+27-02-2025 11:18:54 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+27-02-2025 11:18:54 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+27-02-2025 11:18:55 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+27-02-2025 11:18:55 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+27-02-2025 11:18:55 INFO  com.core.timmy.config.WebMvcConfig - Dialects & TemplateResolvers:  > [org.thymeleaf.spring6.dialect.SpringStandardDialect@515a897c, nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect@4015c65b, org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect@16486ab3] >> [org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver@3ef97efc] >>> 1
+27-02-2025 11:18:56 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+27-02-2025 11:18:56 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 32 mappings in 'requestMappingHandlerMapping'
+27-02-2025 11:18:56 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+27-02-2025 11:18:56 INFO  c.c.timmy.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@423ddfe1, interface org.springframework.context.ApplicationContext=org.springframework.web.context.support.GenericWebApplicationContext@29f0802c, started on Thu Feb 27 11:18:49 CET 2025, interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7ba5d307}
+27-02-2025 11:18:56 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+27-02-2025 11:18:56 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+27-02-2025 11:18:57 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:eventix'
+27-02-2025 11:18:57 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+27-02-2025 11:18:57 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: 
+27-02-2025 11:18:57 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+27-02-2025 11:18:57 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+27-02-2025 11:18:57 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+27-02-2025 11:18:57 INFO  c.c.t.c.ProviderControllerImplTest - Started ProviderControllerImplTest in 8.945 seconds (process running for 10.288)
+27-02-2025 11:18:58 DEBUG o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@29f0802c, started on Thu Feb 27 11:18:49 CET 2025
+27-02-2025 11:18:58 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+27-02-2025 11:18:58 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+27-02-2025 11:18:58 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+27-02-2025 11:28:23 INFO  c.c.t.c.ProviderControllerImplTest - Starting ProviderControllerImplTest using Java 21.0.4 with PID 9620 (started by manana in C:\Users\manana\eclipse-workspace\timmy)
+27-02-2025 11:28:23 INFO  c.c.t.c.ProviderControllerImplTest - No active profile set, falling back to 1 default profile: "default"
+27-02-2025 11:28:23 DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1450078a
+27-02-2025 11:28:24 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+27-02-2025 11:28:24 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+27-02-2025 11:28:24 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 101 ms. Found 8 JPA repository interfaces.
+27-02-2025 11:28:24 INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+27-02-2025 11:28:24 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Annotations [org.springframework.boot.test.autoconfigure.properties.AnnotationsPropertySource] to EncryptableEnumerablePropertySourceWrapper
+27-02-2025 11:28:24 INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+27-02-2025 11:28:24 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource test [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:28:24 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:28:24 INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+27-02-2025 11:28:24 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+27-02-2025 11:28:24 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:28:24 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+27-02-2025 11:28:24 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+27-02-2025 11:28:24 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:28:24 INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource class path resource [properties/secretkey.properties] [org.springframework.core.io.support.ResourcePropertySource] to EncryptableMapPropertySourceWrapper
+27-02-2025 11:28:26 INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+27-02-2025 11:28:26 INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+27-02-2025 11:28:26 INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+27-02-2025 11:28:26 INFO  c.u.j.encryptor.DefaultLazyEncryptor - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+27-02-2025 11:28:26 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+27-02-2025 11:28:26 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+27-02-2025 11:28:26 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+27-02-2025 11:28:26 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+27-02-2025 11:28:26 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+27-02-2025 11:28:26 INFO  c.u.j.c.StringEncryptorBuilder - Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+27-02-2025 11:28:26 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+27-02-2025 11:28:26 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:eventix user=SAS
+27-02-2025 11:28:26 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+27-02-2025 11:28:27 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+27-02-2025 11:28:27 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+27-02-2025 11:28:27 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+27-02-2025 11:28:27 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+27-02-2025 11:28:28 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+27-02-2025 11:28:28 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+27-02-2025 11:28:29 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+27-02-2025 11:28:29 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+27-02-2025 11:28:30 INFO  com.core.timmy.config.WebMvcConfig - Dialects & TemplateResolvers:  > [org.thymeleaf.spring6.dialect.SpringStandardDialect@3f04847e, nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect@2fe6bcbb, org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect@4e92c6c2] >> [org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver@38e46ea] >>> 1
+27-02-2025 11:28:30 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+27-02-2025 11:28:30 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 32 mappings in 'requestMappingHandlerMapping'
+27-02-2025 11:28:30 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+27-02-2025 11:28:30 INFO  c.c.timmy.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@55b56db3, interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@18a421ea, interface org.springframework.context.ApplicationContext=org.springframework.web.context.support.GenericWebApplicationContext@1450078a, started on Thu Feb 27 11:28:23 CET 2025}
+27-02-2025 11:28:31 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+27-02-2025 11:28:31 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+27-02-2025 11:28:31 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:eventix'
+27-02-2025 11:28:31 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+27-02-2025 11:28:31 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: 
+27-02-2025 11:28:31 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+27-02-2025 11:28:31 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+27-02-2025 11:28:31 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+27-02-2025 11:28:31 INFO  c.c.t.c.ProviderControllerImplTest - Started ProviderControllerImplTest in 8.971 seconds (process running for 10.103)
+27-02-2025 11:28:32 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.timmy.controllerImpl.ProviderControllerImpl#providerListGet(Principal, Model, HttpServletRequest)
+27-02-2025 11:28:32 INFO  c.c.t.c.ProviderControllerImpl - TRAZA providerListGet
+27-02-2025 11:28:32 INFO  c.c.t.c.LanguageResourceBundleMessage - resourceArray= 0
+27-02-2025 11:28:32 INFO  c.c.t.c.LanguageResourceBundleMessage - resourceArray= 0
+27-02-2025 11:28:32 WARN  c.c.t.c.MasterControllerImpl - TRAZA: languageTagStringList
+27-02-2025 11:28:32 WARN  c.c.t.c.MasterControllerImpl - Traza2: requestURI
+27-02-2025 11:28:32 DEBUG o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@1450078a, started on Thu Feb 27 11:28:23 CET 2025
+27-02-2025 11:28:32 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+27-02-2025 11:28:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+27-02-2025 11:28:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
